@@ -26,17 +26,17 @@ function OptionsMenu() {
                         </div>
                         <div class="col">
                             <div class="col2">
-                                <h2 class="category">Fruit</h2>
+                                <h2 class="category">Occupations</h2>
                             </div>
                             <div class="col2">
-                                <input type="checkbox" class="vocab" id="vocabFruit"/>
+                                <input type="checkbox" class="vocab" id="vocabOccupations"/>
                             </div>
 
                             <div class="col2">
-                                <h2 class="category">Vegetable</h2>
+                                <h2 class="category">Subjects</h2>
                             </div>
                             <div class="col2">
-                                <input type="checkbox" class="vocab" id="vocabVegetable"/>
+                                <input type="checkbox" class="vocab" id="vocabSubjects"/>
                             </div>    
                         </div>
                     </div>
