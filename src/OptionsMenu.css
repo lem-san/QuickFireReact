@@ -1,0 +1,108 @@
+@font-face {
+    font-family: UDDigiKyokasho;
+    src: url('./assets/UDDigi.ttf');
+}
+
+#optionsLogo {
+    padding: 20px 50px;
+    margin-left: 3%;
+    width: 600px;
+}
+
+#optionTabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 50px auto;
+    font-family: UDDigiKyokasho;
+    border-radius: 30px;
+    backdrop-filter: blur(70px); /* Apply a blur effect to the background */
+    background: transparent;
+}
+
+#vocabOptions, #modifierOptions {
+    display: none;
+}
+
+#optionTabs label {
+    padding: 25px;
+    font-weight: 900;
+    width: 50%;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    margin: 0;
+    text-align: center;
+    font-size: 60px;
+    color: #FFF;
+    text-shadow:
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000;
+    border: 4px solid black;
+    border-bottom: 0;
+    background: rgba(128, 128, 128, 0.371);
+}
+
+#vocabTitle {
+    border-radius: 27px 0 0 0;
+}
+
+#modifierTitle {
+    border-radius: 0 27px 0 0;
+}
+
+#optionTabs .tab{
+    width: 100%;
+    padding: 20px;
+    order: 1;
+    display: none;
+    border-radius: 0 0 27px 27px;
+    border: 4px solid black;
+    border-top: 0;
+    background: rgba(128, 128, 128, 0.371); /* Semi-transparent background color */
+}
+
+#optionTabs input[type="radio"]:checked + label + .tab {
+    display: block;
+    background: rgba(128, 128, 128, 0.049);
+}
+
+#optionTabs input[type="radio"]:checked + label {
+    background: rgba(128, 128, 128, 0.049);
+    border-bottom: 0;
+}
+
+#optionTabs input[type="radio"]:checked + .tab {
+    border-top: 0;
+}
+
+#optionTabs input[type="radio"] + label {
+    border-bottom: 4px solid black;
+}
+
+.col {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;   
+    float: left;
+    width: 50%;
+}
+
+.col2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; 
+    width: 50%;
+}
+
+.col2 h2{
+    width: 10%;
+    float: left;
+}
+
+.col2 input {
+    padding-right: 80%;
+    float: right;
+}

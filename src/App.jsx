@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import MainMenu from "./MainMenu"
 import OptionsMenu from "./OptionsMenu"
 import bg from './assets/bgAnimation.mp4'
-import bgMusic from './assets/audio/bgMusic1.mp3'
 import Info from './Info';
 
 function App() {
@@ -19,10 +18,6 @@ function App() {
         return <MainMenu onSelectOption={setCurrentOption} />;
     }
   }
-
-  // function playSound() {
-  //   new Audio(click).play();
-  // }
 
   return (
     <>

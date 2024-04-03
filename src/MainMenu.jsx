@@ -1,12 +1,12 @@
 import './MainMenu.css'
 import { Fragment } from 'react'
 import logo from './assets/logo.png'
-import click from './assets/menu.mp3'
 import musicOn from './assets/musicOn.png'
 import musicOff from './assets/musicOff.png'
 import info from './assets/info.png'
 import React, {useState} from 'react'
 import bgMusic from './assets/audio/bgMusic1.mp3'
+import {playClick} from './Sounds'
 
 const MainMenu = ({onSelectOption}) => {
     const [audio] = useState(new Audio(bgMusic))
@@ -21,12 +21,8 @@ const MainMenu = ({onSelectOption}) => {
         isPaused(!isPlaying)
     }
 
-    function playSound() {
-        new Audio(click).play();
-    }
-
     const handleClick = (buttonId) => {
-        playSound()
+        playClick();
         switch (buttonId) {
             case "btnNormal":
                 return onSelectOption('NormalMode');
@@ -45,9 +41,9 @@ const MainMenu = ({onSelectOption}) => {
                 <img id="logo" src={logo}/>
                 <div id="btnMenu">
                     <button id="btnNormal" onClick={() => handleClick('btnNormal')}>Normal</button>
-                    <button id="btnRanked" onClick={playSound}>Ranked</button>
-                    <button id="btnLeaderboards" onClick={playSound}>Leaderboards</button>
-                    <button id="btnSettings" onClick={playSound}>Settings</button>
+                    <button id="btnRanked" onClick={playClick}>Ranked</button>
+                    <button id="btnLeaderboards" onClick={playClick}>Leaderboards</button>
+                    <button id="btnSettings" onClick={playClick}>Settings</button>
                 </div>
             </div>
             <div id="iconMenu">
