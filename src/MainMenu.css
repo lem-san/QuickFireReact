@@ -23,7 +23,6 @@ img {
 }
 
 .menu {
-    padding: 1%;  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +34,6 @@ img {
 }
 
 #btnMenu {
-    padding-top: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,6 +135,36 @@ button {
 #btnInfo:hover {
     border: 7px solid #ffa6ff;
     background: #ff00d9;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+#btnReturn {
+    border-radius: 20px;
+    border: 7px solid #ffe600;
+    background: #ffe785;
+    padding: 15px 20px;
+    margin-left: 30px;
+}
+
+#btnReturn:hover {
+    border: 7px solid #ffe785;
+    background: #ffe600;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+#btnOneMore {
+    border-radius: 20px;
+    border: 7px solid #0fffb3;
+    background: #93ffd9;
+    padding: 15px 20px;
+    margin-left: 30px;
+}
+
+#btnOneMore:hover {
+    border: 7px solid #93ffd9;
+    background: #0fffb3;
     box-shadow: none;
     text-shadow: none;
 }

@@ -14,6 +14,8 @@ function App() {
         return <OptionsMenu />;
       case 'Info':
         return <Info />;
+      case 'MainMenu':
+        return <MainMenu onSelectOption={setCurrentOption}/>;
       default:
         return <MainMenu onSelectOption={setCurrentOption} />;
     }

@@ -7,6 +7,8 @@ import info from './assets/info.png'
 import React, {useState} from 'react'
 import bgMusic from './assets/audio/bgMusic1.mp3'
 import {playClick} from './Sounds'
+import returnIcon from './assets/returnIcon.png'
+import oneMoreTime from './assets/oneMoreTime.png'
 
 const MainMenu = ({onSelectOption}) => {
     const [audio] = useState(new Audio(bgMusic))
@@ -28,6 +30,8 @@ const MainMenu = ({onSelectOption}) => {
                 return onSelectOption('NormalMode');
             case "btnInfo":
                 return onSelectOption('Info');
+            case "btnReturn": 
+                return onSelectOption('MainMenu');
             default:
             break;
         }
@@ -51,6 +55,8 @@ const MainMenu = ({onSelectOption}) => {
                     {isPlaying ? <img class="icon" src={musicOff}/> : <img class="icon" src={musicOn}/>}
                 </button>
                 <button id="btnInfo" onClick={() => handleClick('btnInfo')}><img class="icon" src={info}/></button>
+                <button id="btnReturn" onClick={() => handleClick('btnReturn')}><img class="icon" src={returnIcon}/></button>
+                <button id="btnOneMore" onClick={playClick}><img class="icon" src={oneMoreTime} /></button>
             </div>
         </>
     )
