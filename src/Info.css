@@ -1,0 +1,53 @@
+@font-face {
+    font-family: UDDigiKyokasho;
+    src: url('./assets/UDDigi.ttf');
+}
+
+body {
+    font-family: UDDigiKyokasho;
+}
+
+#infoWindow {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 80px auto;
+    align-items:flex-start;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px;
+    border: 7px solid #ff00d9;
+    background-color: #ffa6ff;
+    padding: 20px 40px;
+}
+
+.illustrations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+p {
+    font-size: 20px;
+    padding-bottom: 10px;
+    line-height: 1.6;
+}
+
+#icon {
+    width: 80px;
+    display: flex;
+    align-self: center;
+}
+
+#question {
+    width: 25px;
+}
+
+#point {
+    width: 45px;
+}
+
+#caution {
+    width: 15px;
+}
