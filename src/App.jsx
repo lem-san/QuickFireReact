@@ -13,7 +13,7 @@ function App() {
       case 'NormalMode':
         return <OptionsMenu />;
       case 'Info':
-        return <Info />;
+        return <Info onSelectOption={setCurrentOption}/>;
       case 'MainMenu':
         return <MainMenu onSelectOption={setCurrentOption}/>;
       default:

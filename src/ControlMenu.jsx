@@ -6,6 +6,8 @@ import bgMusic from './assets/audio/bgMusic1.mp3'
 import {playClick} from './Sounds'
 import returnIcon from './assets/returnIcon.png'
 import oneMoreTime from './assets/oneMoreTime.png'
+import fullscreen from './assets/fullscreen.png'
+// import {FullScreen, useFullScreenHandle} from 'react-full-screen'
 
 const ControlMenu = ({onSelectOption}) => {
     return (
@@ -17,6 +19,10 @@ export const handleControls = (controlId, onSelectOption) => {
     // for bg sound control
     const [audio] = useState(new Audio(bgMusic))
     const [isPlaying, isPaused] = useState(false)
+
+    // const handleFullScreen = () => {
+    //     setIsFullScreen(!isFullScreen)
+    // }
 
     function togglePlayback() {
         if (isPlaying) {
@@ -31,7 +37,12 @@ export const handleControls = (controlId, onSelectOption) => {
         playClick();
         switch (buttonId) {
             case "btnInfo":
-                onSelectOption('Info');
+                return onSelectOption('Info');
+            case "btnReturn":
+                return onSelectOption('MainMenu');
+            // case "btnFullscreen":
+            //     handleFullScreen();
+            //     break;
             default:
                 break;
         }
@@ -48,6 +59,8 @@ export const handleControls = (controlId, onSelectOption) => {
             return <button id="btnReturn" onClick={() => handleClick('btnReturn')}><img class="icon" src={returnIcon}/></button>;
         case "btnOneMore":
             return <button id="btnOneMore" onClick={playClick}><img class="icon" src={oneMoreTime} /></button>;
+        case "btnFullscreen":
+            return <button id="btnFullscreen" onClick={playClick}><img class="icon" src={fullscreen} /></button>;
         default:
             break;
     }

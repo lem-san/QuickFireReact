@@ -168,3 +168,15 @@ button {
     box-shadow: none;
     text-shadow: none;
 }
+
+#btnFullscreen {
+    border-radius: 20px;
+    border: 7px solid #97002d;
+    background: #ff8091;
+}
+
+#btnFullscreen:hover {
+    border-radius: 20px;
+    border: 7px solid #ff8091;
+    background: #97002d;
+}
