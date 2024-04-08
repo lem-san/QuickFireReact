@@ -19,7 +19,6 @@ const Info = ({onSelectOption}) => {
                 <p>This is predominantly a teaching tool. It requires someone familiar with the intended vocabulary to indicate whether the answers given are correct or not. It's recommended that a teacher facilitates the activity, pressing the correct/incorrect buttons.
                     There will be future updates to include a 'solo-play' mode, allowing students to play without the need of teacher assistance. Stay tuned!</p>
             </div>
-            {handleControls('btnMusic', onSelectOption)}
             {handleControls('btnReturn', onSelectOption)}
         </>
     )

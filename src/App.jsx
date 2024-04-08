@@ -11,7 +11,7 @@ function App() {
   function renderOption() {
     switch (currentOption) {
       case 'NormalMode':
-        return <OptionsMenu />;
+        return <OptionsMenu onSelectOption={setCurrentOption}/>;
       case 'Info':
         return <Info onSelectOption={setCurrentOption}/>;
       case 'MainMenu':

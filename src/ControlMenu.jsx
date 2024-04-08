@@ -39,10 +39,7 @@ export const handleControls = (controlId, onSelectOption) => {
             case "btnInfo":
                 return onSelectOption('Info');
             case "btnReturn":
-                return onSelectOption('MainMenu');
-            // case "btnFullscreen":
-            //     handleFullScreen();
-            //     break;
+                return onSelectOption('MainMenu');  
             default:
                 break;
         }

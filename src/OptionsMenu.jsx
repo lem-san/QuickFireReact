@@ -1,14 +1,14 @@
 import './OptionsMenu.css'
 import optionsLogo from './assets/optionsPageLogo.png'
-import {playClick} from './Sounds'
 import {playToggleClick} from './Sounds'
+import {handleControls} from './ControlMenu'
 
-function OptionsMenu() {
+const OptionsMenu = ({onSelectOption}) => {
     return (
         <>
             <img id="optionsLogo" src={optionsLogo}/>
             <div id="optionTabs">
-                    <input type="radio" id="vocabOptions" name="optionTabs" checked="checked" />
+                    <input type="radio" id="vocabOptions" name="optionTabs" defaultChecked />
                     <label id="vocabTitle" for="vocabOptions">Vocab</label>
                     <div class="tab">
                         <div class="col">
@@ -165,7 +165,7 @@ function OptionsMenu() {
                     </div>
             </div>
             <div id="iconMenu">
-
+                {handleControls('btnReturn', onSelectOption)}
             </div>
         </>
     )
