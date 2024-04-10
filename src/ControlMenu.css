@@ -1,0 +1,78 @@
+#btnMusic {
+    border-radius: 20px;
+    border: 7px solid #ff8800;
+    background: #ffbc7d;
+    padding: 15px 20px;
+}
+
+#btnMusic:hover {
+    border: 7px solid #ffbc7d;
+    background: #ff8800;
+    box-shadow: none;
+}
+
+#btnInfo {
+    border-radius: 20px;
+    border: 7px solid #ff00d9;
+    background: #ffa6ff;
+    padding: 15px 20px;
+}
+
+#btnInfo:hover {
+    border: 7px solid #ffa6ff;
+    background: #ff00d9;
+    box-shadow: none;
+}
+
+#btnReturn {
+    border-radius: 20px;
+    border: 7px solid #ffe600;
+    background: #ffe785;
+    padding: 15px 20px;
+}
+
+#btnReturn:hover {
+    border: 7px solid #ffe785;
+    background: #ffe600;
+    box-shadow: none;
+}
+
+#btnOneMore {
+    border-radius: 20px;
+    border: 7px solid #0fffb3;
+    background: #93ffd9;
+    padding: 15px 20px;
+}
+
+#btnOneMore:hover {
+    border: 7px solid #93ffd9;
+    background: #0fffb3;
+    box-shadow: none;
+}
+
+#btnFullscreen {
+    border-radius: 20px;
+    border: 7px solid #97002d;
+    background: #ff8091;
+    padding: 15px 20px;
+}
+
+#btnFullscreen:hover {
+    border-radius: 20px;
+    border: 7px solid #ff8091;
+    background: #97002d;
+    box-shadow: none;
+}
+
+#btnNext {
+    border-radius: 20px;
+    border: 7px solid #0059ff;
+    background: #a7d0ff;
+    padding: 15px 20px;
+}
+
+#btnNext:hover {
+    border: 7px solid #a7d0ff;
+    background: #0059ff;
+    box-shadow: none;
+}

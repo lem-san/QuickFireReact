@@ -1,9 +1,27 @@
 import './OptionsMenu.css'
+import React, {useState} from 'react'
 import optionsLogo from './assets/optionsPageLogo.png'
 import {playToggleClick} from './Sounds'
 import {handleControls} from './ControlMenu'
 
 const OptionsMenu = ({onSelectOption}) => {
+    const [checkedVocab, setCheckedVocab] = useState([])
+
+    const handleSelectedVocab = (event) => {
+        playToggleClick()
+        const category = event.target.id.replace('vocab', '');
+        if (event.target.checked) {
+            setCheckedVocab([...checkedVocab, category]);
+        } else {
+            setCheckedVocab(checkedVocab.filter((c) => c !== category));
+        }
+    }
+
+    const handleNextButton = () => {
+        onSelectOption('GameScreen', checkedVocab)
+        console.log(checkedVocab)
+    };
+
     return (
         <>
             <img id="optionsLogo" src={optionsLogo}/>
@@ -17,7 +35,7 @@ const OptionsMenu = ({onSelectOption}) => {
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabFruits">
-                                    <input type="checkbox" class="vocab" id="vocabFruits" onClick={playToggleClick}/>
+                                    <input type="checkbox" class="vocab" id="vocabFruits" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                             </div>
@@ -27,7 +45,7 @@ const OptionsMenu = ({onSelectOption}) => {
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabVegetables">
-                                    <input type="checkbox" class="vocab" id="vocabVegetables" onClick={playToggleClick}/>
+                                    <input type="checkbox" class="vocab" id="vocabVegetables" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                              </div>
@@ -37,7 +55,7 @@ const OptionsMenu = ({onSelectOption}) => {
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabAnimals">
-                                    <input type="checkbox" class="vocab" id="vocabAnimals" onClick={playToggleClick}/>
+                                    <input type="checkbox" class="vocab" id="vocabAnimals" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                              </div>      
@@ -47,7 +65,7 @@ const OptionsMenu = ({onSelectOption}) => {
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabSports">
-                                    <input type="checkbox" class="vocab" id="vocabSports" onClick={playToggleClick}/>
+                                    <input type="checkbox" class="vocab" id="vocabSports" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                              </div>
@@ -57,7 +75,7 @@ const OptionsMenu = ({onSelectOption}) => {
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabStationery">
-                                    <input type="checkbox" class="vocab" id="vocabStationery" onClick={playToggleClick}/>
+                                    <input type="checkbox" class="vocab" id="vocabStationery" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                              </div>    
@@ -67,7 +85,7 @@ const OptionsMenu = ({onSelectOption}) => {
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabSchoolRooms">
-                                    <input type="checkbox" class="vocab" id="vocabSchoolRooms" onClick={playToggleClick}/>
+                                    <input type="checkbox" class="vocab" id="vocabSchoolRooms" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                              </div>    
@@ -77,7 +95,7 @@ const OptionsMenu = ({onSelectOption}) => {
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabLocations">
-                                    <input type="checkbox" class="vocab" id="vocabLocations" onClick={playToggleClick}/>
+                                    <input type="checkbox" class="vocab" id="vocabLocations" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                              </div>    
@@ -89,7 +107,7 @@ const OptionsMenu = ({onSelectOption}) => {
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabOccupations">
-                                    <input type="checkbox" class="vocab" id="vocabOccupations" onClick={playToggleClick}/>
+                                    <input type="checkbox" class="vocab" id="vocabOccupations" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                             </div>
@@ -99,7 +117,7 @@ const OptionsMenu = ({onSelectOption}) => {
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabSubjects">
-                                <input type="checkbox" class="vocab" id="vocabSubjects" onClick={playToggleClick}/>
+                                <input type="checkbox" class="vocab" id="vocabSubjects" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                             </div>    
@@ -109,7 +127,7 @@ const OptionsMenu = ({onSelectOption}) => {
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabMonthsSeasons">
-                                <input type="checkbox" class="vocab" id="vocabMonthsSeasons" onClick={playToggleClick}/>
+                                <input type="checkbox" class="vocab" id="vocabMonthsSeasons" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                             </div> 
@@ -119,7 +137,7 @@ const OptionsMenu = ({onSelectOption}) => {
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabEvents">
-                                <input type="checkbox" class="vocab" id="vocabEvents" onClick={playToggleClick}/>
+                                <input type="checkbox" class="vocab" id="vocabEvents" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                             </div> 
@@ -129,7 +147,7 @@ const OptionsMenu = ({onSelectOption}) => {
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabDailyLife">
-                                <input type="checkbox" class="vocab" id="vocabDailyLife" onClick={playToggleClick}/>
+                                <input type="checkbox" class="vocab" id="vocabDailyLife" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                             </div> 
@@ -139,7 +157,7 @@ const OptionsMenu = ({onSelectOption}) => {
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabVerbs">
-                                <input type="checkbox" class="vocab" id="vocabVerbs" onClick={playToggleClick}/>
+                                <input type="checkbox" class="vocab" id="vocabVerbs" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                             </div> 
@@ -149,7 +167,7 @@ const OptionsMenu = ({onSelectOption}) => {
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabActivities">
-                                <input type="checkbox" class="vocab" id="vocabActivities" onClick={playToggleClick}/>
+                                <input type="checkbox" class="vocab" id="vocabActivities" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                             </div> 
@@ -166,6 +184,7 @@ const OptionsMenu = ({onSelectOption}) => {
             </div>
             <div id="iconMenu">
                 {handleControls('btnReturn', onSelectOption)}
+                {handleControls('btnNext', handleNextButton)}
             </div>
         </>
     )

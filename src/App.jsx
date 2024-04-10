@@ -4,20 +4,30 @@ import MainMenu from "./MainMenu"
 import OptionsMenu from "./OptionsMenu"
 import bg from './assets/bgAnimation.mp4'
 import Info from './Info';
+import GameScreen from './GameScreen';
 
 function App() {
-  const [currentOption, setCurrentOption] = useState('MainMenu');
+  const [currentPage, setCurrentPage] = useState('MainMenu');
+  const [checkedVocab, setCheckedVocab] = useState([])
+
+  function handleOptionSelect(option, categories = []) {
+    setCurrentPage(option);
+    setCheckedVocab(categories);
+  }
 
   function renderOption() {
-    switch (currentOption) {
+    switch (currentPage) {
       case 'NormalMode':
-        return <OptionsMenu onSelectOption={setCurrentOption}/>;
+        return <OptionsMenu onSelectOption={handleOptionSelect} />;
       case 'Info':
-        return <Info onSelectOption={setCurrentOption}/>;
+        return <Info onSelectOption={handleOptionSelect} />;
       case 'MainMenu':
-        return <MainMenu onSelectOption={setCurrentOption}/>;
+        return <MainMenu onSelectOption={handleOptionSelect} />;
+      case 'GameScreen':
+      case 'NextPage': // Assuming 'NextPage' transitions to 'GameScreen'
+        return <GameScreen checkedVocab={checkedVocab} />;
       default:
-        return <MainMenu onSelectOption={setCurrentOption} />;
+        return <MainMenu onSelectOption={handleOptionSelect} />;
     }
   }
 
@@ -26,7 +36,6 @@ function App() {
       <video autoPlay muted loop id="bgAnimation">
         <source src={bg} type="video/mp4"/>
       </video>
-
       {renderOption()}
     </>
   )

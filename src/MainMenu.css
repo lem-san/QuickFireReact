@@ -57,6 +57,8 @@ button {
     transition-duration: 0.4s;
 }
 
+/* Main Menu buttons */
+
 #btnNormal {
     border-radius: 20px;
     border: 7px solid #00BE62;
@@ -109,74 +111,10 @@ button {
     text-shadow: none;
 }
 
-#btnMusic {
-    border-radius: 20px;
-    border: 7px solid #ff8800;
-    background: #ffbc7d;
-    padding: 15px 20px;
-    margin-left: 30px;
-}
+/* Control Menu buttons */
 
-#btnMusic:hover {
-    border: 7px solid #ffbc7d;
-    background: #ff8800;
-    box-shadow: none;
-    text-shadow: none;
-}
-
-#btnInfo {
-    border-radius: 20px;
-    border: 7px solid #ff00d9;
-    background: #ffa6ff;
-    padding: 15px 20px;
-    margin-left: 30px;
-}
-
-#btnInfo:hover {
-    border: 7px solid #ffa6ff;
-    background: #ff00d9;
-    box-shadow: none;
-    text-shadow: none;
-}
-
-#btnReturn {
-    border-radius: 20px;
-    border: 7px solid #ffe600;
-    background: #ffe785;
-    padding: 15px 20px;
-    margin-left: 30px;
-}
-
-#btnReturn:hover {
-    border: 7px solid #ffe785;
-    background: #ffe600;
-    box-shadow: none;
-    text-shadow: none;
-}
-
-#btnOneMore {
-    border-radius: 20px;
-    border: 7px solid #0fffb3;
-    background: #93ffd9;
-    padding: 15px 20px;
-    margin-left: 30px;
-}
-
-#btnOneMore:hover {
-    border: 7px solid #93ffd9;
-    background: #0fffb3;
-    box-shadow: none;
-    text-shadow: none;
-}
-
-#btnFullscreen {
-    border-radius: 20px;
-    border: 7px solid #97002d;
-    background: #ff8091;
-}
-
-#btnFullscreen:hover {
-    border-radius: 20px;
-    border: 7px solid #ff8091;
-    background: #97002d;
-}
+#controls {
+    display: flex;
+    column-gap: 20px;
+    margin-left: 20px;
+} 
