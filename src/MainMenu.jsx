@@ -12,9 +12,9 @@ const MainMenu = ({onSelectOption}) => {
             case "btnNormal":
                 return onSelectOption('NormalMode');
             case "btnRanked":
-                return onSelectOption('GameScreen');
-            default:
-            break;
+            case "btnLeaderboards":
+            case "btnSettings":
+            default: break;
         }
     }
     

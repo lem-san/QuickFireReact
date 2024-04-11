@@ -19,7 +19,6 @@ const OptionsMenu = ({onSelectOption}) => {
 
     const handleNextButton = () => {
         onSelectOption('GameScreen', checkedVocab)
-        console.log(checkedVocab)
     };
 
     return (

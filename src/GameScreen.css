@@ -1,0 +1,14 @@
+#quizItem {
+    width: 500px;
+    display: flex;
+    margin: auto;
+    padding: 40px;
+}
+
+#btnCorrect {
+    background: rgb(84, 255, 112);
+}
+
+#btnIncorrect {
+    background: rgb(255, 84, 101);
+}
