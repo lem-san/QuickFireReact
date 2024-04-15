@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './GameScreen.css'
+import { handleControls } from './ControlMenu';
+import CountdownTimer from './CountdownTimer';
+import correct from './assets/correct.png';
+import incorrect from './assets/incorrect.png'
+import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+import {playCorrectPing, playIncorrectPing} from './Sounds'
 
-const GameScreen = ({ checkedVocab }) => {
+const GameScreen = ({ checkedVocab, onSelectOption }) => {
     const [imagePaths, setImagePaths] = useState([]);
     const [randomImagePath, setRandomImagePath] = useState(null);
     const [scoreCounter, setScoreCounter] = useState(0); 
@@ -27,7 +33,7 @@ const GameScreen = ({ checkedVocab }) => {
                         const sportsImages = await import.meta.glob('./assets/illustrations/sports/*.png');
                         paths.push(...Object.values(sportsImages).map(image => image()));
                         break;
-                    // Add more cases for other categories as needed
+                    // TODO: categories continued here
                     default:
                         break;
                 }
@@ -55,22 +61,41 @@ const GameScreen = ({ checkedVocab }) => {
         switch (buttonId) {
             case "btnCorrect":
                 setScoreCounter((prevScore) => prevScore + 1);
+                confetti({
+                    particleCount: 100,
+                    startVelocity: 30,
+                    spread: 360,
+                    origin: {
+                      x: Math.random(), y: Math.random() - 0.2
+                    }
+                  });
                 renderRandomImage();
+                playCorrectPing();
+                break;
             case "btnIncorrect":
+                playIncorrectPing();
                 renderRandomImage();
+                break;
         }
     }
 
     return (
         <>
+        <div class="game">
+            <CountdownTimer duration={35} />
             {randomImagePath && (
-                <div>
-                    <img id="quizItem" src={randomImagePath} alt="Random Image" />
+                <div id="quizItem">
+                    <img src={randomImagePath} alt="Random Image" />
                 </div>
             )} 
-            <button id="btnCorrect" onClick={() => handleClick('btnCorrect')}></button>
-            <button id="btnIncorrect" onClick={() => handleClick('btnIncorrect')}></button>
-            <h1>{scoreCounter}</h1>
+            <div id="answerBtns">
+                <button id="btnCorrect" onClick={() => handleClick('btnCorrect')}><img class="icon" src={correct}/></button>
+                <button id="btnIncorrect" onClick={() => handleClick('btnIncorrect')}><img class="icon" src={incorrect}/></button>
+            </div>
+            <div id="controlMenu">
+                {handleControls("btnReturn", onSelectOption)}
+            </div>
+        </div>
         </>
     );
 };

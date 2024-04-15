@@ -4,12 +4,13 @@ import info from './assets/info.png'
 import React, {useState} from 'react'
 import bgMusic from './assets/audio/bgMusic1.mp3'
 import {playClick} from './Sounds'
+import { stopSounds } from './Sounds'
 import returnIcon from './assets/returnIcon.png'
 import oneMoreTime from './assets/oneMoreTime.png'
 import fullscreen from './assets/fullscreen.png'
 import './ControlMenu.css'
 
-const ControlMenu = ({onSelectOption}) => {
+const ControlMenu = () => {
     return (
         <></>
     )
@@ -21,6 +22,8 @@ export const handleControls = (controlId, onSelectOption) => {
     const [audio] = useState(new Audio(bgMusic))
     const [isPlaying, isPaused] = useState(false)
 
+    // FIX: Playback begins new track, once the user returns to Main Menu,
+    //      even if the track is already playing (double audio).
     function togglePlayback() {
         if (isPlaying) {
             audio.pause()
@@ -55,6 +58,7 @@ export const handleControls = (controlId, onSelectOption) => {
             case "btnInfo":
                 return onSelectOption('Info');
             case "btnReturn":
+                stopSounds();
                 return onSelectOption('MainMenu');  
             case "btnFullscreen":
                 toggleFullscreen();

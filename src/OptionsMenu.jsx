@@ -18,7 +18,11 @@ const OptionsMenu = ({onSelectOption}) => {
     }
 
     const handleNextButton = () => {
-        onSelectOption('GameScreen', checkedVocab)
+        if (checkedVocab != "") {
+            onSelectOption('GameScreen', checkedVocab)
+        } else {
+            alert("Please select a category type!")
+        }
     };
 
     return (

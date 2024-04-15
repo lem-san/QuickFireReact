@@ -1,0 +1,22 @@
+#countdown {
+    position: relative;
+    display: flex;
+    padding: 80px 80px 30px;
+    height: 150px;
+    justify-content: right;
+    align-items: center;
+}
+
+#countdown img {
+    width: 150px;
+    height:auto;
+}
+
+#countdown h1 {
+    font-size: 150px;
+    margin-left: 30px;
+}
+
+#controlMenu {
+    padding: 50px;
+}

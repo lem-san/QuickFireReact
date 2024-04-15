@@ -1,4 +1,3 @@
-import './App.css'
 import React, { useState } from 'react';
 import MainMenu from "./MainMenu"
 import OptionsMenu from "./OptionsMenu"
@@ -24,8 +23,8 @@ function App() {
       case 'MainMenu':
         return <MainMenu onSelectOption={handleOptionSelect} />;
       case 'GameScreen':
-      case 'NextPage': // Assuming 'NextPage' transitions to 'GameScreen'
-        return <GameScreen checkedVocab={checkedVocab} />;
+      case 'NextPage':
+        return <GameScreen checkedVocab={checkedVocab}  onSelectOption={handleOptionSelect} />;
       default:
         return <MainMenu onSelectOption={handleOptionSelect} />;
     }
@@ -33,9 +32,11 @@ function App() {
 
   return (
     <>
-      <video autoPlay muted loop id="bgAnimation">
-        <source src={bg} type="video/mp4"/>
-      </video>
+      {currentPage !== 'GameScreen' && (
+        <video autoPlay muted loop id="bgAnimation">
+          <source src={bg} type="video/mp4"/>
+        </video>
+      )}
       {renderOption()}
     </>
   )
