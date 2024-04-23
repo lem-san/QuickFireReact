@@ -1,22 +1,23 @@
 #countdown {
-    position: relative;
+    position: fixed;
     display: flex;
-    padding: 80px 80px 30px;
+    padding: 50px;
     height: 150px;
-    justify-content: right;
+    justify-content:flex-end;
     align-items: center;
+    width: 94%;
 }
 
 #countdown img {
-    width: 150px;
+    width: 130px;
     height:auto;
 }
 
 #countdown h1 {
-    font-size: 150px;
+    font-size: 130px;
     margin-left: 30px;
 }
 
 #controlMenu {
-    padding: 50px;
+    padding: 30px;
 }

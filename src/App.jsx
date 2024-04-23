@@ -4,14 +4,34 @@ import OptionsMenu from "./OptionsMenu"
 import bg from './assets/bgAnimation.mp4'
 import Info from './Info';
 import GameScreen from './GameScreen';
+import ScoreScreen from './ScoreScreen';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('MainMenu');
   const [checkedVocab, setCheckedVocab] = useState([])
+  const [currentScore, setCurrentScore] = useState(0)
+  const [timerFinished, setTimerFinished] = useState(false);
+  const [gameScore, setGameScore] = useState(0);
+  const [gameScreenVisible, setGameScreenVisible] = useState(true);
 
-  function handleOptionSelect(option, categories = []) {
+  // TODO: Current game state
+  const [currentGame, setCurrentGame] = useState(checkedVocab)
+
+  function handleOptionSelect(option, categories = [], score) {
     setCurrentPage(option);
     setCheckedVocab(categories);
+    setCurrentScore(score)
+    if (option != 'GameScreen') {
+      // Reset to MainMenu when returning from other screens
+      setTimerFinished(false);
+      setGameScreenVisible(true);
+    }
+  }
+  
+  function handleGameFinish(score) {
+    setGameScore(score);
+    setTimerFinished(true);
+    setGameScreenVisible(false)
   }
 
   function renderOption() {
@@ -23,8 +43,13 @@ function App() {
       case 'MainMenu':
         return <MainMenu onSelectOption={handleOptionSelect} />;
       case 'GameScreen':
-      case 'NextPage':
-        return <GameScreen checkedVocab={checkedVocab}  onSelectOption={handleOptionSelect} />;
+        return gameScreenVisible ? ( <GameScreen 
+          checkedVocab={checkedVocab}  
+          onSelectOption={handleOptionSelect}
+          onGameFinish={handleGameFinish}
+        /> ) : null
+        case 'ScoreScreen':
+          return <ScoreScreen score={gameScore} onSelectOption={handleOptionSelect} />;
       default:
         return <MainMenu onSelectOption={handleOptionSelect} />;
     }
@@ -38,6 +63,7 @@ function App() {
         </video>
       )}
       {renderOption()}
+      {timerFinished && <ScoreScreen score={gameScore} onSelectOption={handleOptionSelect} />}
     </>
   )
 }

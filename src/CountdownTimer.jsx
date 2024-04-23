@@ -1,11 +1,11 @@
 import './CountdownTimer.css'
 import clock from './assets/countdownClock.png'
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState, useContext} from 'react'
 import { playCountdownTheme } from './Sounds'
 
 const CountdownTimer = ( {duration} ) => {  
     const [timerDuration, setTimeDuration] = useState(duration)
-    
+
     const formatTime = (seconds) => {
         const mins = Math.floor(seconds / 60).toString().padStart(1, '0')
         const secs = (seconds % 60).toString().padStart(2, '0')

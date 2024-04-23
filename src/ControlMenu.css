@@ -39,14 +39,14 @@
 
 #btnOneMore {
     border-radius: 20px;
-    border: 7px solid #0fffb3;
-    background: #93ffd9;
+    border: 7px solid #0059ff;
+    background: #a7d0ff;
     padding: 15px 20px;
 }
 
 #btnOneMore:hover {
-    border: 7px solid #93ffd9;
-    background: #0fffb3;
+    border: 7px solid #a7d0ff;
+    background: #0059ff;
     box-shadow: none;
 }
 
@@ -66,13 +66,14 @@
 
 #btnNext {
     border-radius: 20px;
-    border: 7px solid #0059ff;
-    background: #a7d0ff;
+    border: 7px solid #0fffb3;
+    background: #93ffd9;
     padding: 15px 20px;
 }
 
 #btnNext:hover {
-    border: 7px solid #a7d0ff;
-    background: #0059ff;
+    border: 7px solid #93ffd9;
+    background: #0fffb3;
     box-shadow: none;
 }
+

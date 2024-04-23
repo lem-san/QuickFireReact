@@ -8,6 +8,7 @@ import { stopSounds } from './Sounds'
 import returnIcon from './assets/returnIcon.png'
 import oneMoreTime from './assets/oneMoreTime.png'
 import fullscreen from './assets/fullscreen.png'
+import nextIcon from './assets/nextIcon.png'
 import './ControlMenu.css'
 
 const ControlMenu = () => {
@@ -64,7 +65,9 @@ export const handleControls = (controlId, onSelectOption) => {
                 toggleFullscreen();
                 break;    
             case "btnNext":
-                return onSelectOption('NextPage');
+                return onSelectOption('GameScreen');
+            case "btnOneMore":
+                return onSelectOption('GameScreen');
             default:
                 break;
         }
@@ -85,7 +88,7 @@ export const handleControls = (controlId, onSelectOption) => {
         case "btnFullscreen":
             return <button id="btnFullscreen" onClick={() => handleClick('btnFullscreen')}><img class="icon" src={fullscreen} /></button>;
         case "btnNext": 
-            return <button id="btnNext" onClick={() => handleClick('btnNext')}><img class="icon" src={oneMoreTime} /></button>;
+            return <button id="btnNext" onClick={() => handleClick('btnNext')}><img class="icon" src={nextIcon} /></button>;
         default:
             break;
     }
