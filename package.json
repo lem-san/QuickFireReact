@@ -14,9 +14,11 @@
     "confetti-js": "^0.0.18",
     "npm": "^10.5.1",
     "react": "^18.2.0",
+    "react-countup": "^6.5.3",
     "react-dom": "^18.2.0",
     "react-full-screen": "^1.1.1",
-    "react-router-dom": "^6.22.3"
+    "react-router-dom": "^6.22.3",
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

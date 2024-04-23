@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './GameScreen.css'
 import { handleControls } from './ControlMenu';
-import CountdownTimer from './CountdownTimer';
 import correct from './assets/correct.png';
 import incorrect from './assets/incorrect.png'
 import confetti from 'https://cdn.skypack.dev/canvas-confetti';
@@ -117,14 +116,13 @@ const GameScreen = ({ checkedVocab, onSelectOption, onGameFinish }) => {
 
     // TODO: Needs fixing
     const handleTimerFinish = () => {
-        console.log(scoreCounterRef.current)
         onGameFinish(scoreCounterRef.current)
     }
 
     return (
         <>
         <div class="game">
-        <div id="countdown">
+            <div id="countdown">
                 <img src={clock}/>
                 <h1>{formatTime(timerDuration)}</h1>
             </div>  

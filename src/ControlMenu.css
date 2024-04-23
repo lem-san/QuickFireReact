@@ -1,3 +1,7 @@
+#btnReturn, #btnOneMore, #btnNext {
+    margin: 13px;
+}
+
 #btnMusic {
     border-radius: 20px;
     border: 7px solid #ff8800;
