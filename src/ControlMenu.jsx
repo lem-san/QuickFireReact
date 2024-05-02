@@ -67,6 +67,7 @@ export const handleControls = (controlId, onSelectOption) => {
             case "btnNext":
                 return onSelectOption('GameScreen');
             case "btnOneMore":
+                stopSounds();
                 return onSelectOption('GameScreen');
             default:
                 break;

@@ -2,18 +2,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     right: 0;
-    bottom: 0;
+    top: 0;
     min-width: 100%;
     min-height: 100%;
     background: radial-gradient(circle, rgb(157, 230, 116) 0%, rgb(19, 107, 66) 100%);
     position: fixed;
+    padding-bottom: 10%;
 }
 
 #scoreCount {
     font-size: 200px;
-    margin: 0;
+    animation: fadeIn 5s; 
+
 }
 
 #scoreCount img {
@@ -22,11 +24,14 @@
 
 #scoreTitle {
     font-size: 80px;
+    animation: fadeIn 4s; 
 }
 
 #wellDoneLogo {
-    padding-top: 3%;
+    padding-top: 5%;
     width: 60%;
+    animation: fadeIn 2s; 
+
 }
 
 #confettiCanvas {
@@ -37,3 +42,10 @@
     min-height: 100vh;
     min-width: 100vw;
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+

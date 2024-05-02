@@ -5,8 +5,9 @@ import "./ScoreScreen.css"
 import styled, { keyframes } from "styled-components";
 import { useEffect, useState } from "react";
 import ConfettiGenerator from 'confetti-js';
+import { playCongratulationsJingle } from "./Sounds";
 
-const ScoreScreen = ({score, onSelectOption}) => {
+const ScoreScreen = ({onSelectOption, checkedVocab, score, timeLimit}) => {
     const pop = keyframes`
         50% { transform: scale(1.2); }
     `;
@@ -25,6 +26,7 @@ const ScoreScreen = ({score, onSelectOption}) => {
             }, 100);
             return () => clearInterval(interval);
         }
+        playCongratulationsJingle();
     }, [count, score]);
     
     useEffect(() => {
@@ -44,30 +46,40 @@ const ScoreScreen = ({score, onSelectOption}) => {
         const confetti = new ConfettiGenerator(confettiSettings);
         confetti.render();
 
-        // Clean up the confetti instance when component unmounts
         return () => confetti.clear();
     }, []);
 
+    const handleOneMoreButton = () => {
+        console.log("One more button clicked");
+        console.log("Checked Vocab:", checkedVocab);
+        console.log("Time Limit:", timeLimit);
+        onSelectOption('GameScreen', checkedVocab, 0, timeLimit)
+    }
+
+    //TODO:
+    // const handleReviewButton = () => {
+    //     onSelectOption('ReviewScreen', reviewVocab)
+    // }
+
     return (
-        <>
-            <div id="mainView">
-                <canvas id="confettiCanvas"/>
-                <img id="wellDoneLogo" src={wellDone} />
-                <h1 id="scoreTitle">In X , you have scored ...</h1>
-                <h1 id="scoreCount">
-                    <PopWrapper>
-                        <img src={star} alt="Star" />
-                    </PopWrapper>
-                    {count}
-                </h1>
-                <div id="controlMenu">
-                    {handleControls("btnReturn", onSelectOption)}
-                    {handleControls("btnOneMore", onSelectOption)}
-                </div>
-            </div>
-        </>
-    );
-}
+        <div id="mainView">
+          <canvas id="confettiCanvas" />
+          <img id="wellDoneLogo" src={wellDone} />
+          <h1 id="scoreTitle">You have scored...</h1>
+          <h1 id="scoreCount">
+            <PopWrapper>
+              <img src={star} alt="Star" />
+            </PopWrapper>
+            {count}
+          </h1>
+          <div class="controls">
+            {handleControls("btnReturn", onSelectOption)}
+            {handleControls("btnOneMore", handleOneMoreButton)}
+            {/* {handleControls("btnReview", handleReviewButton)} */}
+          </div>
+        </div>
+      );
+    };
 
 
 export default ScoreScreen;

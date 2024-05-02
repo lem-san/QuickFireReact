@@ -5,8 +5,8 @@
 
 #bgAnimation {
     position: fixed;
-    right: 0;
     bottom: 0;
+    left: 0;
     min-width: 100%;
     min-height: 100%;
     z-index: -2;
@@ -27,6 +27,11 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
 }
 
 .icon {
@@ -111,10 +116,11 @@ button {
     text-shadow: none;
 }
 
-/* Control Menu buttons */
-
-#controls {
+.controls {
     display: flex;
+    align-self: start;
     column-gap: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
+    bottom: 20px;
+    position: fixed;
 } 

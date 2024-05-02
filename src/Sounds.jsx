@@ -4,8 +4,10 @@ import toggleClick from './assets/toggle.mp3'
 import correctPing from './assets/correct.mp3'
 import incorrectPing from './assets/incorrect.mp3'
 import countdownTheme from './assets/countdownTheme.mp3'
+import congratsJingle from './assets/congrats.mp3'
 
 const cdTheme = new Audio(countdownTheme)
+const congrats = new Audio(congratsJingle)
 
 export const playClick = () => {
   new Audio(click).play();
@@ -32,9 +34,15 @@ export const playCountdownTheme = () => {
   cdTheme.play()
 }
 
+export const playCongratulationsJingle = () => {
+  congrats.play()
+}
+
 export const stopSounds = () => {
   cdTheme.pause()
   cdTheme.currentTime = 0;
+  congrats.pause()
+  congrats.currentTime = 0;
 }
 
 const Sounds = () => {

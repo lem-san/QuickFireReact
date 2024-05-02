@@ -20,7 +20,7 @@ const MainMenu = ({onSelectOption}) => {
     
     return (
         <>
-               <audio id="menuClick" src="assets/menu.mp3"></audio>
+                <audio id="menuClick" src="assets/menu.mp3"></audio>
                 <audio id="toggleClick" src="assets/toggle.mp3"></audio>
                 <div class="menu">
                     <img id="logo" src={logo}/>
@@ -31,11 +31,11 @@ const MainMenu = ({onSelectOption}) => {
                         <button id="btnSettings" onClick={playClick}>Settings</button>
                     </div>
                 </div>
-                <div id="controls">
-                    {handleControls('btnInfo', onSelectOption)}
-                    {handleControls('btnMusic')}
-                    {handleControls('btnFullscreen')}
-                </div>
+                    <div class="controls">
+                        {handleControls('btnInfo', onSelectOption)}
+                        {handleControls('btnMusic')}
+                        {handleControls('btnFullscreen')}
+                    </div>
         </>
     )
 }

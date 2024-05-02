@@ -9,18 +9,17 @@ import ScoreScreen from './ScoreScreen';
 function App() {
   const [currentPage, setCurrentPage] = useState('MainMenu');
   const [checkedVocab, setCheckedVocab] = useState([])
-  const [currentScore, setCurrentScore] = useState(0)
   const [timerFinished, setTimerFinished] = useState(false);
   const [gameScore, setGameScore] = useState(0);
   const [gameScreenVisible, setGameScreenVisible] = useState(true);
+  const [gameTimeLimit, setGameTimeLimit] = useState(0);
 
-  // TODO: Current game state
-  const [currentGame, setCurrentGame] = useState(checkedVocab)
-
-  function handleOptionSelect(option, categories = [], score) {
+  function handleOptionSelect(option, categories = [], score, timeLimit) {
     setCurrentPage(option);
     setCheckedVocab(categories);
-    setCurrentScore(score)
+    setGameScore(score);
+    setGameTimeLimit(timeLimit);
+    
     if (option != 'GameScreen') {
       // Reset to MainMenu when returning from other screens
       setTimerFinished(false);
@@ -44,17 +43,18 @@ function App() {
         return <MainMenu onSelectOption={handleOptionSelect} />;
       case 'GameScreen':
         return gameScreenVisible ? ( <GameScreen 
-          checkedVocab={checkedVocab}  
           onSelectOption={handleOptionSelect}
+          checkedVocab={checkedVocab}  
           onGameFinish={handleGameFinish}
+          timeLimit={gameTimeLimit}
         /> ) : null
         case 'ScoreScreen':
-          return <ScoreScreen score={gameScore} onSelectOption={handleOptionSelect} />;
+          return <ScoreScreen onSelectOption={handleOptionSelect} checkedVocab={checkedVocab} score={gameScore} timeLimit={gameTimeLimit} />;
       default:
         return <MainMenu onSelectOption={handleOptionSelect} />;
     }
   }
-
+  
   return (
     <>
       {currentPage !== 'GameScreen' && (
@@ -63,7 +63,6 @@ function App() {
         </video>
       )}
       {renderOption()}
-      {timerFinished && <ScoreScreen score={gameScore} onSelectOption={handleOptionSelect} />}
     </>
   )
 }

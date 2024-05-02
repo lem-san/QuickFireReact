@@ -4,18 +4,16 @@ import { handleControls } from './ControlMenu';
 import correct from './assets/correct.png';
 import incorrect from './assets/incorrect.png'
 import confetti from 'https://cdn.skypack.dev/canvas-confetti';
-import {playCorrectPing, playIncorrectPing} from './Sounds'
-import ScoreScreen from './ScoreScreen';
+import {playCorrectPing, playIncorrectPing, playCountdownTheme} from './Sounds'
 import clock from './assets/countdownClock.png'
 
-
-const GameScreen = ({ checkedVocab, onSelectOption, onGameFinish }) => {
+const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit }) => {
     const [imagePaths, setImagePaths] = useState([]);
     const [randomImagePath, setRandomImagePath] = useState(null);
     const [scoreCounter, setScoreCounter] = useState(0); 
-    const [timerDuration, setTimerDuration] = useState(5); // Initial duration of 5 seconds
-    const [timerFinished, setTimerFinished] = useState(false);
+    const [timerDuration, setTimerDuration] = useState(timeLimit); 
     const scoreCounterRef = useRef(0);
+    const [reviewVocab, setReviewVocab] = useState([])
 
     useEffect(() => {
         const importImages = async () => {
@@ -38,6 +36,18 @@ const GameScreen = ({ checkedVocab, onSelectOption, onGameFinish }) => {
                         const sportsImages = await import.meta.glob('./assets/illustrations/sports/*.png');
                         paths.push(...Object.values(sportsImages).map(image => image()));
                         break;
+                    case 'Occupations':
+                        const occupationsImages = await import.meta.glob('./assets/illustrations/occupations/*.png');
+                        paths.push(...Object.values(occupationsImages).map(image => image()));
+                        break;   
+                    case 'Stationery':
+                        const stationeryImages = await import.meta.glob('./assets/illustrations/stationery/*.png');
+                        paths.push(...Object.values(stationeryImages).map(image => image()));
+                        break;    
+                    case 'FoodDrink':
+                        const foodDrinkImages = await import.meta.glob('./assets/illustrations/foodDrink/*.png');
+                        paths.push(...Object.values(foodDrinkImages).map(image => image()));
+                        break;                         
                     // TODO: categories continued here
                     default:
                         break;
@@ -78,10 +88,19 @@ const GameScreen = ({ checkedVocab, onSelectOption, onGameFinish }) => {
                 renderRandomImage();
                 break;
             case "btnIncorrect":
+                addToReview();
+                console.log(reviewVocab)
                 playIncorrectPing();
                 renderRandomImage();
                 break;
         }
+    }
+
+    const addToReview = () => {
+        setReviewVocab(prevReviewVocab => {
+            // Add the current randomImagePath to the reviewVocab array
+            return [...prevReviewVocab, randomImagePath];
+        });
     }
 
     useEffect(() => {
@@ -101,7 +120,7 @@ const GameScreen = ({ checkedVocab, onSelectOption, onGameFinish }) => {
 
         // Cleanup function to clear the timer
         return () => clearInterval(timer);
-    }, []);
+    },  [timeLimit]);
 
     useEffect(() => {
         scoreCounterRef.current = scoreCounter;
@@ -113,19 +132,18 @@ const GameScreen = ({ checkedVocab, onSelectOption, onGameFinish }) => {
         return `${mins}:${secs}`
     }
 
-
-    // TODO: Needs fixing
     const handleTimerFinish = () => {
         onGameFinish(scoreCounterRef.current)
+        onSelectOption('ScoreScreen', checkedVocab, scoreCounterRef.current, timeLimit)
     }
 
     return (
-        <>
-        <div class="game">
+        <>  
             <div id="countdown">
                 <img src={clock}/>
                 <h1>{formatTime(timerDuration)}</h1>
-            </div>  
+            </div>
+            <div class="game">
             {randomImagePath && (
                 <div id="quizItem">
                     <img src={randomImagePath} alt="Random Image" />
@@ -135,11 +153,10 @@ const GameScreen = ({ checkedVocab, onSelectOption, onGameFinish }) => {
                 <button id="btnCorrect" onClick={() => handleClick('btnCorrect')}><img class="icon" src={correct}/></button>
                 <button id="btnIncorrect" onClick={() => handleClick('btnIncorrect')}><img class="icon" src={incorrect}/></button>
             </div>
-            <div id="controlMenu">
+            </div>
+            <div class="controls">
                 {handleControls("btnReturn", onSelectOption)}
             </div>
-        </div>
-        {timerFinished && <ScoreScreen score={scoreCounterRef.current} />}
         </>
     );
 };

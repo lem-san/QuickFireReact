@@ -6,6 +6,7 @@ import {handleControls} from './ControlMenu'
 
 const OptionsMenu = ({onSelectOption}) => {
     const [checkedVocab, setCheckedVocab] = useState([])
+    const [timeLimit, setTimeLimit] = useState(60) // Default time limit
 
     const handleSelectedVocab = (event) => {
         playToggleClick()
@@ -17,9 +18,14 @@ const OptionsMenu = ({onSelectOption}) => {
         }
     }
 
+    const handleTimeLimitChange = (event) => {
+        const selectedTimeLimit = parseInt(event.target.value);
+        setTimeLimit(selectedTimeLimit);
+    };
+
     const handleNextButton = () => {
         if (checkedVocab != "") {
-            onSelectOption('GameScreen', checkedVocab)
+            onSelectOption('GameScreen', checkedVocab, 0, timeLimit)
         } else {
             alert("Please select a category type!")
         }
@@ -84,11 +90,11 @@ const OptionsMenu = ({onSelectOption}) => {
                              </div>    
 
                              <div class="col2">
-                                <h2 class="category" id="schoolRoomsTitle">School Rooms</h2>
+                                <h2 class="category" id="foodDrinkTitle">Food & Drink</h2>
                             </div>
                             <div class="col2">
-                                <label class="switch" for="vocabSchoolRooms">
-                                    <input type="checkbox" class="vocab" id="vocabSchoolRooms" onClick={handleSelectedVocab}/>
+                                <label class="switch" for="vocabFoodDrink">
+                                    <input type="checkbox" class="vocab" id="vocabFoodDrink" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                              </div>    
@@ -180,12 +186,38 @@ const OptionsMenu = ({onSelectOption}) => {
                     <input type="radio" id="modifierOptions" name="optionTabs"/>
                     <label id="modifierTitle" for="modifierOptions">Modifiers</label>
                     <div class="tab">
-                        <p>This is a Modifier test.</p>
-                        <p>This is predominantly a teaching tool. It requires someone familiar with the intended vocabulary to indicate whether the answers given are correct or not. It's recommended that a teacher facilitates the activity, pressing the correct/incorrect buttons.
-                        There will be future updates to include a 'solo-play' mode, allowing students to play without the need of teacher assistance. Stay tuned!</p>
+                        <div class="col">
+
+                            <div class="col2">
+                                <h2 class="category">Time limit</h2>
+                            </div>
+                            <div class="col2">
+                                <label class="switch">
+                                    <select value={timeLimit} onChange={handleTimeLimitChange}>
+                                        <option value="5">0:05</option>
+                                        <option value="30">0:30</option>
+                                        <option value="45">0:45</option>
+                                        <option value="60">1:00</option>
+                                        <option value="90">1:30</option>
+                                        <option value="120">2:00</option>
+                                    </select>
+                                </label>
+                            </div>
+
+                            <div class="col2">
+                                <h2 class="category">Hardmode</h2>
+                            </div>
+                            <div class="col2">
+                                <label class="switch" for="vocabFruits">
+                                    <input type="checkbox" class="vocab" id="vocabFruits" onClick={handleSelectedVocab}/>
+                                    <div class="slider round"></div>
+                                </label>
+                            </div>
+                            
+                        </div>
                     </div>
             </div>
-            <div id="iconMenu">
+            <div class="controls">
                 {handleControls('btnReturn', onSelectOption)}
                 {handleControls('btnNext', handleNextButton)}
             </div>
