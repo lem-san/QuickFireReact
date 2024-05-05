@@ -6,6 +6,7 @@ import Info from './Info';
 import GameScreen from './GameScreen';
 import ScoreScreen from './ScoreScreen';
 
+
 function App() {
   const [currentPage, setCurrentPage] = useState('MainMenu');
   const [checkedVocab, setCheckedVocab] = useState([])

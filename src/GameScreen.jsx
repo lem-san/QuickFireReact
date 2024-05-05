@@ -8,69 +8,73 @@ import {playCorrectPing, playIncorrectPing, playCountdownTheme} from './Sounds'
 import clock from './assets/countdownClock.png'
 
 const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit }) => {
-    const [imagePaths, setImagePaths] = useState([]);
+    const [imagePaths, setImagePaths] = useState(null);
     const [randomImagePath, setRandomImagePath] = useState(null);
     const [scoreCounter, setScoreCounter] = useState(0); 
     const [timerDuration, setTimerDuration] = useState(timeLimit); 
     const scoreCounterRef = useRef(0);
-    const [reviewVocab, setReviewVocab] = useState([])
+    const [reviewVocab, setReviewVocab] = useState([]);
 
     useEffect(() => {
         const importImages = async () => {
             const paths = [];
             for (const category of checkedVocab) {
-                switch (category) {
-                    case 'Fruits':
-                        const fruitsImages = await import.meta.glob('./assets/illustrations/fruits/*.png');
-                        paths.push(...Object.values(fruitsImages).map(image => image()));
-                        break;
-                    case 'Vegetables':
-                        const vegetablesImages = await import.meta.glob('./assets/illustrations/vegetables/*.png');
-                        paths.push(...Object.values(vegetablesImages).map(image => image()));
-                        break;
-                    case 'Animals':
-                        const animalsImages = await import.meta.glob('./assets/illustrations/animals/*.png');
-                        paths.push(...Object.values(animalsImages).map(image => image()));
-                        break;
-                    case 'Sports':
-                        const sportsImages = await import.meta.glob('./assets/illustrations/sports/*.png');
-                        paths.push(...Object.values(sportsImages).map(image => image()));
-                        break;
-                    case 'Occupations':
-                        const occupationsImages = await import.meta.glob('./assets/illustrations/occupations/*.png');
-                        paths.push(...Object.values(occupationsImages).map(image => image()));
-                        break;   
-                    case 'Stationery':
-                        const stationeryImages = await import.meta.glob('./assets/illustrations/stationery/*.png');
-                        paths.push(...Object.values(stationeryImages).map(image => image()));
-                        break;    
-                    case 'FoodDrink':
-                        const foodDrinkImages = await import.meta.glob('./assets/illustrations/foodDrink/*.png');
-                        paths.push(...Object.values(foodDrinkImages).map(image => image()));
-                        break;                         
-                    // TODO: categories continued here
-                    default:
-                        break;
-                }
+                const categoryImages = await fetchImagesFromServer(category);
+                paths.push(...categoryImages);
             }
-            setImagePaths(await Promise.all(paths));
+            setImagePaths(paths);
         };
-
         importImages();
     }, [checkedVocab]);
 
+    const fetchImagesFromServer = async (category) => {
+        try {
+            const response = await fetch(`https://storage.googleapis.com/storage/v1/b/illustrations_bucket/o?prefix=${category}/`);
+            if (!response.ok) {
+                throw new Error('Failed to fetch images');
+            }
+            const data = await response.json();
+            if (data.items) {
+                const paths = data.items.filter(item => item.name.endsWith(".png")); // Filter out only items ending with ".png"
+                const imagePromises = paths.map(async (item) => {
+                    const imageUrl = item.mediaLink;
+                    try {
+                        const imageResponse = await fetch(imageUrl);
+                        if (!imageResponse.ok) {
+                            throw new Error(`Failed to fetch image: ${imageUrl}`);
+                        }
+                        const imageBlob = await imageResponse.blob();
+                        return URL.createObjectURL(imageBlob);
+                    } catch (fetchError) {
+                        console.error('Error fetching image:', fetchError);
+                        console.error('Failed image URL:', imageUrl);
+                        return null; // Returning null for failed images
+                    }
+                });
+                return Promise.all(imagePromises);
+            } else {
+                throw new Error(`No images found in the ${category} folder`);
+            }
+        } catch (error) {
+            console.error('Error fetching images:', error);
+            return [];
+        }
+    };
+    
+    // FIX: repeat images
+    // Aim to remove images from the fetched container that have already been rendered. NO REPEATS.
+    // Once the user reaches the end of their fetched collection, take the user to the Score Screen with MAX points.
 
-    // This useEffect is for the initial game screen image. 
     useEffect(() => {
         renderRandomImage();
     }, [imagePaths]);
 
     const renderRandomImage = () => {
-        if (imagePaths.length > 0) {
+        if (imagePaths && imagePaths.length > 0) {
             const randomIndex = Math.floor(Math.random() * imagePaths.length);
-            setRandomImagePath(imagePaths[randomIndex].default);
+            setRandomImagePath(imagePaths[randomIndex]);
         }
-    }
+    };
 
     const handleClick = (buttonId) => {
         switch (buttonId) {
@@ -89,36 +93,34 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit }) =
                 break;
             case "btnIncorrect":
                 addToReview();
-                console.log(reviewVocab)
                 playIncorrectPing();
                 renderRandomImage();
+                break;
+            default:
                 break;
         }
     }
 
     const addToReview = () => {
         setReviewVocab(prevReviewVocab => {
-            // Add the current randomImagePath to the reviewVocab array
             return [...prevReviewVocab, randomImagePath];
         });
     }
 
     useEffect(() => {
-        // Start the countdown timer
         const timer = setInterval(() => {
             setTimerDuration((prevTimerDuration) => {
                 if (prevTimerDuration === 0) {
-                    handleTimerFinish()
+                    handleTimerFinish();
                     clearInterval(timer);
                     return 0;
                 } else if (prevTimerDuration === 32) {
-                    playCountdownTheme(); // Play countdown theme at 32 seconds
+                    playCountdownTheme();
                 }
                 return prevTimerDuration - 1;
             });
         }, 1000);
 
-        // Cleanup function to clear the timer
         return () => clearInterval(timer);
     },  [timeLimit]);
 
@@ -133,28 +135,32 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit }) =
     }
 
     const handleTimerFinish = () => {
-        onGameFinish(scoreCounterRef.current)
-        onSelectOption('ScoreScreen', checkedVocab, scoreCounterRef.current, timeLimit)
+        onGameFinish(scoreCounterRef.current);
+        onSelectOption('ScoreScreen', checkedVocab, scoreCounterRef.current, timeLimit);
     }
 
     return (
         <>  
             <div id="countdown">
-                <img src={clock}/>
+                <img src={clock} alt="Clock"/>
                 <h1>{formatTime(timerDuration)}</h1>
             </div>
-            <div class="game">
-            {randomImagePath && (
-                <div id="quizItem">
-                    <img src={randomImagePath} alt="Random Image" />
+            <div className="game">
+                {randomImagePath && (
+                    <div id="quizItem">
+                        <img src={randomImagePath} alt="Random Image" />
+                    </div>
+                )} 
+                <div id="answerBtns">
+                    <button id="btnCorrect" onClick={() => handleClick('btnCorrect') }>
+                        <img className="icon" src={correct} alt="Correct" />
+                    </button>
+                    <button id="btnIncorrect" onClick={() => handleClick('btnIncorrect')}>
+                        <img className="icon" src={incorrect} alt="Incorrect" />
+                    </button>
                 </div>
-            )} 
-            <div id="answerBtns">
-                <button id="btnCorrect" onClick={() => handleClick('btnCorrect')}><img class="icon" src={correct}/></button>
-                <button id="btnIncorrect" onClick={() => handleClick('btnIncorrect')}><img class="icon" src={incorrect}/></button>
             </div>
-            </div>
-            <div class="controls">
+            <div className="controls">
                 {handleControls("btnReturn", onSelectOption)}
             </div>
         </>
