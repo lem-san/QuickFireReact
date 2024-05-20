@@ -266,22 +266,6 @@ const OptionsMenu = ({onSelectOption}) => {
                     <label id="modifierTitle" for="modifierOptions">Modifiers</label>
                     <div class="tab">
                         <div class="col">
-
-                            <div class="col2">
-                                <h2 class="category">Time limit</h2>
-                            </div>
-                            <div class="col2">
-                                <label class="switch">
-                                    <select value={timeLimit} onChange={handleTimeLimitChange}>
-                                        <option value="5">0:05</option>
-                                        <option value="30">0:30</option>
-                                        <option value="45">0:45</option>
-                                        <option value="60">1:00</option>
-                                        <option value="90">1:30</option>
-                                        <option value="120">2:00</option>
-                                    </select>
-                                </label>
-                            </div>
                             <div class="col2">
                                 <h2 class="category">Question type:</h2>
                             </div>                            
@@ -316,13 +300,29 @@ const OptionsMenu = ({onSelectOption}) => {
                                 </label>
                             </div>
                         </div>
+                        
                         <div class="col">
-                        <div class="col2">
+                            <div class="col2">
+                                <h2 class="category">Time limit</h2>
+                            </div>
+                            <div class="col2">
+                                <label class="switch">
+                                    <select value={timeLimit} onChange={handleTimeLimitChange}>
+                                        <option value="5">0:05</option>
+                                        <option value="30">0:30</option>
+                                        <option value="45">0:45</option>
+                                        <option value="60">1:00</option>
+                                        <option value="90">1:30</option>
+                                        <option value="120">2:00</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="col2">
                                 <h2 class="category">No repeats</h2>
                             </div>
                             <div class="col2">
-                                <label class="switch" for="repeats">
-                                    <input type="checkbox" class="vocab" id="repeats" onClick={handleQuestionType} defaultChecked/>
+                                <label class="switch" for="questionRepeat">
+                                    <input type="checkbox" class="vocab" id="questionRepeat" onClick={handleQuestionType} />
                                     <div class="slider round"></div>
                                 </label>
                             </div>

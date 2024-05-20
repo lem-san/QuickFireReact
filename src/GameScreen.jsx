@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './GameScreen.css';
 import { handleControls } from './ControlMenu';
 import correct from './assets/correct.png';
 import incorrect from './assets/incorrect.png';
 import confetti from 'https://cdn.skypack.dev/canvas-confetti';
-import { playCorrectPing, playIncorrectPing, playCountdownTheme } from './Sounds';
+import { playCorrectPing, playIncorrectPing, playCountdownTheme, stopSounds } from './Sounds';
 import clock from './assets/countdownClock.png';
 
 const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, questionType }) => {
@@ -82,58 +82,55 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, que
             const randomVocab = vocabData[randomIndex];
             const randomValue = Math.random();
     
-            let renderedItem = null;
+            // TODO:
+            // Rename questionType to 'Modifiers'
+            const shouldRenderImage = questionType.includes('Image');
+            const shouldRenderEnglish = questionType.includes('English');
+            const shouldRenderJapanese = questionType.includes('Japanese');
+            const shouldRepeat = questionType.includes('Repeat');
     
-            const isImageSelected = questionType.includes('Image');
-            const isEnglishSelected = questionType.includes('English');
-            const isJapaneseSelected = questionType.includes('Japanese');
+            const renderImage = () => <img src={randomVocab.image} alt={randomVocab.english} />;
+            const renderEnglish = () => <h1 className="vocabText">{randomVocab.english}</h1>;
+            const renderJapanese = () => <h1 className="vocabText">{randomVocab.japanese}</h1>;
     
-            if (isImageSelected && isEnglishSelected && isJapaneseSelected) {
-                // All question types selected
-                if (randomValue < 0.7) {
-                    renderedItem = <img src={randomVocab.image} alt={randomVocab.english} />;
-                } else if (randomValue < 0.85) {
-                    renderedItem = <h1 className="vocabText">{randomVocab.english}</h1>;
+            const renderRandomItem = () => {
+                if (shouldRenderImage && shouldRenderEnglish && shouldRenderJapanese) {
+                    return randomValue < 0.7 ? renderImage() : randomValue < 0.85 ? renderEnglish() : renderJapanese();
+                } else if (shouldRenderImage && (shouldRenderEnglish || shouldRenderJapanese)) {
+                    return randomValue < 0.7 ? renderImage() : shouldRenderEnglish ? renderEnglish() : renderJapanese();
+                } else if (shouldRenderEnglish && shouldRenderJapanese) {
+                    return randomValue < 0.5 ? renderEnglish() : renderJapanese();
+                } else if (shouldRenderEnglish) {
+                    return renderEnglish();
+                } else if (shouldRenderJapanese) {
+                    return renderJapanese();
+                } else if (shouldRenderImage) {
+                    return renderImage();
                 } else {
-                    renderedItem = <h1 className="vocabText">{randomVocab.japanese}</h1>;
+                    return null;
                 }
-            } else if (isImageSelected && (isEnglishSelected || isJapaneseSelected)) {
-                // Image and either English or Japanese selected
-                if (randomValue < 0.7) {
-                    renderedItem = <img src={randomVocab.image} alt={randomVocab.english} />;
-                } else {
-                    renderedItem = isEnglishSelected ? (
-                        <h1 className="vocabText">{randomVocab.english}</h1>
-                    ) : (
-                        <h1 className="vocabText">{randomVocab.japanese}</h1>
-                    );
-                }
-            } else if (isEnglishSelected && isJapaneseSelected) {
-                // Only English OR Japanese selected
-                renderedItem = randomValue < 0.5 ? (
-                    <h1 className="vocabText">{randomVocab.english}</h1>
-                ) : (
-                    <h1 className="vocabText">{randomVocab.japanese}</h1>
-                );
-            } else if (isEnglishSelected || isJapaneseSelected) {
-                // Only English OR Japanese selected
-                isEnglishSelected ? (
-                    renderedItem = <h1 className="vocabText">{randomVocab.english}</h1>
-                ) : (
-                    renderedItem = <h1 className="vocabText">{randomVocab.japanese}</h1>
-                );
-            } else if (isImageSelected) {
-                // Only Image selected
-                renderedItem = <img src={randomVocab.image} alt={randomVocab.english} />;
-            }
+            };
     
+            const renderedItem = renderRandomItem();
             setRenderedVocab(renderedItem);
+
+            if (shouldRepeat) {
+                const newVocabArray = [
+                    ...vocab.slice(0, randomIndex), // Elements before the one to delete
+                    ...vocab.slice(randomIndex + 1) // Elements after the one to delete
+                  ];
+                setVocab(newVocabArray)
+            }
+
+        } else {
+            handleTimerFinish()
         }
     };
 
     const handleClick = (buttonId) => {
         switch (buttonId) {
             case "btnCorrect":
+                renderRandomVocab(vocab);
                 setScoreCounter(scoreCounter => scoreCounter + 1);
                 playCorrectPing();
                 confetti({
@@ -144,17 +141,34 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, que
                         x: Math.random(), y: Math.random() - 0.2
                     }
                 });
-                renderRandomVocab(vocab);
                 break;
             case "btnIncorrect":
+                renderRandomVocab(vocab);
                 addToReview();
                 playIncorrectPing();
-                renderRandomVocab(vocab);
                 break;
             default:
                 break;
         }
     };
+
+    const handleKeyDown = useCallback(
+        (event) => {
+          if (event.key === 'ArrowLeft') {
+            handleClick('btnCorrect');
+          } else if (event.key === 'ArrowRight') {
+            handleClick('btnIncorrect');
+          }
+        },
+        [handleClick]
+      );
+    
+    useEffect(() => {
+        document.addEventListener('keydown', handleKeyDown);
+        return () => {
+          document.removeEventListener('keydown', handleKeyDown);
+        };
+      }, [handleKeyDown]);
 
     const addToReview = () => {
         setReviewVocab(prevReviewVocab => [...prevReviewVocab, renderedVocab]);
@@ -189,6 +203,7 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, que
 
     const handleTimerFinish = () => {
         onGameFinish(scoreCounterRef.current);
+        stopSounds()
         onSelectOption('ScoreScreen', checkedVocab, scoreCounterRef.current, timeLimit, questionType);
     };
 
