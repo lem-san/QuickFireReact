@@ -1,0 +1,86 @@
+[
+    {
+        "id": "apple",
+        "english": "apple",
+        "japanese": "りんご",
+        "image": "gs://illustrations_bucket/Fruits/apple.png"
+    },
+    {
+        "id": "banana",
+        "english": "banana",
+        "japanese": "バナナ",
+        "image": "gs://illustrations_bucket/Fruits/banana.png"
+    },
+    {
+        "id": "cherry",
+        "english": "cherry",
+        "japanese": "さくらんぼ",
+        "image": "gs://illustrations_bucket/Fruits/cherry.png"
+    },
+    {
+        "id": "grapes",
+        "english": "grapes",
+        "japanese": "ぶどう",
+        "image": "gs://illustrations_bucket/Fruits/grapes.png"
+    },
+    {
+        "id": "kiwiFruit",
+        "english": "kiwi fruit",
+        "japanese": "キウイフルーツ",
+        "image": "gs://illustrations_bucket/Fruits/kiwiFruit.png"
+    },
+    {
+        "id": "lemon",
+        "english": "lemon",
+        "japanese": "レモン",
+        "image": "gs://illustrations_bucket/Fruits/lemon.png"
+    },
+    {
+        "id": "mango",
+        "english": "mango",
+        "japanese": "マンゴ",
+        "image": "gs://illustrations_bucket/Fruits/mango.png"
+    },
+    {
+        "id": "melon",
+        "english": "melon",
+        "japanese": "メロン",
+        "image": "gs://illustrations_bucket/Fruits/melon.png"
+    },
+    {
+        "id": "orange",
+        "english": "orange",
+        "japanese": "オレンジ",
+        "image": "gs://illustrations_bucket/Fruits/orange.png"
+    },
+    {
+        "id": "peach",
+        "english": "peach",
+        "japanese": "もも",
+        "image": "gs://illustrations_bucket/Fruits/peach.png"
+    },
+    {
+        "id": "pear",
+        "english": "pear",
+        "japanese": "なし",
+        "image": "gs://illustrations_bucket/Fruits/pear.png"
+    },
+    {
+        "id": "pineapple",
+        "english": "pineapple",
+        "japanese": "パイナップル",
+        "image": "gs://illustrations_bucket/Fruits/pineapple.png"
+    },
+    {
+        "id": "strawberry",
+        "english": "strawberry",
+        "japanese": "いちご",
+        "image": "gs://illustrations_bucket/Fruits/strawberry.png"
+    },
+    {
+        "id": "watermelon",
+        "english": "watermelon",
+        "japanese": "スイカ",
+        "image": "gs://illustrations_bucket/Fruits/watermelon.png"
+    }
+]

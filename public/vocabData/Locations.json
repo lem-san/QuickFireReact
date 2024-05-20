@@ -1,0 +1,188 @@
+[
+    {
+        "id": "aquarium",
+        "english": "aquarium",
+        "japanese": "水族館",
+        "image": "gs://illustrations_bucket/Locations/aquarium.png"
+    },
+    {
+        "id": "bank",
+        "english": "bank",
+        "japanese": "銀行",
+        "image": "gs://illustrations_bucket/Locations/bank.png"
+    },
+    {
+        "id": "bookstore",
+        "english": "bookstore",
+        "japanese": "本屋",
+        "image": "gs://illustrations_bucket/Locations/bookstore.png"
+    },
+    {
+        "id": "busStop",
+        "english": "bus stop",
+        "japanese": "バス停",
+        "image": "gs://illustrations_bucket/Locations/busStop.png"
+    },
+    {
+        "id": "cafe",
+        "english": "cafe",
+        "japanese": "カフェ",
+        "image": "gs://illustrations_bucket/Locations/cafe.png"
+    },
+    {
+        "id": "castle",
+        "english": "castle",
+        "japanese": "城",
+        "image": "gs://illustrations_bucket/Locations/castle.png"
+    },
+    {
+        "id": "cinema",
+        "english": "cinema",
+        "japanese": "映画館",
+        "image": "gs://illustrations_bucket/Locations/cinema.png"
+    },
+    {
+        "id": "cityHall",
+        "english": "city hall",
+        "japanese": "市役所",
+        "image": "gs://illustrations_bucket/Locations/cityHall.png"
+    },
+    {
+        "id": "convenienceStore",
+        "english": "convenience store",
+        "japanese": "コンビニエンスストア",
+        "image": "gs://illustrations_bucket/Locations/convenienceStore.png"
+    },
+    {
+        "id": "departmentStore",
+        "english": "department store",
+        "japanese": "デパート",
+        "image": "gs://illustrations_bucket/Locations/departmentStore.png"
+    },
+    {
+        "id": "fireStation",
+        "english": "fire station",
+        "japanese": "消防署",
+        "image": "gs://illustrations_bucket/Locations/fireStation.png"
+    },
+    {
+        "id": "gameArcade",
+        "english": "game arcade",
+        "japanese": "ゲームセンター",
+        "image": "gs://illustrations_bucket/Locations/gameArcade.png"
+    },
+    {
+        "id": "gasStation",
+        "english": "gas station",
+        "japanese": "ガソリンスタンド",
+        "image": "gs://illustrations_bucket/Locations/gasStation.png"
+    },
+    {
+        "id": "gym",
+        "english": "gym",
+        "japanese": "ジム",
+        "image": "gs://illustrations_bucket/Locations/gym.png"
+    },
+    {
+        "id": "hospital",
+        "english": "hospital",
+        "japanese": "病院",
+        "image": "gs://illustrations_bucket/Locations/hospital.png"
+    },
+    {
+        "id": "hotSprings",
+        "english": "hot xprings",
+        "japanese": "温泉",
+        "image": "gs://illustrations_bucket/Locations/hotSprings.png"
+    },
+    {
+        "id": "library",
+        "english": "library",
+        "japanese": "図書館",
+        "image": "gs://illustrations_bucket/Locations/library.png"
+    },
+    {
+        "id": "museum",
+        "english": "museum",
+        "japanese": "博物館",
+        "image": "gs://illustrations_bucket/Locations/museum.png"
+    },
+    {
+        "id": "park",
+        "english": "park",
+        "japanese": "公園",
+        "image": "gs://illustrations_bucket/Locations/park.png"
+    },
+    {
+        "id": "policeStation",
+        "english": "police station",
+        "japanese": "警察署",
+        "image": "gs://illustrations_bucket/Locations/policeStation.png"
+    },
+    {
+        "id": "postOffice",
+        "english": "post office",
+        "japanese": "郵便局",
+        "image": "gs://illustrations_bucket/Locations/postOffice.png"
+    },
+    {
+        "id": "restaurant",
+        "english": "restaurant",
+        "japanese": "レストラン",
+        "image": "gs://illustrations_bucket/Locations/restaurant.png"
+    },
+    {
+        "id": "roadsideStation",
+        "english": "roadside station",
+        "japanese": "道の駅",
+        "image": "gs://illustrations_bucket/Locations/roadsideStation.png"
+    },
+    {
+        "id": "school",
+        "english": "school",
+        "japanese": "学校",
+        "image": "gs://illustrations_bucket/Locations/school.png"
+    },
+    {
+        "id": "shrine",
+        "english": "shrine",
+        "japanese": "神社",
+        "image": "gs://illustrations_bucket/Locations/shrine.png"
+    },
+    {
+        "id": "skiResort",
+        "english": "ski resort",
+        "japanese": "スキー場",
+        "image": "gs://illustrations_bucket/Locations/skiResort.png"
+    },
+    {
+        "id": "stadium",
+        "english": "stadium",
+        "japanese": "スタジアム",
+        "image": "gs://illustrations_bucket/Locations/stadium.png"
+    },
+    {
+        "id": "station",
+        "english": "station",
+        "japanese": "駅",
+        "image": "gs://illustrations_bucket/Locations/station.png"
+    },
+    {
+        "id": "supermarket",
+        "english": "supermarket",
+        "japanese": "スーパーマーケット",
+        "image": "gs://illustrations_bucket/Locations/supermarket.png"
+    },
+    {
+        "id": "temple",
+        "english": "temple",
+        "japanese": "お寺",
+        "image": "gs://illustrations_bucket/Locations/temple.png"
+    },
+    {
+        "id": "zoo",
+        "english": "zoo",
+        "japanese": "動物園",
+        "image": "gs://illustrations_bucket/Locations/zoo.png"
+    }
+]

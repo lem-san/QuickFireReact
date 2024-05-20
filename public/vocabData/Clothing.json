@@ -1,0 +1,140 @@
+[
+    {
+        "id": "scarf",
+        "english": "scarf",
+        "japanese": "スカーフ",
+        "image": "gs://illustrations_bucket/Clothing/scarf.png"
+    },
+    {
+        "id": "dress",
+        "english": "dress",
+        "japanese": "ドレス",
+        "image": "gs://illustrations_bucket/Clothing/dress.png"
+    },
+    {
+        "id": "skirt",
+        "english": "skirt",
+        "japanese": "スカート",
+        "image": "gs://illustrations_bucket/Clothing/skirt.png"
+    },
+    {
+        "id": "vest",
+        "english": "vest",
+        "japanese": "ベスト",
+        "image": "gs://illustrations_bucket/Clothing/vest.png"
+    },
+    {
+        "id": "mask",
+        "english": "mask",
+        "japanese": "マスク",
+        "image": "gs://illustrations_bucket/Clothing/mask.png"
+    },
+    {
+        "id": "watch",
+        "english": "watch",
+        "japanese": "腕時計",
+        "image": "gs://illustrations_bucket/Clothing/watch.png"
+    },
+    {
+        "id": "swimsuit",
+        "english": "swimsuit",
+        "japanese": "水着",
+        "image": "gs://illustrations_bucket/Clothing/swimsuit.png"
+    },
+    {
+        "id": "sunglasses",
+        "english": "sunglasses",
+        "japanese": "サングラス",
+        "image": "gs://illustrations_bucket/Clothing/sunglasses.png"
+    },
+    {
+        "id": "gloves",
+        "english": "gloves",
+        "japanese": "手袋",
+        "image": "gs://illustrations_bucket/Clothing/gloves.png"
+    },
+    {
+        "id": "umbrella",
+        "english": "umbrella",
+        "japanese": "傘",
+        "image": "gs://illustrations_bucket/Clothing/umbrella.png"
+    },
+    {
+        "id": "beanie",
+        "english": "beanie",
+        "japanese": "ビーニー",
+        "image": "gs://illustrations_bucket/Clothing/beanie.png"
+    },
+    {
+        "id": "jacket",
+        "english": "jacket",
+        "japanese": "ジャケット",
+        "image": "gs://illustrations_bucket/Clothing/jacket.png"
+    },
+    {
+        "id": "sweater",
+        "english": "sweater",
+        "japanese": "セーター",
+        "image": "gs://illustrations_bucket/Clothing/sweater.png"
+    },
+    {
+        "id": "sandals",
+        "english": "sandals",
+        "japanese": "サンダル",
+        "image": "gs://illustrations_bucket/Clothing/sandals.png"
+    },
+    {
+        "id": "shoes",
+        "english": "shoes",
+        "japanese": "靴",
+        "image": "gs://illustrations_bucket/Clothing/shoes.png"
+    },
+    {
+        "id": "rainBoots",
+        "english": "rain boots",
+        "japanese": "レインブーツ",
+        "image": "gs://illustrations_bucket/Clothing/rainBoots.png"
+    },
+    {
+        "id": "boots",
+        "english": "boots",
+        "japanese": "ブーツ",
+        "image": "gs://illustrations_bucket/Clothing/boots.png"
+    },
+    {
+        "id": "pants",
+        "english": "pants",
+        "japanese": "ズボン",
+        "image": "gs://illustrations_bucket/Clothing/pants.png"
+    },
+    {
+        "id": "shorts",
+        "english": "shorts",
+        "japanese": "ショーツ",
+        "image": "gs://illustrations_bucket/Clothing/shorts.png"
+    },
+    {
+        "id": "shirt",
+        "english": "shirt",
+        "japanese": "シャツ",
+        "image": "gs://illustrations_bucket/Clothing/shirt.png"
+    },
+    {
+        "id": "t-shirt",
+        "english": "t-shirt",
+        "japanese": "Tシャツ",
+        "image": "gs://illustrations_bucket/Clothing/t-shirt.png"
+    },
+    {
+        "id": "cap",
+        "english": "cap",
+        "japanese": "キャップ",
+        "image": "gs://illustrations_bucket/Clothing/cap.png"
+    },
+    {
+        "id": "raincoat",
+        "english": "raincoat",
+        "japanese": "レインコート",
+        "image": "gs://illustrations_bucket/Clothing/raincoat.png"
+    }
+]

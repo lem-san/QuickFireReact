@@ -14,12 +14,14 @@ function App() {
   const [gameScore, setGameScore] = useState(0);
   const [gameScreenVisible, setGameScreenVisible] = useState(true);
   const [gameTimeLimit, setGameTimeLimit] = useState(0);
+  const [questionType, setQuestionType] = useState([])
 
-  function handleOptionSelect(option, categories = [], score, timeLimit) {
+  function handleOptionSelect(option, categories = [], score, timeLimit, questionType) {
     setCurrentPage(option);
     setCheckedVocab(categories);
     setGameScore(score);
     setGameTimeLimit(timeLimit);
+    setQuestionType(questionType)
     
     if (option != 'GameScreen') {
       // Reset to MainMenu when returning from other screens
@@ -48,9 +50,10 @@ function App() {
           checkedVocab={checkedVocab}  
           onGameFinish={handleGameFinish}
           timeLimit={gameTimeLimit}
+          questionType={questionType}
         /> ) : null
         case 'ScoreScreen':
-          return <ScoreScreen onSelectOption={handleOptionSelect} checkedVocab={checkedVocab} score={gameScore} timeLimit={gameTimeLimit} />;
+          return <ScoreScreen onSelectOption={handleOptionSelect} checkedVocab={checkedVocab} score={gameScore} timeLimit={gameTimeLimit} questionType={questionType} />;
       default:
         return <MainMenu onSelectOption={handleOptionSelect} />;
     }

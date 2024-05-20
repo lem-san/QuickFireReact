@@ -1,0 +1,68 @@
+[
+    {
+        "id": "happy",
+        "english": "happy",
+        "japanese": "幸せ",
+        "image": "gs://illustrations_bucket/Feelings/happy.png"
+    },
+    {
+        "id": "tired",
+        "english": "tired",
+        "japanese": "疲れた",
+        "image": "gs://illustrations_bucket/Feelings/tired.png"
+    },
+    {
+        "id": "sad",
+        "english": "sad",
+        "japanese": "悲しい",
+        "image": "gs://illustrations_bucket/Feelings/sad.png"
+    },
+    {
+        "id": "sleepy",
+        "english": "sleepy",
+        "japanese": "眠い",
+        "image": "gs://illustrations_bucket/Feelings/sleepy.png"
+    },
+    {
+        "id": "thirsty",
+        "english": "thirsty",
+        "japanese": "喉が渇いた",
+        "image": "gs://illustrations_bucket/Feelings/thirsty.png"
+    },
+    {
+        "id": "hungry",
+        "english": "hungry",
+        "japanese": "お腹が空いた",
+        "image": "gs://illustrations_bucket/Feelings/hungry.png"
+    },
+    {
+        "id": "great",
+        "english": "great",
+        "japanese": "素晴らしい",
+        "image": "gs://illustrations_bucket/Feelings/great.png"
+    },
+    {
+        "id": "good",
+        "english": "good",
+        "japanese": "良い",
+        "image": "gs://illustrations_bucket/Feelings/good.png"
+    },
+    {
+        "id": "cold",
+        "english": "cold",
+        "japanese": "寒い",
+        "image": "gs://illustrations_bucket/Feelings/cold.png"
+    },
+    {
+        "id": "hot",
+        "english": "hot",
+        "japanese": "暑い",
+        "image": "gs://illustrations_bucket/Feelings/hot.png"
+    },
+    {
+        "id": "angry",
+        "english": "angry",
+        "japanese": "怒っている",
+        "image": "gs://illustrations_bucket/Feelings/angry.png"
+    }
+]

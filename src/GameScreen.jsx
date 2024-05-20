@@ -1,31 +1,61 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './GameScreen.css'
+import './GameScreen.css';
 import { handleControls } from './ControlMenu';
 import correct from './assets/correct.png';
-import incorrect from './assets/incorrect.png'
+import incorrect from './assets/incorrect.png';
 import confetti from 'https://cdn.skypack.dev/canvas-confetti';
-import {playCorrectPing, playIncorrectPing, playCountdownTheme} from './Sounds'
-import clock from './assets/countdownClock.png'
+import { playCorrectPing, playIncorrectPing, playCountdownTheme } from './Sounds';
+import clock from './assets/countdownClock.png';
 
-const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit }) => {
-    const [imagePaths, setImagePaths] = useState(null);
-    const [randomImagePath, setRandomImagePath] = useState(null);
-    const [scoreCounter, setScoreCounter] = useState(0); 
-    const [timerDuration, setTimerDuration] = useState(timeLimit); 
+const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, questionType }) => {
+    const [vocab, setVocab] = useState(null);
+    const [scoreCounter, setScoreCounter] = useState(0);
+    const [timerDuration, setTimerDuration] = useState(timeLimit);
     const scoreCounterRef = useRef(0);
     const [reviewVocab, setReviewVocab] = useState([]);
+    const [renderedVocab, setRenderedVocab] = useState(null);
 
     useEffect(() => {
-        const importImages = async () => {
-            const paths = [];
+        const importData = async () => {
+            const vocabPromises = [];
+            const imagePromises = [];
+    
             for (const category of checkedVocab) {
-                const categoryImages = await fetchImagesFromServer(category);
-                paths.push(...categoryImages);
+                vocabPromises.push(fetchVocabFromServer(category));
+                imagePromises.push(fetchImagesFromServer(category));
             }
-            setImagePaths(paths);
+    
+            const vocabularies = await Promise.all(vocabPromises);
+            const imagePaths = await Promise.all(imagePromises);
+    
+            const flattenedVocab = vocabularies.flat();
+            const flattenedImagePaths = imagePaths.flat();
+    
+            const vocabWithImagePaths = flattenedVocab.map(vocab => ({
+                ...vocab,
+                image: flattenedImagePaths.find(path => path.includes(vocab.id))
+            }));
+    
+            setVocab(vocabWithImagePaths);
+            renderRandomVocab(vocabWithImagePaths); // Pass true to indicate initial rendering
         };
-        importImages();
+    
+        importData();
     }, [checkedVocab]);
+
+    const fetchVocabFromServer = async (category) => {
+        try {
+            const response = await fetch(`/vocabData/${category}.json`);
+            if (!response.ok) {
+                throw new Error('Failed to fetch vocabulary data');
+            }
+            const vocabData = await response.json();
+            return vocabData;
+        } catch (error) {
+            console.error('Error fetching vocabulary data:', error);
+            return [];
+        }
+    };
 
     const fetchImagesFromServer = async (category) => {
         try {
@@ -35,23 +65,8 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit }) =
             }
             const data = await response.json();
             if (data.items) {
-                const paths = data.items.filter(item => item.name.endsWith(".png")); // Filter out only items ending with ".png"
-                const imagePromises = paths.map(async (item) => {
-                    const imageUrl = item.mediaLink;
-                    try {
-                        const imageResponse = await fetch(imageUrl);
-                        if (!imageResponse.ok) {
-                            throw new Error(`Failed to fetch image: ${imageUrl}`);
-                        }
-                        const imageBlob = await imageResponse.blob();
-                        return URL.createObjectURL(imageBlob);
-                    } catch (fetchError) {
-                        console.error('Error fetching image:', fetchError);
-                        console.error('Failed image URL:', imageUrl);
-                        return null; // Returning null for failed images
-                    }
-                });
-                return Promise.all(imagePromises);
+                const paths = data.items.filter(item => item.name.endsWith(".png")).map(item => item.mediaLink);
+                return paths;
             } else {
                 throw new Error(`No images found in the ${category} folder`);
             }
@@ -60,56 +75,94 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit }) =
             return [];
         }
     };
+
+    const renderRandomVocab = (vocabData) => {
+        if (vocabData && vocabData.length > 0) {
+            const randomIndex = Math.floor(Math.random() * vocabData.length);
+            const randomVocab = vocabData[randomIndex];
+            const randomValue = Math.random();
     
-    // FIX: repeat images
-    // Aim to remove images from the fetched container that have already been rendered. NO REPEATS.
-    // Once the user reaches the end of their fetched collection, take the user to the Score Screen with MAX points.
-
-    useEffect(() => {
-        renderRandomImage();
-    }, [imagePaths]);
-
-    const renderRandomImage = () => {
-        if (imagePaths && imagePaths.length > 0) {
-            const randomIndex = Math.floor(Math.random() * imagePaths.length);
-            setRandomImagePath(imagePaths[randomIndex]);
+            let renderedItem = null;
+    
+            const isImageSelected = questionType.includes('Image');
+            const isEnglishSelected = questionType.includes('English');
+            const isJapaneseSelected = questionType.includes('Japanese');
+    
+            if (isImageSelected && isEnglishSelected && isJapaneseSelected) {
+                // All question types selected
+                if (randomValue < 0.7) {
+                    renderedItem = <img src={randomVocab.image} alt={randomVocab.english} />;
+                } else if (randomValue < 0.85) {
+                    renderedItem = <h1 className="vocabText">{randomVocab.english}</h1>;
+                } else {
+                    renderedItem = <h1 className="vocabText">{randomVocab.japanese}</h1>;
+                }
+            } else if (isImageSelected && (isEnglishSelected || isJapaneseSelected)) {
+                // Image and either English or Japanese selected
+                if (randomValue < 0.7) {
+                    renderedItem = <img src={randomVocab.image} alt={randomVocab.english} />;
+                } else {
+                    renderedItem = isEnglishSelected ? (
+                        <h1 className="vocabText">{randomVocab.english}</h1>
+                    ) : (
+                        <h1 className="vocabText">{randomVocab.japanese}</h1>
+                    );
+                }
+            } else if (isEnglishSelected && isJapaneseSelected) {
+                // Only English OR Japanese selected
+                renderedItem = randomValue < 0.5 ? (
+                    <h1 className="vocabText">{randomVocab.english}</h1>
+                ) : (
+                    <h1 className="vocabText">{randomVocab.japanese}</h1>
+                );
+            } else if (isEnglishSelected || isJapaneseSelected) {
+                // Only English OR Japanese selected
+                isEnglishSelected ? (
+                    renderedItem = <h1 className="vocabText">{randomVocab.english}</h1>
+                ) : (
+                    renderedItem = <h1 className="vocabText">{randomVocab.japanese}</h1>
+                );
+            } else if (isImageSelected) {
+                // Only Image selected
+                renderedItem = <img src={randomVocab.image} alt={randomVocab.english} />;
+            }
+    
+            setRenderedVocab(renderedItem);
         }
     };
 
     const handleClick = (buttonId) => {
         switch (buttonId) {
             case "btnCorrect":
-                setScoreCounter((scoreCounter) => scoreCounter + 1);
+                setScoreCounter(scoreCounter => scoreCounter + 1);
                 playCorrectPing();
                 confetti({
                     particleCount: 50,
                     startVelocity: 30,
                     spread: 360,
                     origin: {
-                      x: Math.random(), y: Math.random() - 0.2
+                        x: Math.random(), y: Math.random() - 0.2
                     }
-                  });
-                renderRandomImage();
+                });
+                renderRandomVocab(vocab);
                 break;
             case "btnIncorrect":
                 addToReview();
                 playIncorrectPing();
-                renderRandomImage();
+                renderRandomVocab(vocab);
                 break;
             default:
                 break;
         }
-    }
+    };
 
     const addToReview = () => {
-        setReviewVocab(prevReviewVocab => {
-            return [...prevReviewVocab, randomImagePath];
-        });
-    }
+        setReviewVocab(prevReviewVocab => [...prevReviewVocab, renderedVocab]);
+    };
 
     useEffect(() => {
         const timer = setInterval(() => {
-            setTimerDuration((prevTimerDuration) => {
+            setTimerDuration(prevTimerDuration => {
                 if (prevTimerDuration === 0) {
                     handleTimerFinish();
                     clearInterval(timer);
@@ -122,37 +175,37 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit }) =
         }, 1000);
 
         return () => clearInterval(timer);
-    },  [timeLimit]);
+    }, [timeLimit]);
 
     useEffect(() => {
         scoreCounterRef.current = scoreCounter;
     }, [scoreCounter]);
 
     const formatTime = (seconds) => {
-        const mins = Math.floor(seconds / 60).toString().padStart(1, '0')
-        const secs = (seconds % 60).toString().padStart(2, '0')
-        return `${mins}:${secs}`
-    }
+        const mins = Math.floor(seconds / 60).toString().padStart(1, '0');
+        const secs = (seconds % 60).toString().padStart(2, '0');
+        return `${mins}:${secs}`;
+    };
 
     const handleTimerFinish = () => {
         onGameFinish(scoreCounterRef.current);
-        onSelectOption('ScoreScreen', checkedVocab, scoreCounterRef.current, timeLimit);
-    }
+        onSelectOption('ScoreScreen', checkedVocab, scoreCounterRef.current, timeLimit, questionType);
+    };
 
     return (
-        <>  
+        <>
             <div id="countdown">
-                <img src={clock} alt="Clock"/>
+                <img src={clock} alt="Clock" />
                 <h1>{formatTime(timerDuration)}</h1>
             </div>
             <div className="game">
-                {randomImagePath && (
+                {vocab && (
                     <div id="quizItem">
-                        <img src={randomImagePath} alt="Random Image" />
+                        {renderedVocab}
                     </div>
-                )} 
+                )}
                 <div id="answerBtns">
-                    <button id="btnCorrect" onClick={() => handleClick('btnCorrect') }>
+                    <button id="btnCorrect" onClick={() => handleClick('btnCorrect')}>
                         <img className="icon" src={correct} alt="Correct" />
                     </button>
                     <button id="btnIncorrect" onClick={() => handleClick('btnIncorrect')}>

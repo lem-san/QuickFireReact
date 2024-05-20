@@ -1,0 +1,68 @@
+[
+    {
+        "id": "badminton",
+        "english": "badminton",
+        "japanese": "バドミントン",
+        "image": "gs://illustrations_bucket/Sports/badminton.png"
+    },
+    {
+        "id": "basketball",
+        "english": "basketball",
+        "japanese": "バスケットボール",
+        "image": "gs://illustrations_bucket/Sports/basketball.png"
+    },
+    {
+        "id": "dodgeball",
+        "english": "dodgeball",
+        "japanese": "ドッジボール",
+        "image": "gs://illustrations_bucket/Sports/dodgeball.png"
+    },
+    {
+        "id": "running",
+        "english": "running",
+        "japanese": "ランニング",
+        "image": "gs://illustrations_bucket/Sports/running.png"
+    },
+    {
+        "id": "skiing",
+        "english": "skiing",
+        "japanese": "スキー",
+        "image": "gs://illustrations_bucket/Sports/skiing.png"
+    },
+    {
+        "id": "snowboarding",
+        "english": "snowboarding",
+        "japanese": "スノーボード",
+        "image": "gs://illustrations_bucket/Sports/snowboarding.png"
+    },
+    {
+        "id": "soccer",
+        "english": "soccer",
+        "japanese": "サッカー",
+        "image": "gs://illustrations_bucket/Sports/soccer.png"
+    },
+    {
+        "id": "swimming",
+        "english": "swimming",
+        "japanese": "水泳",
+        "image": "gs://illustrations_bucket/Sports/swimming.png"
+    },
+    {
+        "id": "tableTennis",
+        "english": "table tennis",
+        "japanese": "たっきゅう",
+        "image": "gs://illustrations_bucket/Sports/tableTennis.png"
+    },
+    {
+        "id": "tennis",
+        "english": "tennis",
+        "japanese": "テニス",
+        "image": "gs://illustrations_bucket/Sports/tennis.png"
+    },
+    {
+        "id": "volleyball",
+        "english": "volleyball",
+        "japanese": "バレーボール",
+        "image": "gs://illustrations_bucket/Sports/volleyball.png"
+    }
+]

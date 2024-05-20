@@ -1,0 +1,194 @@
+[
+    {
+        "id": "astronaut",
+        "english": "astronaut",
+        "japanese": "宇宙飛行士",
+        "image": "gs://illustrations_bucket/Occupations/astronaut.png"
+    },
+    {
+        "id": "baker",
+        "english": "baker",
+        "japanese": "パン屋",
+        "image": "gs://illustrations_bucket/Occupations/baker.png"
+    },
+    {
+        "id": "baseballPlayer",
+        "english": "baseball player",
+        "japanese": "野球選手",
+        "image": "gs://illustrations_bucket/Occupations/baseballPlayer.png"
+    },
+    {
+        "id": "childcareTaker",
+        "english": "child caretaker",
+        "japanese": "保育士",
+        "image": "gs://illustrations_bucket/Occupations/childcareTaker.png"
+    },
+    {
+        "id": "comedian",
+        "english": "comedian",
+        "japanese": "コメディアン",
+        "image": "gs://illustrations_bucket/Occupations/comedian.png"
+    },
+    {
+        "id": "cook",
+        "english": "cook",
+        "japanese": "調理師",
+        "image": "gs://illustrations_bucket/Occupations/cook.png"
+    },
+    {
+        "id": "designer",
+        "english": "designer",
+        "japanese": "デザイナー",
+        "image": "gs://illustrations_bucket/Occupations/designer.png"
+    },
+    {
+        "id": "doctor",
+        "english": "doctor",
+        "japanese": "医者",
+        "image": "gs://illustrations_bucket/Occupations/doctor.png"
+    },
+    {
+        "id": "farmer",
+        "english": "farmer",
+        "japanese": "農家",
+        "image": "gs://illustrations_bucket/Occupations/farmer.png"
+    },
+    {
+        "id": "fashionDesigner",
+        "english": "fashion designer",
+        "japanese": "ファッションデザイナー",
+        "image": "gs://illustrations_bucket/Occupations/fashionDesigner.png"
+    },
+    {
+        "id": "figureSkater",
+        "english": "figure skater",
+        "japanese": "フィギュアスケーター",
+        "image": "gs://illustrations_bucket/Occupations/figureSkater.png"
+    },
+    {
+        "id": "fireFighter",
+        "english": "fire fighter",
+        "japanese": "消防士",
+        "image": "gs://illustrations_bucket/Occupations/fireFighter.png"
+    },
+    {
+        "id": "flightAttendant",
+        "english": "flight attendant",
+        "japanese": "フライトアテンダント",
+        "image": "gs://illustrations_bucket/Occupations/flightAttendant.png"
+    },
+    {
+        "id": "hairdresser",
+        "english": "hairdresser",
+        "japanese": "美容師",
+        "image": "gs://illustrations_bucket/Occupations/hairdresser.png"
+    },
+    {
+        "id": "mangaArtist",
+        "english": "manga artist",
+        "japanese": "漫画家",
+        "image": "gs://illustrations_bucket/Occupations/mangaArtist.png"
+    },
+    {
+        "id": "mountaineer",
+        "english": "mountaineer",
+        "japanese": "山岳ガイド",
+        "image": "gs://illustrations_bucket/Occupations/mountaineer.png"
+    },
+    {
+        "id": "musician",
+        "english": "musician",
+        "japanese": "ミュージシャン",
+        "image": "gs://illustrations_bucket/Occupations/musician.png"
+    },
+    {
+        "id": "newsCaster",
+        "english": "newscaster",
+        "japanese": "ニュースキャスター",
+        "image": "gs://illustrations_bucket/Occupations/newsCaster.png"
+    },
+    {
+        "id": "nurse",
+        "english": "nurse",
+        "japanese": "看護師",
+        "image": "gs://illustrations_bucket/Occupations/nurse.png"
+    },
+    {
+        "id": "officeWorker",
+        "english": "office worker",
+        "japanese": "会社員",
+        "image": "gs://illustrations_bucket/Occupations/officeWorker.png"
+    },
+    {
+        "id": "pilot",
+        "english": "pilot",
+        "japanese": "パイロット",
+        "image": "gs://illustrations_bucket/Occupations/pilot.png"
+    },
+    {
+        "id": "programmer",
+        "english": "programmer",
+        "japanese": "プログラマー",
+        "image": "gs://illustrations_bucket/Occupations/programmer.png"
+    },
+    {
+        "id": "scientist",
+        "english": "scientist",
+        "japanese": "科学者",
+        "image": "gs://illustrations_bucket/Occupations/scientist.png"
+    },
+    {
+        "id": "singer",
+        "english": "singer",
+        "japanese": "歌手",
+        "image": "gs://illustrations_bucket/Occupations/singer.png"
+    },
+    {
+        "id": "soccerPlayer",
+        "english": "soccer player",
+        "japanese": "サッカー選手",
+        "image": "gs://illustrations_bucket/Occupations/soccerPlayer.png"
+    },
+    {
+        "id": "tennisPlayer",
+        "english": "tennis player",
+        "japanese": "テニス選手",
+        "image": "gs://illustrations_bucket/Occupations/tennisPlayer.png"
+    },
+    {
+        "id": "tourGuide",
+        "english": "tour guide",
+        "japanese": "ツアーガイド",
+        "image": "gs://illustrations_bucket/Occupations/tourGuide.png"
+    },
+    {
+        "id": "truckDriver",
+        "english": "truck driver",
+        "japanese": "トラック運転手",
+        "image": "gs://illustrations_bucket/Occupations/truckDriver.png"
+    },
+    {
+        "id": "vet",
+        "english": "vet",
+        "japanese": "獣医",
+        "image": "gs://illustrations_bucket/Occupations/vet.png"
+    },
+    {
+        "id": "writer",
+        "english": "writer",
+        "japanese": "作家",
+        "image": "gs://illustrations_bucket/Occupations/writer.png"
+    },
+    {
+        "id": "youtuber",
+        "english": "youtuber",
+        "japanese": "ユーチューバー",
+        "image": "gs://illustrations_bucket/Occupations/youtuber.png"
+    },
+    {
+        "id": "zookeeper",
+        "english": "zookeeper",
+        "japanese": "動物園の飼育員",
+        "image": "gs://illustrations_bucket/Occupations/zookeeper.png"
+    }
+]

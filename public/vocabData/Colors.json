@@ -1,0 +1,68 @@
+[
+    {
+        "id": "black",
+        "english": "black",
+        "japanese": "黒",
+        "image": "gs://illustrations_bucket/Colors/black.png"
+    },
+    {
+        "id": "blue",
+        "english": "blue",
+        "japanese": "青",
+        "image": "gs://illustrations_bucket/Colors/blue.png"
+    },
+    {
+        "id": "brown",
+        "english": "brown",
+        "japanese": "茶色",
+        "image": "gs://illustrations_bucket/Colors/brown.png"
+    },
+    {
+        "id": "gray",
+        "english": "gray",
+        "japanese": "灰色",
+        "image": "gs://illustrations_bucket/Colors/gray.png"
+    },
+    {
+        "id": "green",
+        "english": "green",
+        "japanese": "緑",
+        "image": "gs://illustrations_bucket/Colors/green.png"
+    },
+    {
+        "id": "orange",
+        "english": "orange",
+        "japanese": "オレンジ",
+        "image": "gs://illustrations_bucket/Colors/orange.png"
+    },
+    {
+        "id": "pink",
+        "english": "pink",
+        "japanese": "ピンク",
+        "image": "gs://illustrations_bucket/Colors/pink.png"
+    },
+    {
+        "id": "purple",
+        "english": "purple",
+        "japanese": "紫",
+        "image": "gs://illustrations_bucket/Colors/purple.png"
+    },
+    {
+        "id": "red",
+        "english": "red",
+        "japanese": "赤",
+        "image": "gs://illustrations_bucket/Colors/red.png"
+    },
+    {
+        "id": "white",
+        "english": "white",
+        "japanese": "白",
+        "image": "gs://illustrations_bucket/Colors/white.png"
+    },
+    {
+        "id": "yellow",
+        "english": "yellow",
+        "japanese": "黄色",
+        "image": "gs://illustrations_bucket/Colors/yellow.png"
+    }
+]

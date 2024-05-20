@@ -1,0 +1,80 @@
+[
+    {
+        "id": "dinner",
+        "english": "dinner",
+        "japanese": "夕食",
+        "image": "gs://illustrations_bucket/DaysTimes/dinner.png"
+    },
+    {
+        "id": "lunch",
+        "english": "lunch",
+        "japanese": "昼食",
+        "image": "gs://illustrations_bucket/DaysTimes/lunch.png"
+    },
+    {
+        "id": "breakfast",
+        "english": "breakfast",
+        "japanese": "朝食",
+        "image": "gs://illustrations_bucket/DaysTimes/breakfast.png"
+    },
+    {
+        "id": "afternoon",
+        "english": "afternoon",
+        "japanese": "午後",
+        "image": "gs://illustrations_bucket/DaysTimes/afternoon.png"
+    },
+    {
+        "id": "morning",
+        "english": "morning",
+        "japanese": "朝",
+        "image": "gs://illustrations_bucket/DaysTimes/morning.png"
+    },
+    {
+        "id": "night",
+        "english": "night",
+        "japanese": "夜",
+        "image": "gs://illustrations_bucket/DaysTimes/night.png"
+    },
+    {
+        "id": "Sunday",
+        "english": "Sunday",
+        "japanese": "日曜日",
+        "image": "gs://illustrations_bucket/DaysTimes/Sunday.png"
+    },
+    {
+        "id": "Saturday",
+        "english": "Saturday",
+        "japanese": "土曜日",
+        "image": "gs://illustrations_bucket/DaysTimes/Saturday.png"
+    },
+    {
+        "id": "Friday",
+        "english": "Friday",
+        "japanese": "金曜日",
+        "image": "gs://illustrations_bucket/DaysTimes/Friday.png"
+    },
+    {
+        "id": "Thursday",
+        "english": "Thursday",
+        "japanese": "木曜日",
+        "image": "gs://illustrations_bucket/DaysTimes/Thursday.png"
+    },
+    {
+        "id": "Wednesday",
+        "english": "Wednesday",
+        "japanese": "水曜日",
+        "image": "gs://illustrations_bucket/DaysTimes/Wednesday.png"
+    },
+    {
+        "id": "Tuesday",
+        "english": "Tuesday",
+        "japanese": "火曜日",
+        "image": "gs://illustrations_bucket/DaysTimes/Tuesday.png"
+    },
+    {
+        "id": "Monday",
+        "english": "Monday",
+        "japanese": "月曜日",
+        "image": "gs://illustrations_bucket/DaysTimes/Monday.png"
+    }
+]

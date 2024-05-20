@@ -1,0 +1,110 @@
+[
+    {
+        "id": "candy",
+        "english": "candy",
+        "japanese": "キャンディー",
+        "image": "gs://illustrations_bucket/SnacksDesserts/candy.png"
+    },
+    {
+        "id": "biscuit",
+        "english": "biscuit",
+        "japanese": "ビスケット",
+        "image": "gs://illustrations_bucket/SnacksDesserts/biscuit.png"
+    },
+    {
+        "id": "frenchFries",
+        "english": "french fries",
+        "japanese": "フライドポテト",
+        "image": "gs://illustrations_bucket/SnacksDesserts/frenchFries.png"
+    },
+    {
+        "id": "cornDog",
+        "english": "corn dog",
+        "japanese": "アメリカンドッグ",
+        "image": "gs://illustrations_bucket/SnacksDesserts/cornDog.png"
+    },
+    {
+        "id": "donut",
+        "english": "donut",
+        "japanese": "ドーナツ",
+        "image": "gs://illustrations_bucket/SnacksDesserts/donut.png"
+    },
+    {
+        "id": "creamPuff",
+        "english": "cream puff",
+        "japanese": "シュークリーム",
+        "image": "gs://illustrations_bucket/SnacksDesserts/creamPuff.png"
+    },
+    {
+        "id": "potatoChips",
+        "english": "potato chips",
+        "japanese": "ポテトチップス",
+        "image": "gs://illustrations_bucket/SnacksDesserts/potatoChips.png"
+    },
+    {
+        "id": "shavedIce",
+        "english": "shaved ice",
+        "japanese": "かき氷",
+        "image": "gs://illustrations_bucket/SnacksDesserts/shavedIce.png"
+    },
+    {
+        "id": "pudding",
+        "english": "pudding",
+        "japanese": "プリン",
+        "image": "gs://illustrations_bucket/SnacksDesserts/pudding.png"
+    },
+    {
+        "id": "popcorn",
+        "english": "popcorn",
+        "japanese": "ポップコーン",
+        "image": "gs://illustrations_bucket/SnacksDesserts/popcorn.png"
+    },
+    {
+        "id": "parfait",
+        "english": "parfait",
+        "japanese": "パフェ",
+        "image": "gs://illustrations_bucket/SnacksDesserts/parfait.png"
+    },
+    {
+        "id": "nuts",
+        "english": "nuts",
+        "japanese": "ナッツ",
+        "image": "gs://illustrations_bucket/SnacksDesserts/nuts.png"
+    },
+    {
+        "id": "iceCream",
+        "english": "ice cream",
+        "japanese": "アイスクリーム",
+        "image": "gs://illustrations_bucket/SnacksDesserts/iceCream.png"
+    },
+    {
+        "id": "chocolate",
+        "english": "chocolate",
+        "japanese": "チョコレート",
+        "image": "gs://illustrations_bucket/SnacksDesserts/chocolate.png"
+    },
+    {
+        "id": "cake",
+        "english": "cake",
+        "japanese": "ケーキ",
+        "image": "gs://illustrations_bucket/SnacksDesserts/cake.png"
+    },
+    {
+        "id": "cupcake",
+        "english": "cupcake",
+        "japanese": "カップケーキ",
+        "image": "gs://illustrations_bucket/SnacksDesserts/cupcake.png"
+    },
+    {
+        "id": "pie",
+        "english": "pie",
+        "japanese": "パイ",
+        "image": "gs://illustrations_bucket/SnacksDesserts/pie.png"
+    },
+    {
+        "id": "pancakes",
+        "english": "pancakes",
+        "japanese": "パンケーキ",
+        "image": "gs://illustrations_bucket/SnacksDesserts/pancakes.png"
+    }
+]

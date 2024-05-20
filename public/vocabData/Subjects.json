@@ -1,0 +1,92 @@
+[
+    {
+        "id": "moralEducation",
+        "english": "moral education",
+        "japanese": "道徳",
+        "image": "gs://illustrations_bucket/Subjects/moralEducation.png"
+    },
+    {
+        "id": "calligraphy",
+        "english": "calligraphy",
+        "japanese": "書道",
+        "image": "gs://illustrations_bucket/Subjects/calligraphy.png"
+    },
+    {
+        "id": "artsAndCrafts",
+        "english": "arts and crafts",
+        "japanese": "図工",
+        "image": "gs://illustrations_bucket/Subjects/artsAndCrafts.png"
+    },
+    {
+        "id": "PE",
+        "english": "P.E.",
+        "japanese": "体育",
+        "image": "gs://illustrations_bucket/Subjects/PE.png"
+    },
+    {
+        "id": "integratedStudy",
+        "english": "integrated study",
+        "japanese": "総合",
+        "image": "gs://illustrations_bucket/Subjects/integratedStudy.png"
+    },
+    {
+        "id": "libraryTime",
+        "english": "library time",
+        "japanese": "図書",
+        "image": "gs://illustrations_bucket/Subjects/libraryTime.png"
+    },
+    {
+        "id": "clubActivities",
+        "english": "club activities",
+        "japanese": "クラブ活動",
+        "image": "gs://illustrations_bucket/Subjects/clubActivities.png"
+    },
+    {
+        "id": "homeroom",
+        "english": "homeroom",
+        "japanese": "ホームルーム",
+        "image": "gs://illustrations_bucket/Subjects/homeroom.png"
+    },
+    {
+        "id": "homeEconomics",
+        "english": "home economics",
+        "japanese": "家庭科",
+        "image": "gs://illustrations_bucket/Subjects/homeEconomics.png"
+    },
+    {
+        "id": "English",
+        "english": "English",
+        "japanese": "英語",
+        "image": "gs://illustrations_bucket/Subjects/English.png"
+    },
+    {
+        "id": "Japanese",
+        "english": "Japanese",
+        "japanese": "国語",
+        "image": "gs://illustrations_bucket/Subjects/Japanese.png"
+    },
+    {
+        "id": "socialStudies",
+        "english": "social studies",
+        "japanese": "社会",
+        "image": "gs://illustrations_bucket/Subjects/socialStudies.png"
+    },
+    {
+        "id": "music",
+        "english": "music",
+        "japanese": "音楽",
+        "image": "gs://illustrations_bucket/Subjects/music.png"
+    },
+    {
+        "id": "science",
+        "english": "science",
+        "japanese": "理科",
+        "image": "gs://illustrations_bucket/Subjects/science.png"
+    },
+    {
+        "id": "math",
+        "english": "math",
+        "japanese": "算数",
+        "image": "gs://illustrations_bucket/Subjects/math.png"
+    }
+]

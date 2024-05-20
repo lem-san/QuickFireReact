@@ -1,0 +1,56 @@
+[
+    {
+        "id": "cross",
+        "english": "cross",
+        "japanese": "クロス",
+        "image": "gs://illustrations_bucket/Shapes/cross.png"
+    },
+    {
+        "id": "oval",
+        "english": "oval",
+        "japanese": "オーバル",
+        "image": "gs://illustrations_bucket/Shapes/oval.png"
+    },
+    {
+        "id": "heart",
+        "english": "heart",
+        "japanese": "ハート",
+        "image": "gs://illustrations_bucket/Shapes/heart.png"
+    },
+    {
+        "id": "star",
+        "english": "star",
+        "japanese": "スター",
+        "image": "gs://illustrations_bucket/Shapes/star.png"
+    },
+    {
+        "id": "rectangle",
+        "english": "rectangle",
+        "japanese": "長方形",
+        "image": "gs://illustrations_bucket/Shapes/rectangle.png"
+    },
+    {
+        "id": "diamond",
+        "english": "diamond",
+        "japanese": "ダイヤモンド",
+        "image": "gs://illustrations_bucket/Shapes/diamond.png"
+    },
+    {
+        "id": "triangle",
+        "english": "triangle",
+        "japanese": "三角形",
+        "image": "gs://illustrations_bucket/Shapes/triangle.png"
+    },
+    {
+        "id": "circle",
+        "english": "circle",
+        "japanese": "サークル",
+        "image": "gs://illustrations_bucket/Shapes/circle.png"
+    },
+    {
+        "id": "square",
+        "english": "square",
+        "japanese": "四角形",
+        "image": "gs://illustrations_bucket/Shapes/square.png"
+    }
+]

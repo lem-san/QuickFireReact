@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import ConfettiGenerator from 'confetti-js';
 import { playCongratulationsJingle } from "./Sounds";
 
-const ScoreScreen = ({onSelectOption, checkedVocab, score, timeLimit}) => {
+const ScoreScreen = ({onSelectOption, checkedVocab, score, timeLimit, questionType}) => {
     const pop = keyframes`
         50% { transform: scale(1.2); }
     `;
@@ -53,7 +53,8 @@ const ScoreScreen = ({onSelectOption, checkedVocab, score, timeLimit}) => {
         console.log("One more button clicked");
         console.log("Checked Vocab:", checkedVocab);
         console.log("Time Limit:", timeLimit);
-        onSelectOption('GameScreen', checkedVocab, 0, timeLimit)
+        console.log("Question types:", questionType )
+        onSelectOption('GameScreen', checkedVocab, 0, timeLimit, questionType)
     }
 
     //TODO:
@@ -72,7 +73,7 @@ const ScoreScreen = ({onSelectOption, checkedVocab, score, timeLimit}) => {
             </PopWrapper>
             {count}
           </h1>
-          <div class="controls">
+          <div className="controls">
             {handleControls("btnReturn", onSelectOption)}
             {handleControls("btnOneMore", handleOneMoreButton)}
             {/* {handleControls("btnReview", handleReviewButton)} */}

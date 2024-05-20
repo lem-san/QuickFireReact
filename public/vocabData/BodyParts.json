@@ -1,0 +1,116 @@
+[
+    {
+        "id": "teeth",
+        "english": "teeth",
+        "japanese": "歯",
+        "image": "gs://illustrations_bucket/BodyParts/teeth.png"
+    },
+    {
+        "id": "finger",
+        "english": "finger",
+        "japanese": "指",
+        "image": "gs://illustrations_bucket/BodyParts/finger.png"
+    },
+    {
+        "id": "toe",
+        "english": "toe",
+        "japanese": "つま先",
+        "image": "gs://illustrations_bucket/BodyParts/toe.png"
+    },
+    {
+        "id": "shoulder",
+        "english": "shoulder",
+        "japanese": "肩",
+        "image": "gs://illustrations_bucket/BodyParts/shoulder.png"
+    },
+    {
+        "id": "knee",
+        "english": "knee",
+        "japanese": "膝",
+        "image": "gs://illustrations_bucket/BodyParts/knee.png"
+    },
+    {
+        "id": "eyebrow",
+        "english": "eyebrow",
+        "japanese": "眉",
+        "image": "gs://illustrations_bucket/BodyParts/eyebrow.png"
+    },
+    {
+        "id": "hair",
+        "english": "hair",
+        "japanese": "髪",
+        "image": "gs://illustrations_bucket/BodyParts/hair.png"
+    },
+    {
+        "id": "neck",
+        "english": "neck",
+        "japanese": "首",
+        "image": "gs://illustrations_bucket/BodyParts/neck.png"
+    },
+    {
+        "id": "body",
+        "english": "body",
+        "japanese": "体",
+        "image": "gs://illustrations_bucket/BodyParts/body.png"
+    },
+    {
+        "id": "mouth",
+        "english": "mouth",
+        "japanese": "口",
+        "image": "gs://illustrations_bucket/BodyParts/mouth.png"
+    },
+    {
+        "id": "ear",
+        "english": "ear",
+        "japanese": "耳",
+        "image": "gs://illustrations_bucket/BodyParts/ear.png"
+    },
+    {
+        "id": "nose",
+        "english": "nose",
+        "japanese": "鼻",
+        "image": "gs://illustrations_bucket/BodyParts/nose.png"
+    },
+    {
+        "id": "eye",
+        "english": "eye",
+        "japanese": "目",
+        "image": "gs://illustrations_bucket/BodyParts/eye.png"
+    },
+    {
+        "id": "face",
+        "english": "face",
+        "japanese": "顔",
+        "image": "gs://illustrations_bucket/BodyParts/face.png"
+    },
+    {
+        "id": "head",
+        "english": "head",
+        "japanese": "頭",
+        "image": "gs://illustrations_bucket/BodyParts/head.png"
+    },
+    {
+        "id": "foot",
+        "english": "foot",
+        "japanese": "足",
+        "image": "gs://illustrations_bucket/BodyParts/foot.png"
+    },
+    {
+        "id": "hand",
+        "english": "hand",
+        "japanese": "手",
+        "image": "gs://illustrations_bucket/BodyParts/hand.png"
+    },
+    {
+        "id": "leg",
+        "english": "leg",
+        "japanese": "脚",
+        "image": "gs://illustrations_bucket/BodyParts/leg.png"
+    },
+    {
+        "id": "arm",
+        "english": "arm",
+        "japanese": "腕",
+        "image": "gs://illustrations_bucket/BodyParts/arm.png"
+    }
+]

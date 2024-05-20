@@ -1,0 +1,164 @@
+[
+    {
+        "id": "wheelchair",
+        "english": "wheelchair",
+        "japanese": "車椅子",
+        "image": "gs://illustrations_bucket/Objects/wheelchair.png"
+    },
+    {
+        "id": "violin",
+        "english": "violin",
+        "japanese": "バイオリン",
+        "image": "gs://illustrations_bucket/Objects/violin.png"
+    },
+    {
+        "id": "truck",
+        "english": "truck",
+        "japanese": "トラック",
+        "image": "gs://illustrations_bucket/Objects/truck.png"
+    },
+    {
+        "id": "train",
+        "english": "train",
+        "japanese": "電車",
+        "image": "gs://illustrations_bucket/Objects/train.png"
+    },
+    {
+        "id": "recorder",
+        "english": "recorder",
+        "japanese": "リコーダー",
+        "image": "gs://illustrations_bucket/Objects/recorder.png"
+    },
+    {
+        "id": "photo",
+        "english": "photo",
+        "japanese": "写真",
+        "image": "gs://illustrations_bucket/Objects/photo.png"
+    },
+    {
+        "id": "racket",
+        "english": "racket",
+        "japanese": "ラケット",
+        "image": "gs://illustrations_bucket/Objects/racket.png"
+    },
+    {
+        "id": "present",
+        "english": "present",
+        "japanese": "プレゼント",
+        "image": "gs://illustrations_bucket/Objects/present.png"
+    },
+    {
+        "id": "piano",
+        "english": "piano",
+        "japanese": "ピアノ",
+        "image": "gs://illustrations_bucket/Objects/piano.png"
+    },
+    {
+        "id": "map",
+        "english": "map",
+        "japanese": "地図",
+        "image": "gs://illustrations_bucket/Objects/map.png"
+    },
+    {
+        "id": "guitar",
+        "english": "guitar",
+        "japanese": "ギター",
+        "image": "gs://illustrations_bucket/Objects/guitar.png"
+    },
+    {
+        "id": "desk",
+        "english": "desk",
+        "japanese": "机",
+        "image": "gs://illustrations_bucket/Objects/desk.png"
+    },
+    {
+        "id": "cup",
+        "english": "cup",
+        "japanese": "カップ",
+        "image": "gs://illustrations_bucket/Objects/cup.png"
+    },
+    {
+        "id": "tablet",
+        "english": "tablet",
+        "japanese": "タブレット",
+        "image": "gs://illustrations_bucket/Objects/tablet.png"
+    },
+    {
+        "id": "computer",
+        "english": "computer",
+        "japanese": "コンピューター",
+        "image": "gs://illustrations_bucket/Objects/computer.png"
+    },
+    {
+        "id": "comicBook",
+        "english": "comic book",
+        "japanese": "マンガ",
+        "image": "gs://illustrations_bucket/Objects/comicBook.png"
+    },
+    {
+        "id": "clock",
+        "english": "clock",
+        "japanese": "時計",
+        "image": "gs://illustrations_bucket/Objects/clock.png"
+    },
+    {
+        "id": "chair",
+        "english": "chair",
+        "japanese": "椅子",
+        "image": "gs://illustrations_bucket/Objects/chair.png"
+    },
+    {
+        "id": "car",
+        "english": "car",
+        "japanese": "車",
+        "image": "gs://illustrations_bucket/Objects/car.png"
+    },
+    {
+        "id": "bus",
+        "english": "bus",
+        "japanese": "バス",
+        "image": "gs://illustrations_bucket/Objects/bus.png"
+    },
+    {
+        "id": "box",
+        "english": "box",
+        "japanese": "箱",
+        "image": "gs://illustrations_bucket/Objects/box.png"
+    },
+    {
+        "id": "book",
+        "english": "book",
+        "japanese": "本",
+        "image": "gs://illustrations_bucket/Objects/book.png"
+    },
+    {
+        "id": "bicycle",
+        "english": "bicycle",
+        "japanese": "自転車",
+        "image": "gs://illustrations_bucket/Objects/bicycle.png"
+    },
+    {
+        "id": "basket",
+        "english": "basket",
+        "japanese": "バスケット",
+        "image": "gs://illustrations_bucket/Objects/basket.png"
+    },
+    {
+        "id": "ball",
+        "english": "ball",
+        "japanese": "ボール",
+        "image": "gs://illustrations_bucket/Objects/ball.png"
+    },
+    {
+        "id": "bag",
+        "english": "bag",
+        "japanese": "バッグ",
+        "image": "gs://illustrations_bucket/Objects/bag.png"
+    },
+    {
+        "id": "bat",
+        "english": "bat",
+        "japanese": "バット",
+        "image": "gs://illustrations_bucket/Objects/bat.png"
+    }
+]

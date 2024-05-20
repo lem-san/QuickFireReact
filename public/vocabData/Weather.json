@@ -1,0 +1,50 @@
+[
+    {
+        "id": "foggy",
+        "english": "foggy",
+        "japanese": "霧",
+        "image": "gs://illustrations_bucket/Weather/foggy.png"
+    },
+    {
+        "id": "rainbow",
+        "english": "rainbow",
+        "japanese": "虹",
+        "image": "gs://illustrations_bucket/Weather/rainbow.png"
+    },
+    {
+        "id": "windy",
+        "english": "windy",
+        "japanese": "風",
+        "image": "gs://illustrations_bucket/Weather/windy.png"
+    },
+    {
+        "id": "stormy",
+        "english": "stormy",
+        "japanese": "嵐",
+        "image": "gs://illustrations_bucket/Weather/stormy.png"
+    },
+    {
+        "id": "snowy",
+        "english": "snowy",
+        "japanese": "雪",
+        "image": "gs://illustrations_bucket/Weather/snowy.png"
+    },
+    {
+        "id": "rainy",
+        "english": "rainy",
+        "japanese": "雨",
+        "image": "gs://illustrations_bucket/Weather/rainy.png"
+    },
+    {
+        "id": "cloudy",
+        "english": "cloudy",
+        "japanese": "曇り",
+        "image": "gs://illustrations_bucket/Weather/cloudy.png"
+    },
+    {
+        "id": "sunny",
+        "english": "sunny",
+        "japanese": "晴れ",
+        "image": "gs://illustrations_bucket/Weather/sunny.png"
+    }
+]

@@ -1,0 +1,176 @@
+[
+    {
+        "id": "America",
+        "english": "America",
+        "japanese": "アメリカ",
+        "image": "gs://illustrations_bucket/Countries/America.png"
+    },
+    {
+        "id": "Australia",
+        "english": "Australia",
+        "japanese": "オーストラリア",
+        "image": "gs://illustrations_bucket/Countries/Australia.png"
+    },
+    {
+        "id": "Brazil",
+        "english": "Brazil",
+        "japanese": "ブラジル",
+        "image": "gs://illustrations_bucket/Countries/Brazil.png"
+    },
+    {
+        "id": "Canada",
+        "english": "Canada",
+        "japanese": "カナダ",
+        "image": "gs://illustrations_bucket/Countries/Canada.png"
+    },
+    {
+        "id": "China",
+        "english": "China",
+        "japanese": "中国",
+        "image": "gs://illustrations_bucket/Countries/China.png"
+    },
+    {
+        "id": "Egypt",
+        "english": "Egypt",
+        "japanese": "エジプト",
+        "image": "gs://illustrations_bucket/Countries/Egypt.png"
+    },
+    {
+        "id": "Finland",
+        "english": "Finland",
+        "japanese": "フィンランド",
+        "image": "gs://illustrations_bucket/Countries/Finland.png"
+    },
+    {
+        "id": "France",
+        "english": "France",
+        "japanese": "フランス",
+        "image": "gs://illustrations_bucket/Countries/France.png"
+    },
+    {
+        "id": "Germany",
+        "english": "Germany",
+        "japanese": "ドイツ",
+        "image": "gs://illustrations_bucket/Countries/Germany.png"
+    },
+    {
+        "id": "Ghana",
+        "english": "Ghana",
+        "japanese": "ガーナ",
+        "image": "gs://illustrations_bucket/Countries/Ghana.png"
+    },
+    {
+        "id": "India",
+        "english": "India",
+        "japanese": "インド",
+        "image": "gs://illustrations_bucket/Countries/India.png"
+    },
+    {
+        "id": "Indonesia",
+        "english": "Indonesia",
+        "japanese": "インドネシア",
+        "image": "gs://illustrations_bucket/Countries/Indonesia.png"
+    },
+    {
+        "id": "Italy",
+        "english": "Italy",
+        "japanese": "イタリア",
+        "image": "gs://illustrations_bucket/Countries/Italy.png"
+    },
+    {
+        "id": "Japan",
+        "english": "Japan",
+        "japanese": "日本",
+        "image": "gs://illustrations_bucket/Countries/Japan.png"
+    },
+    {
+        "id": "Kenya",
+        "english": "Kenya",
+        "japanese": "ケニア",
+        "image": "gs://illustrations_bucket/Countries/Kenya.png"
+    },
+    {
+        "id": "Korea",
+        "english": "Korea",
+        "japanese": "韓国",
+        "image": "gs://illustrations_bucket/Countries/Korea.png"
+    },
+    {
+        "id": "Mongolia",
+        "english": "Mongolia",
+        "japanese": "モンゴル",
+        "image": "gs://illustrations_bucket/Countries/Mongolia.png"
+    },
+    {
+        "id": "NewZealand",
+        "english": "New Zealand",
+        "japanese": "ニュージーランド",
+        "image": "gs://illustrations_bucket/Countries/NewZealand.png"
+    },
+    {
+        "id": "Norway",
+        "english": "Norway",
+        "japanese": "ノルウェー",
+        "image": "gs://illustrations_bucket/Countries/Norway.png"
+    },
+    {
+        "id": "Peru",
+        "english": "Peru",
+        "japanese": "ペルー",
+        "image": "gs://illustrations_bucket/Countries/Peru.png"
+    },
+    {
+        "id": "Russia",
+        "english": "Russia",
+        "japanese": "ロシア",
+        "image": "gs://illustrations_bucket/Countries/Russia.png"
+    },
+    {
+        "id": "SaudiArabia",
+        "english": "Saudi Arabia",
+        "japanese": "サウジアラビア",
+        "image": "gs://illustrations_bucket/Countries/SaudiArabia.png"
+    },
+    {
+        "id": "Singapore",
+        "english": "Singapore",
+        "japanese": "シンガポール",
+        "image": "gs://illustrations_bucket/Countries/Singapore.png"
+    },
+    {
+        "id": "Spain",
+        "english": "Spain",
+        "japanese": "スペイン",
+        "image": "gs://illustrations_bucket/Countries/Spain.png"
+    },
+    {
+        "id": "Sweden",
+        "english": "Sweden",
+        "japanese": "スウェーデン",
+        "image": "gs://illustrations_bucket/Countries/Sweden.png"
+    },
+    {
+        "id": "Thailand",
+        "english": "Thailand",
+        "japanese": "タイ",
+        "image": "gs://illustrations_bucket/Countries/Thailand.png"
+    },
+    {
+        "id": "Turkey",
+        "english": "Turkey",
+        "japanese": "トルコ",
+        "image": "gs://illustrations_bucket/Countries/Turkey.png"
+    },
+    {
+        "id": "U.K.",
+        "english": "U.K.",
+        "japanese": "イギリス",
+        "image": "gs://illustrations_bucket/Countries/U.K..png"
+    },
+    {
+        "id": "Vietnam",
+        "english": "Vietnam",
+        "japanese": "ベトナム",
+        "image": "gs://illustrations_bucket/Countries/Vietnam.png"
+    }
+]

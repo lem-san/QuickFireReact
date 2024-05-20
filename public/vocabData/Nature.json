@@ -1,0 +1,80 @@
+[
+    {
+        "id": "wetlands",
+        "english": "wetlands",
+        "japanese": "湿地",
+        "image": "gs://illustrations_bucket/Nature/wetlands.png"
+    },
+    {
+        "id": "tree",
+        "english": "tree",
+        "japanese": "木",
+        "image": "gs://illustrations_bucket/Nature/tree.png"
+    },
+    {
+        "id": "sea",
+        "english": "sea",
+        "japanese": "海",
+        "image": "gs://illustrations_bucket/Nature/sea.png"
+    },
+    {
+        "id": "mountain",
+        "english": "mountain",
+        "japanese": "山",
+        "image": "gs://illustrations_bucket/Nature/mountain.png"
+    },
+    {
+        "id": "savanna",
+        "english": "savanna",
+        "japanese": "サバンナ",
+        "image": "gs://illustrations_bucket/Nature/savanna.png"
+    },
+    {
+        "id": "riceField",
+        "english": "rice field",
+        "japanese": "田んぼ",
+        "image": "gs://illustrations_bucket/Nature/riceField.png"
+    },
+    {
+        "id": "river",
+        "english": "river",
+        "japanese": "川",
+        "image": "gs://illustrations_bucket/Nature/river.png"
+    },
+    {
+        "id": "lake",
+        "english": "lake",
+        "japanese": "湖",
+        "image": "gs://illustrations_bucket/Nature/lake.png"
+    },
+    {
+        "id": "pond",
+        "english": "pond",
+        "japanese": "池",
+        "image": "gs://illustrations_bucket/Nature/pond.png"
+    },
+    {
+        "id": "island",
+        "english": "island",
+        "japanese": "島",
+        "image": "gs://illustrations_bucket/Nature/island.png"
+    },
+    {
+        "id": "forest",
+        "english": "forest",
+        "japanese": "森",
+        "image": "gs://illustrations_bucket/Nature/forest.png"
+    },
+    {
+        "id": "flower",
+        "english": "flower",
+        "japanese": "花",
+        "image": "gs://illustrations_bucket/Nature/flower.png"
+    },
+    {
+        "id": "desert",
+        "english": "desert",
+        "japanese": "砂漠",
+        "image": "gs://illustrations_bucket/Nature/desert.png"
+    }
+]

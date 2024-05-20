@@ -7,6 +7,7 @@ import {handleControls} from './ControlMenu'
 const OptionsMenu = ({onSelectOption}) => {
     const [checkedVocab, setCheckedVocab] = useState([])
     const [timeLimit, setTimeLimit] = useState(60) // Default time limit
+    const [questionType, setQuestionType] = useState(['Image'])
 
     const handleSelectedVocab = (event) => {
         playToggleClick()
@@ -19,15 +20,33 @@ const OptionsMenu = ({onSelectOption}) => {
     }
 
     const handleTimeLimitChange = (event) => {
+        playToggleClick()
         const selectedTimeLimit = parseInt(event.target.value);
         setTimeLimit(selectedTimeLimit);
     };
 
-    const handleNextButton = () => {
-        if (checkedVocab != "") {
-            onSelectOption('GameScreen', checkedVocab, 0, timeLimit)
+    const handleQuestionType = (event) => {
+        playToggleClick()
+        const selectedType = event.target.id.replace('question', '');
+        if (event.target.checked) {
+            setQuestionType([...questionType, selectedType]);
         } else {
+            setQuestionType(questionType.filter((c) => c !== selectedType));
+        }    
+    };
+
+    const handleNextButton = () => {
+        playToggleClick()
+        if (checkedVocab != "") {
+            if (questionType != "") {
+                onSelectOption('GameScreen', checkedVocab, 0, timeLimit, questionType)
+            } else {
+                alert("Please select a question type!")
+            }
+        } else if (questionType != ""){
             alert("Please select a category type!")
+        } else {
+            alert("Please select a category and question type!")
         }
     };
 
@@ -40,7 +59,7 @@ const OptionsMenu = ({onSelectOption}) => {
                     <div class="tab">
                         <div class="col">
                             <div class="col2">
-                                <h2 class="category">Fruits</h2>
+                                <h2 class="category">Fruits 🍎</h2>
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabFruits">
@@ -50,7 +69,7 @@ const OptionsMenu = ({onSelectOption}) => {
                             </div>
 
                             <div class="col2">
-                                <h2 class="category">Vegetables</h2>
+                                <h2 class="category">Vegetables 🥕</h2>
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabVegetables">
@@ -60,7 +79,7 @@ const OptionsMenu = ({onSelectOption}) => {
                              </div>
 
                             <div class="col2">
-                                <h2 class="category">Animals</h2>
+                                <h2 class="category">Animals 🐶</h2>
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabAnimals">
@@ -70,7 +89,7 @@ const OptionsMenu = ({onSelectOption}) => {
                              </div>      
 
                             <div class="col2">
-                                <h2 class="category">Sports</h2>
+                                <h2 class="category">Sports ⚾</h2>
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabSports">
@@ -80,7 +99,7 @@ const OptionsMenu = ({onSelectOption}) => {
                              </div>
 
                              <div class="col2">
-                                <h2 class="category">Stationery</h2>
+                                <h2 class="category">Stationery ✏️</h2>
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabStationery">
@@ -90,7 +109,7 @@ const OptionsMenu = ({onSelectOption}) => {
                              </div>    
 
                              <div class="col2">
-                                <h2 class="category" id="foodDrinkTitle">Food & Drink</h2>
+                                <h2 class="category" id="foodDrinkTitle">Food & Drink 🍔</h2>
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabFoodDrink">
@@ -100,19 +119,49 @@ const OptionsMenu = ({onSelectOption}) => {
                              </div>    
 
                              <div class="col2">
-                                <h2 class="category">Locations</h2>
+                                <h2 class="category">Locations 📮</h2>
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabLocations">
                                     <input type="checkbox" class="vocab" id="vocabLocations" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
-                             </div>    
+                             </div>
+
+                             <div class="col2">
+                                <h2 class="category">Nature 🌳</h2>
+                            </div>
+                            <div class="col2">
+                                <label class="switch" for="vocabNature">
+                                    <input type="checkbox" class="vocab" id="vocabNature" onClick={handleSelectedVocab}/>
+                                    <div class="slider round"></div>
+                                </label>
+                             </div>      
+                             
+                             <div class="col2">
+                                <h2 class="category">Body Parts 👁️</h2>
+                            </div>
+                            <div class="col2">
+                                <label class="switch" for="vocabBodyParts">
+                                    <input type="checkbox" class="vocab" id="vocabBodyParts" onClick={handleSelectedVocab}/>
+                                    <div class="slider round"></div>
+                                </label>
+                             </div>
+
+                             <div class="col2">
+                                <h2 class="category">Objects 👜</h2>
+                            </div>
+                            <div class="col2">
+                                <label class="switch" for="vocabObjects">
+                                    <input type="checkbox" class="vocab" id="vocabObjects" onClick={handleSelectedVocab}/>
+                                    <div class="slider round"></div>
+                                </label>
+                             </div>      
                         </div>
 
                         <div class="col">
                             <div class="col2">
-                                <h2 class="category">Occupations</h2>
+                                <h2 class="category">Occupations 👮‍♀️</h2>
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabOccupations">
@@ -122,61 +171,91 @@ const OptionsMenu = ({onSelectOption}) => {
                             </div>
 
                             <div class="col2">
-                                <h2 class="category">Subjects</h2>
+                                <h2 class="category">Colors 🎨</h2>
                             </div>
                             <div class="col2">
-                                <label class="switch" for="vocabSubjects">
-                                <input type="checkbox" class="vocab" id="vocabSubjects" onClick={handleSelectedVocab}/>
+                                <label class="switch" for="vocabColors">
+                                <input type="checkbox" class="vocab" id="vocabColors" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                             </div>    
 
                             <div class="col2">
-                                <h2 class="category" id="monthsSeasonsTitle">Months & Seasons</h2>
+                                <h2 class="category">Shapes 🟨</h2>
                             </div>
                             <div class="col2">
-                                <label class="switch" for="vocabMonthsSeasons">
-                                <input type="checkbox" class="vocab" id="vocabMonthsSeasons" onClick={handleSelectedVocab}/>
+                                <label class="switch" for="vocabShapes">
+                                <input type="checkbox" class="vocab" id="vocabShapes" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                             </div> 
 
                             <div class="col2">
-                                <h2 class="category">Events</h2>
+                                <h2 class="category">Countries 🌎</h2>
                             </div>
                             <div class="col2">
-                                <label class="switch" for="vocabEvents">
-                                <input type="checkbox" class="vocab" id="vocabEvents" onClick={handleSelectedVocab}/>
+                                <label class="switch" for="vocabCountries">
+                                <input type="checkbox" class="vocab" id="vocabCountries" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                             </div> 
 
                             <div class="col2">
-                                <h2 class="category">Daily Life</h2>
+                                <h2 class="category">Feelings 😋</h2>
                             </div>
                             <div class="col2">
-                                <label class="switch" for="vocabDailyLife">
-                                <input type="checkbox" class="vocab" id="vocabDailyLife" onClick={handleSelectedVocab}/>
+                                <label class="switch" for="vocabFeelings">
+                                <input type="checkbox" class="vocab" id="vocabFeelings" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                             </div> 
 
                             <div class="col2">
-                                <h2 class="category">Verbs</h2>
+                                <h2 class="category">Weather 🌤️</h2>
                             </div>
                             <div class="col2">
-                                <label class="switch" for="vocabVerbs">
-                                <input type="checkbox" class="vocab" id="vocabVerbs" onClick={handleSelectedVocab}/>
+                                <label class="switch" for="vocabWeather">
+                                <input type="checkbox" class="vocab" id="vocabWeather" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                             </div> 
 
                             <div class="col2">
-                                <h2 class="category">Activities</h2>
+                                <h2 class="category">Days & Times 🌃</h2>
                             </div>
                             <div class="col2">
-                                <label class="switch" for="vocabActivities">
-                                <input type="checkbox" class="vocab" id="vocabActivities" onClick={handleSelectedVocab}/>
+                                <label class="switch" for="vocabDaysTimes">
+                                <input type="checkbox" class="vocab" id="vocabDaysTimes" onClick={handleSelectedVocab}/>
+                                    <div class="slider round"></div>
+                                </label>
+                            </div> 
+
+                            <div class="col2">
+                                <h2 class="category">Clothing 👕</h2>
+                            </div>
+                            <div class="col2">
+                                <label class="switch" for="vocabClothing">
+                                <input type="checkbox" class="vocab" id="vocabClothing" onClick={handleSelectedVocab}/>
+                                    <div class="slider round"></div>
+                                </label>
+                            </div> 
+
+                            <div class="col2">
+                                <h2 class="category">Snacks & Desserts 🍨</h2>
+                            </div>
+                            <div class="col2">
+                                <label class="switch" for="vocabSnacksDesserts">
+                                <input type="checkbox" class="vocab" id="vocabSnacksDesserts" onClick={handleSelectedVocab}/>
+                                    <div class="slider round"></div>
+                                </label>
+                            </div> 
+
+                            <div class="col2">
+                                <h2 class="category">Subjects 📚</h2>
+                            </div>
+                            <div class="col2">
+                                <label class="switch" for="vocabSubjects">
+                                <input type="checkbox" class="vocab" id="vocabSubjects" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                             </div> 
@@ -203,22 +282,56 @@ const OptionsMenu = ({onSelectOption}) => {
                                     </select>
                                 </label>
                             </div>
-
                             <div class="col2">
-                                <h2 class="category">Hardmode</h2>
+                                <h2 class="category">Question type:</h2>
+                            </div>                            
+                            <div class="col2">
+                                <h2 class="category"></h2>
                             </div>
                             <div class="col2">
-                                <label class="switch" for="vocabFruits">
-                                    <input type="checkbox" class="vocab" id="vocabFruits" onClick={handleSelectedVocab}/>
+                                <h2 class="category">Image</h2>
+                            </div>
+                            <div class="col2">
+                                <label class="switch" for="questionImage">
+                                    <input type="checkbox" class="vocab" id="questionImage" onClick={handleQuestionType} defaultChecked/>
                                     <div class="slider round"></div>
                                 </label>
                             </div>
-                            
+                            <div class="col2">
+                                <h2 class="category">English</h2>
+                            </div>
+                            <div class="col2">
+                                <label class="switch" for="questionEnglish">
+                                    <input type="checkbox" class="vocab" id="questionEnglish" onClick={handleQuestionType}/>
+                                    <div class="slider round"></div>
+                                </label>
+                            </div>
+                            <div class="col2">
+                                <h2 class="category">Japanese</h2>
+                            </div>
+                            <div class="col2">
+                                <label class="switch" for="questionJapanese">
+                                    <input type="checkbox" class="vocab" id="questionJapanese" onClick={handleQuestionType}/>
+                                    <div class="slider round"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col">
+                        <div class="col2">
+                                <h2 class="category">No repeats</h2>
+                            </div>
+                            <div class="col2">
+                                <label class="switch" for="repeats">
+                                    <input type="checkbox" class="vocab" id="repeats" onClick={handleQuestionType} defaultChecked/>
+                                    <div class="slider round"></div>
+                                </label>
+                            </div>
                         </div>
                     </div>
             </div>
             <div class="controls">
                 {handleControls('btnReturn', onSelectOption)}
+                {handleControls('btnFullscreen')}
                 {handleControls('btnNext', handleNextButton)}
             </div>
         </>

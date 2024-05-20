@@ -1,0 +1,80 @@
+[
+    {
+        "id": "calendar",
+        "english": "calendar",
+        "japanese": "カレンダー",
+        "image": "gs://illustrations_bucket/Stationery/calendar.png"
+    },
+    {
+        "id": "eraser",
+        "english": "eraser",
+        "japanese": "消しゴム",
+        "image": "gs://illustrations_bucket/Stationery/eraser.png"
+    },
+    {
+        "id": "glueStick",
+        "english": "glue stick",
+        "japanese": "のり",
+        "image": "gs://illustrations_bucket/Stationery/glueStick.png"
+    },
+    {
+        "id": "marker",
+        "english": "marker",
+        "japanese": "マーカー",
+        "image": "gs://illustrations_bucket/Stationery/marker.png"
+    },
+    {
+        "id": "notebook",
+        "english": "notebook",
+        "japanese": "ノート",
+        "image": "gs://illustrations_bucket/Stationery/notebook.png"
+    },
+    {
+        "id": "pen",
+        "english": "pen",
+        "japanese": "ペン",
+        "image": "gs://illustrations_bucket/Stationery/pen.png"
+    },
+    {
+        "id": "pencil",
+        "english": "pencil",
+        "japanese": "鉛筆",
+        "image": "gs://illustrations_bucket/Stationery/pencil.png"
+    },
+    {
+        "id": "pencilCase",
+        "english": "pencil case",
+        "japanese": "鉛筆ケース",
+        "image": "gs://illustrations_bucket/Stationery/pencilCase.png"
+    },
+    {
+        "id": "pencilSharpener",
+        "english": "pencil sharpener",
+        "japanese": "鉛筆削り",
+        "image": "gs://illustrations_bucket/Stationery/pencilSharpener.png"
+    },
+    {
+        "id": "ruler",
+        "english": "ruler",
+        "japanese": "定規",
+        "image": "gs://illustrations_bucket/Stationery/ruler.png"
+    },
+    {
+        "id": "schoolBag",
+        "english": "school bag",
+        "japanese": "学校のかばん",
+        "image": "gs://illustrations_bucket/Stationery/schoolBag.png"
+    },
+    {
+        "id": "scissors",
+        "english": "scissors",
+        "japanese": "はさみ",
+        "image": "gs://illustrations_bucket/Stationery/scissors.png"
+    },
+    {
+        "id": "stapler",
+        "english": "stapler",
+        "japanese": "ホッチキス",
+        "image": "gs://illustrations_bucket/Stationery/stapler.png"
+    }
+]

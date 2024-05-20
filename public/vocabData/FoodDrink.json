@@ -1,0 +1,140 @@
+[
+    {
+        "id": "bread",
+        "english": "bread",
+        "japanese": "パン",
+        "image": "gs://illustrations_bucket/FoodDrink/bread.png"
+    },
+    {
+        "id": "cheese",
+        "english": "cheese",
+        "japanese": "チーズ",
+        "image": "gs://illustrations_bucket/FoodDrink/cheese.png"
+    },
+    {
+        "id": "coffee",
+        "english": "coffee",
+        "japanese": "コーヒー",
+        "image": "gs://illustrations_bucket/FoodDrink/coffee.png"
+    },
+    {
+        "id": "cola",
+        "english": "cola",
+        "japanese": "コーラ",
+        "image": "gs://illustrations_bucket/FoodDrink/cola.png"
+    },
+    {
+        "id": "curry",
+        "english": "curry and rice",
+        "japanese": "カレー",
+        "image": "gs://illustrations_bucket/FoodDrink/curry.png"
+    },
+    {
+        "id": "egg",
+        "english": "egg",
+        "japanese": "卵",
+        "image": "gs://illustrations_bucket/FoodDrink/egg.png"
+    },
+    {
+        "id": "frenchFries",
+        "english": "french fries",
+        "japanese": "フライドポテト",
+        "image": "gs://illustrations_bucket/FoodDrink/frenchFries.png"
+    },
+    {
+        "id": "hamburger",
+        "english": "hamburger",
+        "japanese": "ハンバーガー",
+        "image": "gs://illustrations_bucket/FoodDrink/hamburger.png"
+    },
+    {
+        "id": "hotdog",
+        "english": "hotdog",
+        "japanese": "ホットドッグ",
+        "image": "gs://illustrations_bucket/FoodDrink/hotdog.png"
+    },
+    {
+        "id": "milk",
+        "english": "milk",
+        "japanese": "牛乳",
+        "image": "gs://illustrations_bucket/FoodDrink/milk.png"
+    },
+    {
+        "id": "misoSoup",
+        "english": "miso soup",
+        "japanese": "味噌汁",
+        "image": "gs://illustrations_bucket/FoodDrink/misoSoup.png"
+    },
+    {
+        "id": "omelet",
+        "english": "omelet",
+        "japanese": "オムレツ",
+        "image": "gs://illustrations_bucket/FoodDrink/omelet.png"
+    },
+    {
+        "id": "orangeJuice",
+        "english": "orange juice",
+        "japanese": "オレンジジュース",
+        "image": "gs://illustrations_bucket/FoodDrink/orangeJuice.png"
+    },
+    {
+        "id": "pizza",
+        "english": "pizza",
+        "japanese": "ピザ",
+        "image": "gs://illustrations_bucket/FoodDrink/pizza.png"
+    },
+    {
+        "id": "rice",
+        "english": "rice",
+        "japanese": "ごはん",
+        "image": "gs://illustrations_bucket/FoodDrink/rice.png"
+    },
+    {
+        "id": "riceBall",
+        "english": "rice ball",
+        "japanese": "おにぎり",
+        "image": "gs://illustrations_bucket/FoodDrink/riceBall.png"
+    },
+    {
+        "id": "salad",
+        "english": "salad",
+        "japanese": "サラダ",
+        "image": "gs://illustrations_bucket/FoodDrink/salad.png"
+    },
+    {
+        "id": "sandwich",
+        "english": "sandwich",
+        "japanese": "サンドイッチ",
+        "image": "gs://illustrations_bucket/FoodDrink/sandwich.png"
+    },
+    {
+        "id": "spaghetti",
+        "english": "spaghetti",
+        "japanese": "スパゲッティ",
+        "image": "gs://illustrations_bucket/FoodDrink/spaghetti.png"
+    },
+    {
+        "id": "steak",
+        "english": "steak",
+        "japanese": "ステーキ",
+        "image": "gs://illustrations_bucket/FoodDrink/steak.png"
+    },
+    {
+        "id": "sushi",
+        "english": "sushi",
+        "japanese": "寿司",
+        "image": "gs://illustrations_bucket/FoodDrink/sushi.png"
+    },
+    {
+        "id": "tea",
+        "english": "tea",
+        "japanese": "お茶",
+        "image": "gs://illustrations_bucket/FoodDrink/tea.png"
+    },
+    {
+        "id": "water",
+        "english": "water",
+        "japanese": "水",
+        "image": "gs://illustrations_bucket/FoodDrink/water.png"
+    }
+]

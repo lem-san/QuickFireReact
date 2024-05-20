@@ -1,0 +1,158 @@
+[
+    {
+        "id": "bear",
+        "english": "bear",
+        "japanese": "クマ",
+        "image": "gs://illustrations_bucket/Animals/bear.png"
+    },
+    {
+        "id": "beetle",
+        "english": "beetle",
+        "japanese": "カブトムシ",
+        "image": "gs://illustrations_bucket/Animals/beetle.png"
+    },
+    {
+        "id": "bird",
+        "english": "bird",
+        "japanese": "鳥",
+        "image": "gs://illustrations_bucket/Animals/bird.png"
+    },
+    {
+        "id": "butterfly",
+        "english": "butterfly",
+        "japanese": "蝶",
+        "image": "gs://illustrations_bucket/Animals/butterfly.png"
+    },
+    {
+        "id": "cat",
+        "english": "cat",
+        "japanese": "猫",
+        "image": "gs://illustrations_bucket/Animals/cat.png"
+    },
+    {
+        "id": "dog",
+        "english": "dog",
+        "japanese": "犬",
+        "image": "gs://illustrations_bucket/Animals/dog.png"
+    },
+    {
+        "id": "dolphin",
+        "english": "dolphin",
+        "japanese": "イルカ",
+        "image": "gs://illustrations_bucket/Animals/dolphin.png"
+    },
+    {
+        "id": "dragonfly",
+        "english": "dragonfly",
+        "japanese": "トンボ",
+        "image": "gs://illustrations_bucket/Animals/dragonfly.png"
+    },
+    {
+        "id": "elephant",
+        "english": "elephant",
+        "japanese": "象",
+        "image": "gs://illustrations_bucket/Animals/elephant.png"
+    },
+    {
+        "id": "fox",
+        "english": "fox",
+        "japanese": "キツネ",
+        "image": "gs://illustrations_bucket/Animals/fox.png"
+    },
+    {
+        "id": "frog",
+        "english": "frog",
+        "japanese": "カエル",
+        "image": "gs://illustrations_bucket/Animals/frog.png"
+    },
+    {
+        "id": "giraffe",
+        "english": "giraffe",
+        "japanese": "キリン",
+        "image": "gs://illustrations_bucket/Animals/giraffe.png"
+    },
+    {
+        "id": "gorilla",
+        "english": "gorilla",
+        "japanese": "ゴリラ",
+        "image": "gs://illustrations_bucket/Animals/gorilla.png"
+    },
+    {
+        "id": "horse",
+        "english": "horse",
+        "japanese": "馬",
+        "image": "gs://illustrations_bucket/Animals/horse.png"
+    },
+    {
+        "id": "koala",
+        "english": "koala",
+        "japanese": "コアラ",
+        "image": "gs://illustrations_bucket/Animals/koala.png"
+    },
+    {
+        "id": "ladybug",
+        "english": "ladybug",
+        "japanese": "てんとう虫",
+        "image": "gs://illustrations_bucket/Animals/ladybug.png"
+    },
+    {
+        "id": "lion",
+        "english": "lion",
+        "japanese": "ライオン",
+        "image": "gs://illustrations_bucket/Animals/lion.png"
+    },
+    {
+        "id": "monkey",
+        "english": "monkey",
+        "japanese": "猿",
+        "image": "gs://illustrations_bucket/Animals/monkey.png"
+    },
+    {
+        "id": "mouse",
+        "english": "mouse",
+        "japanese": "ネズミ",
+        "image": "gs://illustrations_bucket/Animals/mouse.png"
+    },
+    {
+        "id": "octopus",
+        "english": "octopus",
+        "japanese": "タコ",
+        "image": "gs://illustrations_bucket/Animals/octopus.png"
+    },
+    {
+        "id": "panda",
+        "english": "panda",
+        "japanese": "パンダ",
+        "image": "gs://illustrations_bucket/Animals/panda.png"
+    },
+    {
+        "id": "penguin",
+        "english": "penguin",
+        "japanese": "ペンギン",
+        "image": "gs://illustrations_bucket/Animals/penguin.png"
+    },
+    {
+        "id": "rabbit",
+        "english": "rabbit",
+        "japanese": "ウサギ",
+        "image": "gs://illustrations_bucket/Animals/rabbit.png"
+    },
+    {
+        "id": "shark",
+        "english": "shark",
+        "japanese": "サメ",
+        "image": "gs://illustrations_bucket/Animals/shark.png"
+    },
+    {
+        "id": "snake",
+        "english": "snake",
+        "japanese": "蛇",
+        "image": "gs://illustrations_bucket/Animals/snake.png"
+    },
+    {
+        "id": "turtle",
+        "english": "turtle",
+        "japanese": "亀",
+        "image": "gs://illustrations_bucket/Animals/turtle.png"
+    }
+]

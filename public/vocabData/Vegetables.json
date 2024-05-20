@@ -1,0 +1,98 @@
+[
+    {
+        "id": "avocado",
+        "english": "avocado",
+        "japanese": "アボカド",
+        "image": "gs://illustrations_bucket/Vegetables/avocado.png"
+    },
+    {
+        "id": "broccoli",
+        "english": "broccoli",
+        "japanese": "ブロッコリー",
+        "image": "gs://illustrations_bucket/Vegetables/broccoli.png"
+    },
+    {
+        "id": "cabbage",
+        "english": "cabbage",
+        "japanese": "キャベツ",
+        "image": "gs://illustrations_bucket/Vegetables/cabbage.png"
+    },
+    {
+        "id": "carrot",
+        "english": "carrot",
+        "japanese": "にんじん",
+        "image": "gs://illustrations_bucket/Vegetables/carrot.png"
+    },
+    {
+        "id": "corn",
+        "english": "corn",
+        "japanese": "とうもろこし",
+        "image": "gs://illustrations_bucket/Vegetables/corn.png"
+    },
+    {
+        "id": "cucumber",
+        "english": "cucumber",
+        "japanese": "きゅうり",
+        "image": "gs://illustrations_bucket/Vegetables/cucumber.png"
+    },
+    {
+        "id": "eggplant",
+        "english": "eggplant",
+        "japanese": "なす",
+        "image": "gs://illustrations_bucket/Vegetables/eggplant.png"
+    },
+    {
+        "id": "greenPepper",
+        "english": "green pepper",
+        "japanese": "ピーマン",
+        "image": "gs://illustrations_bucket/Vegetables/greenPepper.png"
+    },
+    {
+        "id": "lettuce",
+        "english": "lettuce",
+        "japanese": "レタス",
+        "image": "gs://illustrations_bucket/Vegetables/lettuce.png"
+    },
+    {
+        "id": "mushroom",
+        "english": "mushroom",
+        "japanese": "きのこ",
+        "image": "gs://illustrations_bucket/Vegetables/mushroom.png"
+    },
+    {
+        "id": "onion",
+        "english": "onion",
+        "japanese": "たまねぎ",
+        "image": "gs://illustrations_bucket/Vegetables/onion.png"
+    },
+    {
+        "id": "potato",
+        "english": "potato",
+        "japanese": "じゃがいも",
+        "image": "gs://illustrations_bucket/Vegetables/potato.png"
+    },
+    {
+        "id": "pumpkin",
+        "english": "pumpkin",
+        "japanese": "かぼちゃ",
+        "image": "gs://illustrations_bucket/Vegetables/pumpkin.png"
+    },
+    {
+        "id": "spinach",
+        "english": "spinach",
+        "japanese": "ほうれんそう",
+        "image": "gs://illustrations_bucket/Vegetables/spinach.png"
+    },
+    {
+        "id": "sweetPotato",
+        "english": "sweet potato",
+        "japanese": "さつまいも",
+        "image": "gs://illustrations_bucket/Vegetables/sweetPotato.png"
+    },
+    {
+        "id": "tomato",
+        "english": "tomato",
+        "japanese": "トマト",
+        "image": "gs://illustrations_bucket/Vegetables/tomato.png"
+    }
+]
