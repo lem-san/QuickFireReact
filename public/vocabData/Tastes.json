@@ -1,0 +1,74 @@
+[
+    {
+        "id": "delicious",
+        "english": "delicious",
+        "japanese": "美味しい",
+        "image": "gs://illustrations_bucket/Tastes/delicious.png"
+    },
+    {
+        "id": "rich",
+        "english": "rich",
+        "japanese": "濃厚な",
+        "image": "gs://illustrations_bucket/Tastes/rich.png"
+    },
+    {
+        "id": "creamy",
+        "english": "creamy",
+        "japanese": "クリーミーな",
+        "image": "gs://illustrations_bucket/Tastes/creamy.png"
+    },
+    {
+        "id": "crunchy",
+        "english": "crunchy",
+        "japanese": "カリカリした",
+        "image": "gs://illustrations_bucket/Tastes/crunchy.png"
+    },
+    {
+        "id": "crispy",
+        "english": "crispy",
+        "japanese": "サクサクした",
+        "image": "gs://illustrations_bucket/Tastes/crispy.png"
+    },
+    {
+        "id": "greasy",
+        "english": "greasy",
+        "japanese": "脂っこい",
+        "image": "gs://illustrations_bucket/Tastes/greasy.png"
+    },
+    {
+        "id": "sour",
+        "english": "sour",
+        "japanese": "酸っぱい",
+        "image": "gs://illustrations_bucket/Tastes/sour.png"
+    },
+    {
+        "id": "spicy",
+        "english": "spicy",
+        "japanese": "辛い",
+        "image": "gs://illustrations_bucket/Tastes/spicy.png"
+    },
+    {
+        "id": "salty",
+        "english": "salty",
+        "japanese": "塩辛い",
+        "image": "gs://illustrations_bucket/Tastes/salty.png"
+    },
+    {
+        "id": "bitter",
+        "english": "bitter",
+        "japanese": "苦い",
+        "image": "gs://illustrations_bucket/Tastes/bitter.png"
+    },
+    {
+        "id": "juicy",
+        "english": "juicy",
+        "japanese": "ジューシーな",
+        "image": "gs://illustrations_bucket/Tastes/juicy.png"
+    },
+    {
+        "id": "sweet",
+        "english": "sweet",
+        "japanese": "甘い",
+        "image": "gs://illustrations_bucket/Tastes/sweet.png"
+    }
+]

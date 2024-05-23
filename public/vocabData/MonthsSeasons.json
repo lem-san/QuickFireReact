@@ -1,0 +1,98 @@
+[
+    {
+        "id": "fall",
+        "english": "fall",
+        "japanese": "秋",
+        "image": "gs://illustrations_bucket/MonthsSeasons/fall.png"
+    },
+    {
+        "id": "spring",
+        "english": "spring",
+        "japanese": "春",
+        "image": "gs://illustrations_bucket/MonthsSeasons/spring.png"
+    },
+    {
+        "id": "winter",
+        "english": "winter",
+        "japanese": "冬",
+        "image": "gs://illustrations_bucket/MonthsSeasons/winter.png"
+    },
+    {
+        "id": "summer",
+        "english": "summer",
+        "japanese": "夏",
+        "image": "gs://illustrations_bucket/MonthsSeasons/summer.png"
+    },
+    {
+        "id": "January",
+        "english": "January",
+        "japanese": "1月",
+        "image": "gs://illustrations_bucket/MonthsSeasons/January.png"
+    },
+    {
+        "id": "February",
+        "english": "February",
+        "japanese": "2月",
+        "image": "gs://illustrations_bucket/MonthsSeasons/February.png"
+    },
+    {
+        "id": "March",
+        "english": "March",
+        "japanese": "3月",
+        "image": "gs://illustrations_bucket/MonthsSeasons/March.png"
+    },
+    {
+        "id": "April",
+        "english": "April",
+        "japanese": "4月",
+        "image": "gs://illustrations_bucket/MonthsSeasons/April.png"
+    },
+    {
+        "id": "May",
+        "english": "May",
+        "japanese": "5月",
+        "image": "gs://illustrations_bucket/MonthsSeasons/May.png"
+    },
+    {
+        "id": "June",
+        "english": "June",
+        "japanese": "6月",
+        "image": "gs://illustrations_bucket/MonthsSeasons/June.png"
+    },
+    {
+        "id": "July",
+        "english": "July",
+        "japanese": "7月",
+        "image": "gs://illustrations_bucket/MonthsSeasons/July.png"
+    },
+    {
+        "id": "August",
+        "english": "August",
+        "japanese": "8月",
+        "image": "gs://illustrations_bucket/MonthsSeasons/August.png"
+    },
+    {
+        "id": "September",
+        "english": "September",
+        "japanese": "9月",
+        "image": "gs://illustrations_bucket/MonthsSeasons/September.png"
+    },
+    {
+        "id": "October",
+        "english": "October",
+        "japanese": "10月",
+        "image": "gs://illustrations_bucket/MonthsSeasons/October.png"
+    },
+    {
+        "id": "November",
+        "english": "November",
+        "japanese": "11月",
+        "image": "gs://illustrations_bucket/MonthsSeasons/November.png"
+    },
+    {
+        "id": "December",
+        "english": "December",
+        "japanese": "12月",
+        "image": "gs://illustrations_bucket/MonthsSeasons/December.png"
+    }
+]

@@ -1,0 +1,128 @@
+[
+    {
+        "id": "goToSleep",
+        "english": "go to sleep",
+        "japanese": "寝る",
+        "image": "gs://illustrations_bucket/DailyLife/goToSleep.png"
+    },
+    {
+        "id": "getUp",
+        "english": "get up",
+        "japanese": "起きる",
+        "image": "gs://illustrations_bucket/DailyLife/getUp.png"
+    },
+    {
+        "id": "watchYoutube",
+        "english": "watch YouTube",
+        "japanese": "YouTubeを見る",
+        "image": "gs://illustrations_bucket/DailyLife/watchYoutube.png"
+    },
+    {
+        "id": "goShopping",
+        "english": "go shopping",
+        "japanese": "買い物に行く",
+        "image": "gs://illustrations_bucket/DailyLife/goShopping.png"
+    },
+    {
+        "id": "cleanTheHouse",
+        "english": "clean the house",
+        "japanese": "家を掃除する",
+        "image": "gs://illustrations_bucket/DailyLife/cleanTheHouse.png"
+    },
+    {
+        "id": "readBooks",
+        "english": "read books",
+        "japanese": "本を読む",
+        "image": "gs://illustrations_bucket/DailyLife/readBooks.png"
+    },
+    {
+        "id": "playVideoGames",
+        "english": "play video games",
+        "japanese": "ビデオゲームをする",
+        "image": "gs://illustrations_bucket/DailyLife/playVideoGames.png"
+    },
+    {
+        "id": "eatBreakfast",
+        "english": "eat breakfast",
+        "japanese": "朝ご飯を食べる",
+        "image": "gs://illustrations_bucket/DailyLife/eatBreakfast.png"
+    },
+    {
+        "id": "cookDinner",
+        "english": "cook dinner",
+        "japanese": "夕食を作る",
+        "image": "gs://illustrations_bucket/DailyLife/cookDinner.png"
+    },
+    {
+        "id": "goToSchool",
+        "english": "go to school",
+        "japanese": "学校に行く",
+        "image": "gs://illustrations_bucket/DailyLife/goToSchool.png"
+    },
+    {
+        "id": "playSports",
+        "english": "play sports",
+        "japanese": "スポーツをする",
+        "image": "gs://illustrations_bucket/DailyLife/playSports.png"
+    },
+    {
+        "id": "watchTV",
+        "english": "watch TV",
+        "japanese": "テレビを見る",
+        "image": "gs://illustrations_bucket/DailyLife/watchTV.png"
+    },
+    {
+        "id": "washTheDishes",
+        "english": "wash the dishes",
+        "japanese": "皿を洗う",
+        "image": "gs://illustrations_bucket/DailyLife/washTheDishes.png"
+    },
+    {
+        "id": "doMyHomework",
+        "english": "do my homework",
+        "japanese": "宿題をする",
+        "image": "gs://illustrations_bucket/DailyLife/doMyHomework.png"
+    },
+    {
+        "id": "brushMyTeeth",
+        "english": "brush my teeth",
+        "japanese": "歯を磨く",
+        "image": "gs://illustrations_bucket/DailyLife/brushMyTeeth.png"
+    },
+    {
+        "id": "walkMyDog",
+        "english": "walk my dog",
+        "japanese": "犬を散歩させる",
+        "image": "gs://illustrations_bucket/DailyLife/walkMyDog.png"
+    },
+    {
+        "id": "eatLunch",
+        "english": "eat lunch",
+        "japanese": "昼ご飯を食べる",
+        "image": "gs://illustrations_bucket/DailyLife/eatLunch.png"
+    },
+    {
+        "id": "eatDinner",
+        "english": "eat dinner",
+        "japanese": "晩ご飯を食べる",
+        "image": "gs://illustrations_bucket/DailyLife/eatDinner.png"
+    },
+    {
+        "id": "goHome",
+        "english": "go home",
+        "japanese": "家に帰る",
+        "image": "gs://illustrations_bucket/DailyLife/goHome.png"
+    },
+    {
+        "id": "takeOutTheGarbage",
+        "english": "take out the garbage",
+        "japanese": "ゴミを出す",
+        "image": "gs://illustrations_bucket/DailyLife/takeOutTheGarbage.png"
+    },
+    {
+        "id": "takeABath",
+        "english": "take a bath",
+        "japanese": "風呂に入る",
+        "image": "gs://illustrations_bucket/DailyLife/takeABath.png"
+    }
+]

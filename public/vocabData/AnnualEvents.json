@@ -1,0 +1,86 @@
+[
+    {
+        "id": "Christmas",
+        "english": "Christmas",
+        "japanese": "クリスマス",
+        "image": "gs://illustrations_bucket/AnnualEvents/Christmas.png"
+    },
+    {
+        "id": "ObonFestival",
+        "english": "Obon Festival",
+        "japanese": "お盆",
+        "image": "gs://illustrations_bucket/AnnualEvents/ObonFestival.png"
+    },
+    {
+        "id": "fireworksFestival",
+        "english": "fireworks festival",
+        "japanese": "花火大会",
+        "image": "gs://illustrations_bucket/AnnualEvents/fireworksFestival.png"
+    },
+    {
+        "id": "Halloween",
+        "english": "Halloween",
+        "japanese": "ハロウィン",
+        "image": "gs://illustrations_bucket/AnnualEvents/Halloween.png"
+    },
+    {
+        "id": "cherryBlossomViewing",
+        "english": "cherry blossom viewing",
+        "japanese": "花見",
+        "image": "gs://illustrations_bucket/AnnualEvents/cherryBlossomViewing.png"
+    },
+    {
+        "id": "moonViewing",
+        "english": "moon viewing",
+        "japanese": "月見",
+        "image": "gs://illustrations_bucket/AnnualEvents/moonViewing.png"
+    },
+    {
+        "id": "ChildrensDay",
+        "english": "Children's Day",
+        "japanese": "こどもの日",
+        "image": "gs://illustrations_bucket/AnnualEvents/ChildrensDay.png"
+    },
+    {
+        "id": "DollsFestival",
+        "english": "Dolls' Festival",
+        "japanese": "ひな祭り",
+        "image": "gs://illustrations_bucket/AnnualEvents/DollsFestival.png"
+    },
+    {
+        "id": "NewYearsEve",
+        "english": "New Year's Eve",
+        "japanese": "大晦日",
+        "image": "gs://illustrations_bucket/AnnualEvents/NewYearsEve.png"
+    },
+    {
+        "id": "ValentinesDay",
+        "english": "Valentine's Day",
+        "japanese": "バレンタインデー",
+        "image": "gs://illustrations_bucket/AnnualEvents/ValentinesDay.png"
+    },
+    {
+        "id": "NewYearsDay",
+        "english": "New Year's Day",
+        "japanese": "元日",
+        "image": "gs://illustrations_bucket/AnnualEvents/NewYearsDay.png"
+    },
+    {
+        "id": "SetsubunFestival",
+        "english": "Setsubun Festival",
+        "japanese": "節分",
+        "image": "gs://illustrations_bucket/AnnualEvents/SetsubunFestival.png"
+    },
+    {
+        "id": "ShichiGoSanFestival",
+        "english": "Shichi-Go-San Festival",
+        "japanese": "七五三",
+        "image": "gs://illustrations_bucket/AnnualEvents/ShichiGoSanFestival.png"
+    },
+    {
+        "id": "StarFestival",
+        "english": "Star Festival",
+        "japanese": "七夕",
+        "image": "gs://illustrations_bucket/AnnualEvents/StarFestival.png"
+    }
+]

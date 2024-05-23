@@ -143,8 +143,10 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, que
                 });
                 break;
             case "btnIncorrect":
-                renderRandomVocab(vocab);
                 addToReview();
+                console.log(renderedVocab)
+
+                renderRandomVocab(vocab);
                 playIncorrectPing();
                 break;
             default:

@@ -146,9 +146,9 @@ const OptionsMenu = ({onSelectOption}) => {
                                     <input type="checkbox" class="vocab" id="vocabBodyParts" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
-                             </div>
+                            </div>
 
-                             <div class="col2">
+                            <div class="col2">
                                 <h2 class="category">Objects 👜</h2>
                             </div>
                             <div class="col2">
@@ -156,7 +156,37 @@ const OptionsMenu = ({onSelectOption}) => {
                                     <input type="checkbox" class="vocab" id="vocabObjects" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
-                             </div>      
+                             </div>
+
+                            <div class="col2">
+                                <h2 class="category">Months & Seasons 🌸</h2>
+                            </div>
+                            <div class="col2">
+                                <label class="switch" for="vocabMonthsSeasons">
+                                    <input type="checkbox" class="vocab" id="vocabMonthsSeasons" onClick={handleSelectedVocab}/>
+                                    <div class="slider round"></div>
+                                </label>
+                             </div>
+
+                             <div class="col2">
+                                <h2 class="category">Daily Life 🛌</h2>
+                            </div>
+                            <div class="col2">
+                                <label class="switch" for="vocabDailyLife">
+                                    <input type="checkbox" class="vocab" id="vocabDailyLife" onClick={handleSelectedVocab}/>
+                                    <div class="slider round"></div>
+                                </label>
+                             </div>
+
+                            <div class="col2">
+                                <h2 class="category">Tastes 😋</h2>
+                            </div>
+                            <div class="col2">
+                                <label class="switch" for="vocabTastes">
+                                    <input type="checkbox" class="vocab" id="vocabTastes" onClick={handleSelectedVocab}/>
+                                    <div class="slider round"></div>
+                                </label>
+                             </div>                 
                         </div>
 
                         <div class="col">
@@ -201,7 +231,7 @@ const OptionsMenu = ({onSelectOption}) => {
                             </div> 
 
                             <div class="col2">
-                                <h2 class="category">Feelings 😋</h2>
+                                <h2 class="category">Feelings 😴</h2>
                             </div>
                             <div class="col2">
                                 <label class="switch" for="vocabFeelings">
@@ -259,6 +289,26 @@ const OptionsMenu = ({onSelectOption}) => {
                                     <div class="slider round"></div>
                                 </label>
                             </div> 
+
+                            <div class="col2">
+                                <h2 class="category">Annual Events 🎎</h2>
+                            </div>
+                            <div class="col2">
+                                <label class="switch" for="vocabAnnualEvents">
+                                <input type="checkbox" class="vocab" id="vocabAnnualEvents" onClick={handleSelectedVocab}/>
+                                    <div class="slider round"></div>
+                                </label>
+                            </div>
+
+                            <div class="col2">
+                                <h2 class="category">School Events 🏅</h2>
+                            </div>
+                            <div class="col2">
+                                <label class="switch" for="vocabSchoolEvents">
+                                <input type="checkbox" class="vocab" id="vocabSchoolEvents" onClick={handleSelectedVocab}/>
+                                    <div class="slider round"></div>
+                                </label>
+                            </div>  
                         </div>
                     </div>
 
