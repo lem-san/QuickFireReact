@@ -1,0 +1,68 @@
+[
+    {
+        "id": "family",
+        "english": "family",
+        "japanese": "家族",
+        "image": "gs://illustrations_bucket/People/family.png"
+    },
+    {
+        "id": "student",
+        "english": "student",
+        "japanese": "学生",
+        "image": "gs://illustrations_bucket/People/student.png"
+    },
+    {
+        "id": "teacher",
+        "english": "teacher",
+        "japanese": "先生",
+        "image": "gs://illustrations_bucket/People/teacher.png"
+    },
+    {
+        "id": "grandfather",
+        "english": "grandfather",
+        "japanese": "おじいさん",
+        "image": "gs://illustrations_bucket/People/grandfather.png"
+    },
+    {
+        "id": "grandmother",
+        "english": "grandmother",
+        "japanese": "おばあさん",
+        "image": "gs://illustrations_bucket/People/grandmother.png"
+    },
+    {
+        "id": "mother",
+        "english": "mother",
+        "japanese": "母",
+        "image": "gs://illustrations_bucket/People/mother.png"
+    },
+    {
+        "id": "father",
+        "english": "father",
+        "japanese": "父",
+        "image": "gs://illustrations_bucket/People/father.png"
+    },
+    {
+        "id": "classmates",
+        "english": "classmates",
+        "japanese": "クラスメート",
+        "image": "gs://illustrations_bucket/People/classmates.png"
+    },
+    {
+        "id": "friends",
+        "english": "friends",
+        "japanese": "友達",
+        "image": "gs://illustrations_bucket/People/friends.png"
+    },
+    {
+        "id": "sister",
+        "english": "sister",
+        "japanese": "姉妹",
+        "image": "gs://illustrations_bucket/People/sister.png"
+    },
+    {
+        "id": "brother",
+        "english": "brother",
+        "japanese": "兄弟",
+        "image": "gs://illustrations_bucket/People/brother.png"
+    }
+]

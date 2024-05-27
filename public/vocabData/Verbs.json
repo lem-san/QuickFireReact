@@ -1,0 +1,182 @@
+[
+    {
+        "id": "skate",
+        "english": "skate",
+        "japanese": "スケートをする",
+        "image": "gs://illustrations_bucket/Verbs/skate.png"
+    },
+    {
+        "id": "fly",
+        "english": "fly",
+        "japanese": "飛ぶ",
+        "image": "gs://illustrations_bucket/Verbs/fly.png"
+    },
+    {
+        "id": "write",
+        "english": "write",
+        "japanese": "書く",
+        "image": "gs://illustrations_bucket/Verbs/write.png"
+    },
+    {
+        "id": "travel",
+        "english": "travel",
+        "japanese": "旅行する",
+        "image": "gs://illustrations_bucket/Verbs/travel.png"
+    },
+    {
+        "id": "think",
+        "english": "think",
+        "japanese": "考える",
+        "image": "gs://illustrations_bucket/Verbs/think.png"
+    },
+    {
+        "id": "swim",
+        "english": "swim",
+        "japanese": "泳ぐ",
+        "image": "gs://illustrations_bucket/Verbs/swim.png"
+    },
+    {
+        "id": "study",
+        "english": "study",
+        "japanese": "勉強する",
+        "image": "gs://illustrations_bucket/Verbs/study.png"
+    },
+    {
+        "id": "stop",
+        "english": "stop",
+        "japanese": "止まる",
+        "image": "gs://illustrations_bucket/Verbs/stop.png"
+    },
+    {
+        "id": "talk",
+        "english": "talk",
+        "japanese": "話す",
+        "image": "gs://illustrations_bucket/Verbs/talk.png"
+    },
+    {
+        "id": "sing",
+        "english": "sing",
+        "japanese": "歌う",
+        "image": "gs://illustrations_bucket/Verbs/sing.png"
+    },
+    {
+        "id": "see",
+        "english": "see",
+        "japanese": "見る",
+        "image": "gs://illustrations_bucket/Verbs/see.png"
+    },
+    {
+        "id": "run",
+        "english": "run",
+        "japanese": "走る",
+        "image": "gs://illustrations_bucket/Verbs/run.png"
+    },
+    {
+        "id": "ride",
+        "english": "ride",
+        "japanese": "乗る",
+        "image": "gs://illustrations_bucket/Verbs/ride.png"
+    },
+    {
+        "id": "read",
+        "english": "read",
+        "japanese": "読む",
+        "image": "gs://illustrations_bucket/Verbs/read.png"
+    },
+    {
+        "id": "practice",
+        "english": "practice",
+        "japanese": "練習する",
+        "image": "gs://illustrations_bucket/Verbs/practice.png"
+    },
+    {
+        "id": "bake",
+        "english": "bake",
+        "japanese": "焼く",
+        "image": "gs://illustrations_bucket/Verbs/bake.png"
+    },
+    {
+        "id": "enjoy",
+        "english": "enjoy",
+        "japanese": "楽しむ",
+        "image": "gs://illustrations_bucket/Verbs/enjoy.png"
+    },
+    {
+        "id": "play",
+        "english": "play",
+        "japanese": "遊ぶ",
+        "image": "gs://illustrations_bucket/Verbs/play.png"
+    },
+    {
+        "id": "make",
+        "english": "make",
+        "japanese": "作る",
+        "image": "gs://illustrations_bucket/Verbs/make.png"
+    },
+    {
+        "id": "listen",
+        "english": "listen",
+        "japanese": "聞く",
+        "image": "gs://illustrations_bucket/Verbs/listen.png"
+    },
+    {
+        "id": "jump",
+        "english": "jump",
+        "japanese": "跳ぶ",
+        "image": "gs://illustrations_bucket/Verbs/jump.png"
+    },
+    {
+        "id": "help",
+        "english": "help",
+        "japanese": "助ける",
+        "image": "gs://illustrations_bucket/Verbs/help.png"
+    },
+    {
+        "id": "go",
+        "english": "go",
+        "japanese": "行く",
+        "image": "gs://illustrations_bucket/Verbs/go.png"
+    },
+    {
+        "id": "eat",
+        "english": "eat",
+        "japanese": "食べる",
+        "image": "gs://illustrations_bucket/Verbs/eat.png"
+    },
+    {
+        "id": "drink",
+        "english": "drink",
+        "japanese": "飲む",
+        "image": "gs://illustrations_bucket/Verbs/drink.png"
+    },
+    {
+        "id": "draw",
+        "english": "draw",
+        "japanese": "描く",
+        "image": "gs://illustrations_bucket/Verbs/draw.png"
+    },
+    {
+        "id": "dance",
+        "english": "dance",
+        "japanese": "踊る",
+        "image": "gs://illustrations_bucket/Verbs/dance.png"
+    },
+    {
+        "id": "cook",
+        "english": "cook",
+        "japanese": "料理する",
+        "image": "gs://illustrations_bucket/Verbs/cook.png"
+    },
+    {
+        "id": "clean",
+        "english": "clean",
+        "japanese": "掃除する",
+        "image": "gs://illustrations_bucket/Verbs/clean.png"
+    },
+    {
+        "id": "buy",
+        "english": "buy",
+        "japanese": "買う",
+        "image": "gs://illustrations_bucket/Verbs/buy.png"
+    }
+]

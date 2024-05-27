@@ -186,7 +186,17 @@ const OptionsMenu = ({onSelectOption}) => {
                                     <input type="checkbox" class="vocab" id="vocabTastes" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
-                             </div>                 
+                             </div>       
+
+                             <div class="col2">
+                                <h2 class="category">People 🧑</h2>
+                            </div>
+                            <div class="col2">
+                                <label class="switch" for="vocabPeople">
+                                <input type="checkbox" class="vocab" id="vocabPeople" onClick={handleSelectedVocab}/>
+                                    <div class="slider round"></div>
+                                </label>
+                            </div>           
                         </div>
 
                         <div class="col">
@@ -306,6 +316,16 @@ const OptionsMenu = ({onSelectOption}) => {
                             <div class="col2">
                                 <label class="switch" for="vocabSchoolEvents">
                                 <input type="checkbox" class="vocab" id="vocabSchoolEvents" onClick={handleSelectedVocab}/>
+                                    <div class="slider round"></div>
+                                </label>
+                            </div>
+
+                            <div class="col2">
+                                <h2 class="category">Verbs 💃</h2>
+                            </div>
+                            <div class="col2">
+                                <label class="switch" for="vocabVerbs">
+                                <input type="checkbox" class="vocab" id="vocabVerbs" onClick={handleSelectedVocab}/>
                                     <div class="slider round"></div>
                                 </label>
                             </div>  
