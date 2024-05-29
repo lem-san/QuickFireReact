@@ -1,0 +1,86 @@
+[
+    {
+        "id": "artsAndCraftsRoom",
+        "english": "Arts and Crafts Room",
+        "japanese": "図工室",
+        "image": "gs://illustrations_bucket/SchoolRooms/artsAndCraftsRoom.png"
+    },
+    {
+        "id": "classroom",
+        "english": "Classroom",
+        "japanese": "教室",
+        "image": "gs://illustrations_bucket/SchoolRooms/classroom.png"
+    },
+    {
+        "id": "computerRoom",
+        "english": "Computer Room",
+        "japanese": "コンピュータ室",
+        "image": "gs://illustrations_bucket/SchoolRooms/computerRoom.png"
+    },
+    {
+        "id": "cookingRoom",
+        "english": "Cooking Room",
+        "japanese": "料理室",
+        "image": "gs://illustrations_bucket/SchoolRooms/cookingRoom.png"
+    },
+    {
+        "id": "elementarySchool",
+        "english": "Elementary School",
+        "japanese": "小学校",
+        "image": "gs://illustrations_bucket/SchoolRooms/elementarySchool.png"
+    },
+    {
+        "id": "entrance",
+        "english": "Entrance",
+        "japanese": "入口",
+        "image": "gs://illustrations_bucket/SchoolRooms/entrance.png"
+    },
+    {
+        "id": "gym",
+        "english": "Gym",
+        "japanese": "体育館",
+        "image": "gs://illustrations_bucket/SchoolRooms/gym.png"
+    },
+    {
+        "id": "library",
+        "english": "Library",
+        "japanese": "図書館",
+        "image": "gs://illustrations_bucket/SchoolRooms/library.png"
+    },
+    {
+        "id": "lunchRoom",
+        "english": "Lunch Room",
+        "japanese": "ランチルーム",
+        "image": "gs://illustrations_bucket/SchoolRooms/lunchRoom.png"
+    },
+    {
+        "id": "musicRoom",
+        "english": "Music Room",
+        "japanese": "音楽室",
+        "image": "gs://illustrations_bucket/SchoolRooms/musicRoom.png"
+    },
+    {
+        "id": "playground",
+        "english": "Playground",
+        "japanese": "運動場",
+        "image": "gs://illustrations_bucket/SchoolRooms/playground.png"
+    },
+    {
+        "id": "schoolNursesOffice",
+        "english": "School Nurse's Office",
+        "japanese": "保健室",
+        "image": "gs://illustrations_bucket/SchoolRooms/schoolNursesOffice.png"
+    },
+    {
+        "id": "schoolPrincipalsOffice",
+        "english": "School Principal's Office",
+        "japanese": "校長室",
+        "image": "gs://illustrations_bucket/SchoolRooms/schoolPrincipalsOffice.png"
+    },
+    {
+        "id": "scienceRoom",
+        "english": "Science Room",
+        "japanese": "理科室",
+        "image": "gs://illustrations_bucket/SchoolRooms/scienceRoom.png"
+    }
+]

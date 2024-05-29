@@ -1,0 +1,140 @@
+[
+    {
+        "id": "boardGames",
+        "english": "board games",
+        "japanese": "ボードゲーム",
+        "image": "gs://illustrations_bucket/HobbiesActivities/boardGames.png"
+    },
+    {
+        "id": "camping",
+        "english": "camping",
+        "japanese": "キャンプ",
+        "image": "gs://illustrations_bucket/HobbiesActivities/camping.png"
+    },
+    {
+        "id": "cards",
+        "english": "cards",
+        "japanese": "カードゲーム",
+        "image": "gs://illustrations_bucket/HobbiesActivities/cards.png"
+    },
+    {
+        "id": "dancing",
+        "english": "dancing",
+        "japanese": "ダンス",
+        "image": "gs://illustrations_bucket/HobbiesActivities/dancing.png"
+    },
+    {
+        "id": "fishing",
+        "english": "fishing",
+        "japanese": "釣り",
+        "image": "gs://illustrations_bucket/HobbiesActivities/fishing.png"
+    },
+    {
+        "id": "frisbee",
+        "english": "frisbee",
+        "japanese": "フリスビー",
+        "image": "gs://illustrations_bucket/HobbiesActivities/frisbee.png"
+    },
+    {
+        "id": "hiking",
+        "english": "hiking",
+        "japanese": "ハイキング",
+        "image": "gs://illustrations_bucket/HobbiesActivities/hiking.png"
+    },
+    {
+        "id": "jumpRope",
+        "english": "jump rope",
+        "japanese": "縄跳び",
+        "image": "gs://illustrations_bucket/HobbiesActivities/jumpRope.png"
+    },
+    {
+        "id": "karuta",
+        "english": "karuta",
+        "japanese": "かるた",
+        "image": "gs://illustrations_bucket/HobbiesActivities/karuta.png"
+    },
+    {
+        "id": "kendama",
+        "english": "kendama",
+        "japanese": "けん玉",
+        "image": "gs://illustrations_bucket/HobbiesActivities/kendama.png"
+    },
+    {
+        "id": "lego",
+        "english": "Lego",
+        "japanese": "レゴ",
+        "image": "gs://illustrations_bucket/HobbiesActivities/lego.png"
+    },
+    {
+        "id": "manga",
+        "english": "manga",
+        "japanese": "漫画",
+        "image": "gs://illustrations_bucket/HobbiesActivities/manga.png"
+    },
+    {
+        "id": "movies",
+        "english": "movies",
+        "japanese": "映画",
+        "image": "gs://illustrations_bucket/HobbiesActivities/movies.png"
+    },
+    {
+        "id": "origami",
+        "english": "origami",
+        "japanese": "折り紙",
+        "image": "gs://illustrations_bucket/HobbiesActivities/origami.png"
+    },
+    {
+        "id": "puzzle",
+        "english": "puzzle",
+        "japanese": "パズル",
+        "image": "gs://illustrations_bucket/HobbiesActivities/puzzle.png"
+    },
+    {
+        "id": "reading",
+        "english": "reading",
+        "japanese": "読書",
+        "image": "gs://illustrations_bucket/HobbiesActivities/reading.png"
+    },
+    {
+        "id": "shopping",
+        "english": "shopping",
+        "japanese": "買い物",
+        "image": "gs://illustrations_bucket/HobbiesActivities/shopping.png"
+    },
+    {
+        "id": "study",
+        "english": "study",
+        "japanese": "勉強",
+        "image": "gs://illustrations_bucket/HobbiesActivities/study.png"
+    },
+    {
+        "id": "tag",
+        "english": "tag",
+        "japanese": "鬼ごっこ",
+        "image": "gs://illustrations_bucket/HobbiesActivities/tag.png"
+    },
+    {
+        "id": "topSpinning",
+        "english": "top spinning",
+        "japanese": "コマ回し",
+        "image": "gs://illustrations_bucket/HobbiesActivities/topSpinning.png"
+    },
+    {
+        "id": "videoGames",
+        "english": "video games",
+        "japanese": "テレビゲーム",
+        "image": "gs://illustrations_bucket/HobbiesActivities/videoGames.png"
+    },
+    {
+        "id": "watchingTV",
+        "english": "watching TV",
+        "japanese": "テレビを見る",
+        "image": "gs://illustrations_bucket/HobbiesActivities/watchingTV.png"
+    },
+    {
+        "id": "Youtube",
+        "english": "YouTube",
+        "japanese": "ユーチューブ",
+        "image": "gs://illustrations_bucket/HobbiesActivities/Youtube.png"
+    }
+]

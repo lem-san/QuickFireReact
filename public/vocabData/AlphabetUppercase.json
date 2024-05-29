@@ -1,0 +1,158 @@
+[
+    {
+        "id": "A",
+        "english": "A",
+        "japanese": "エー",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/A.png"
+    },
+    {
+        "id": "B",
+        "english": "B",
+        "japanese": "ビー",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/B.png"
+    },
+    {
+        "id": "C",
+        "english": "C",
+        "japanese": "シー",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/C.png"
+    },
+    {
+        "id": "D",
+        "english": "D",
+        "japanese": "ディー",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/D.png"
+    },
+    {
+        "id": "E",
+        "english": "E",
+        "japanese": "イー",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/E.png"
+    },
+    {
+        "id": "F",
+        "english": "F",
+        "japanese": "エフ",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/F.png"
+    },
+    {
+        "id": "G",
+        "english": "G",
+        "japanese": "ジー",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/G.png"
+    },
+    {
+        "id": "H",
+        "english": "H",
+        "japanese": "エイチ",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/H.png"
+    },
+    {
+        "id": "I",
+        "english": "I",
+        "japanese": "アイ",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/I.png"
+    },
+    {
+        "id": "J",
+        "english": "J",
+        "japanese": "ジェイ",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/J.png"
+    },
+    {
+        "id": "K",
+        "english": "K",
+        "japanese": "ケイ",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/K.png"
+    },
+    {
+        "id": "L",
+        "english": "L",
+        "japanese": "エル",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/L.png"
+    },
+    {
+        "id": "M",
+        "english": "M",
+        "japanese": "エム",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/M.png"
+    },
+    {
+        "id": "N",
+        "english": "N",
+        "japanese": "エヌ",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/N.png"
+    },
+    {
+        "id": "O",
+        "english": "O",
+        "japanese": "オー",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/O.png"
+    },
+    {
+        "id": "P",
+        "english": "P",
+        "japanese": "ピー",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/P.png"
+    },
+    {
+        "id": "Q",
+        "english": "Q",
+        "japanese": "キュー",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/Q.png"
+    },
+    {
+        "id": "R",
+        "english": "R",
+        "japanese": "アール",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/R.png"
+    },
+    {
+        "id": "S",
+        "english": "S",
+        "japanese": "エス",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/S.png"
+    },
+    {
+        "id": "T",
+        "english": "T",
+        "japanese": "ティー",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/T.png"
+    },
+    {
+        "id": "U",
+        "english": "U",
+        "japanese": "ユー",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/U.png"
+    },
+    {
+        "id": "V",
+        "english": "V",
+        "japanese": "ヴィー",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/V.png"
+    },
+    {
+        "id": "W",
+        "english": "W",
+        "japanese": "ダブリュー",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/W.png"
+    },
+    {
+        "id": "X",
+        "english": "X",
+        "japanese": "エックス",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/X.png"
+    },
+    {
+        "id": "Y",
+        "english": "Y",
+        "japanese": "ワイ",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/Y.png"
+    },
+    {
+        "id": "Z",
+        "english": "Z",
+        "japanese": "ゼット",
+        "image": "gs://illustrations_bucket/AlphabetUppercase/Z.png"
+    }
+]

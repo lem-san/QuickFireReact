@@ -1,0 +1,140 @@
+[
+    {
+        "id": "popular",
+        "english": "popular",
+        "japanese": "人気のある",
+        "image": "gs://illustrations_bucket/Adjectives/popular.png"
+    },
+    {
+        "id": "cool",
+        "english": "cool",
+        "japanese": "かっこいい",
+        "image": "gs://illustrations_bucket/Adjectives/cool.png"
+    },
+    {
+        "id": "smart",
+        "english": "smart",
+        "japanese": "賢い",
+        "image": "gs://illustrations_bucket/Adjectives/smart.png"
+    },
+    {
+        "id": "shy",
+        "english": "shy",
+        "japanese": "恥ずかしがり屋",
+        "image": "gs://illustrations_bucket/Adjectives/shy.png"
+    },
+    {
+        "id": "gentle",
+        "english": "gentle",
+        "japanese": "優しい",
+        "image": "gs://illustrations_bucket/Adjectives/gentle.png"
+    },
+    {
+        "id": "kind",
+        "english": "kind",
+        "japanese": "親切な",
+        "image": "gs://illustrations_bucket/Adjectives/kind.png"
+    },
+    {
+        "id": "friendly",
+        "english": "friendly",
+        "japanese": "友好的な",
+        "image": "gs://illustrations_bucket/Adjectives/friendly.png"
+    },
+    {
+        "id": "active",
+        "english": "active",
+        "japanese": "活動的な",
+        "image": "gs://illustrations_bucket/Adjectives/active.png"
+    },
+    {
+        "id": "funny",
+        "english": "funny",
+        "japanese": "面白い",
+        "image": "gs://illustrations_bucket/Adjectives/funny.png"
+    },
+    {
+        "id": "strong",
+        "english": "strong",
+        "japanese": "強い",
+        "image": "gs://illustrations_bucket/Adjectives/strong.png"
+    },
+    {
+        "id": "brave",
+        "english": "brave",
+        "japanese": "勇敢な",
+        "image": "gs://illustrations_bucket/Adjectives/brave.png"
+    },
+    {
+        "id": "light",
+        "english": "light",
+        "japanese": "軽い",
+        "image": "gs://illustrations_bucket/Adjectives/light.png"
+    },
+    {
+        "id": "heavy",
+        "english": "heavy",
+        "japanese": "重い",
+        "image": "gs://illustrations_bucket/Adjectives/heavy.png"
+    },
+    {
+        "id": "soft",
+        "english": "soft",
+        "japanese": "柔らかい",
+        "image": "gs://illustrations_bucket/Adjectives/soft.png"
+    },
+    {
+        "id": "hard",
+        "english": "hard",
+        "japanese": "硬い",
+        "image": "gs://illustrations_bucket/Adjectives/hard.png"
+    },
+    {
+        "id": "hot",
+        "english": "hot",
+        "japanese": "暑い",
+        "image": "gs://illustrations_bucket/Adjectives/hot.png"
+    },
+    {
+        "id": "cold",
+        "english": "cold",
+        "japanese": "寒い",
+        "image": "gs://illustrations_bucket/Adjectives/cold.png"
+    },
+    {
+        "id": "shortHeight",
+        "english": "short (height)",
+        "japanese": "背が低い",
+        "image": "gs://illustrations_bucket/Adjectives/shortHeight.png"
+    },
+    {
+        "id": "tallHeight",
+        "english": "tall (height)",
+        "japanese": "背が高い",
+        "image": "gs://illustrations_bucket/Adjectives/tallHeight.png"
+    },
+    {
+        "id": "short",
+        "english": "short",
+        "japanese": "短い",
+        "image": "gs://illustrations_bucket/Adjectives/short.png"
+    },
+    {
+        "id": "long",
+        "english": "long",
+        "japanese": "長い",
+        "image": "gs://illustrations_bucket/Adjectives/long.png"
+    },
+    {
+        "id": "big",
+        "english": "big",
+        "japanese": "大きい",
+        "image": "gs://illustrations_bucket/Adjectives/big.png"
+    },
+    {
+        "id": "small",
+        "english": "small",
+        "japanese": "小さい",
+        "image": "gs://illustrations_bucket/Adjectives/small.png"
+    }
+]

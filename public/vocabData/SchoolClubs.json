@@ -1,0 +1,134 @@
+[
+    {
+        "id": "scienceClub",
+        "english": "Science Club",
+        "japanese": "科学クラブ",
+        "image": "gs://illustrations_bucket/SchoolClubs/scienceClub.png"
+    },
+    {
+        "id": "EnglishClub",
+        "english": "English Club",
+        "japanese": "英語クラブ",
+        "image": "gs://illustrations_bucket/SchoolClubs/EnglishClub.png"
+    },
+    {
+        "id": "computerClub",
+        "english": "Computer Club",
+        "japanese": "コンピュータクラブ",
+        "image": "gs://illustrations_bucket/SchoolClubs/computerClub.png"
+    },
+    {
+        "id": "gymnasticsTeam",
+        "english": "Gymnastics Team",
+        "japanese": "体操チーム",
+        "image": "gs://illustrations_bucket/SchoolClubs/gymnasticsTeam.png"
+    },
+    {
+        "id": "photographyClub",
+        "english": "Photography Club",
+        "japanese": "写真クラブ",
+        "image": "gs://illustrations_bucket/SchoolClubs/photographyClub.png"
+    },
+    {
+        "id": "newspaperClub",
+        "english": "Newspaper Club",
+        "japanese": "新聞クラブ",
+        "image": "gs://illustrations_bucket/SchoolClubs/newspaperClub.png"
+    },
+    {
+        "id": "broadcastingClub",
+        "english": "Broadcasting Club",
+        "japanese": "放送クラブ",
+        "image": "gs://illustrations_bucket/SchoolClubs/broadcastingClub.png"
+    },
+    {
+        "id": "chorus",
+        "english": "Chorus",
+        "japanese": "合唱",
+        "image": "gs://illustrations_bucket/SchoolClubs/chorus.png"
+    },
+    {
+        "id": "brassBand",
+        "english": "Brass Band",
+        "japanese": "吹奏楽団",
+        "image": "gs://illustrations_bucket/SchoolClubs/brassBand.png"
+    },
+    {
+        "id": "dramaClub",
+        "english": "Drama Club",
+        "japanese": "演劇クラブ",
+        "image": "gs://illustrations_bucket/SchoolClubs/dramaClub.png"
+    },
+    {
+        "id": "cookingClub",
+        "english": "Cooking Club",
+        "japanese": "料理クラブ",
+        "image": "gs://illustrations_bucket/SchoolClubs/cookingClub.png"
+    },
+    {
+        "id": "artClub",
+        "english": "Art Club",
+        "japanese": "美術クラブ",
+        "image": "gs://illustrations_bucket/SchoolClubs/artClub.png"
+    },
+    {
+        "id": "trackAndFieldTeam",
+        "english": "Track and Field Team",
+        "japanese": "陸上競技チーム",
+        "image": "gs://illustrations_bucket/SchoolClubs/trackAndFieldTeam.png"
+    },
+    {
+        "id": "danceTeam",
+        "english": "Dance Team",
+        "japanese": "ダンスチーム",
+        "image": "gs://illustrations_bucket/SchoolClubs/danceTeam.png"
+    },
+    {
+        "id": "badmintonTeam",
+        "english": "Badminton Team",
+        "japanese": "バドミントンチーム",
+        "image": "gs://illustrations_bucket/SchoolClubs/badmintonTeam.png"
+    },
+    {
+        "id": "tennisTeam",
+        "english": "Tennis Team",
+        "japanese": "テニスチーム",
+        "image": "gs://illustrations_bucket/SchoolClubs/tennisTeam.png"
+    },
+    {
+        "id": "tableTennisTeam",
+        "english": "Table Tennis Team",
+        "japanese": "卓球チーム",
+        "image": "gs://illustrations_bucket/SchoolClubs/tableTennisTeam.png"
+    },
+    {
+        "id": "soccerTeam",
+        "english": "Soccer Team",
+        "japanese": "サッカーチーム",
+        "image": "gs://illustrations_bucket/SchoolClubs/soccerTeam.png"
+    },
+    {
+        "id": "volleyballTeam",
+        "english": "Volleyball Team",
+        "japanese": "バレーボールチーム",
+        "image": "gs://illustrations_bucket/SchoolClubs/volleyballTeam.png"
+    },
+    {
+        "id": "basketballTeam",
+        "english": "Basketball Team",
+        "japanese": "バスケットボールチーム",
+        "image": "gs://illustrations_bucket/SchoolClubs/basketballTeam.png"
+    },
+    {
+        "id": "softballTeam",
+        "english": "Softball Team",
+        "japanese": "ソフトボールチーム",
+        "image": "gs://illustrations_bucket/SchoolClubs/softballTeam.png"
+    },
+    {
+        "id": "baseballTeam",
+        "english": "Baseball Team",
+        "japanese": "野球チーム",
+        "image": "gs://illustrations_bucket/SchoolClubs/baseballTeam.png"
+    }
+]

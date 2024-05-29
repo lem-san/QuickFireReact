@@ -1,0 +1,188 @@
+[
+    {
+        "id": "first",
+        "english": "first",
+        "japanese": "第一",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/first.png"
+    },
+    {
+        "id": "second",
+        "english": "second",
+        "japanese": "第二",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/second.png"
+    },
+    {
+        "id": "third",
+        "english": "third",
+        "japanese": "第三",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/third.png"
+    },
+    {
+        "id": "fourth",
+        "english": "fourth",
+        "japanese": "第四",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/fourth.png"
+    },
+    {
+        "id": "fifth",
+        "english": "fifth",
+        "japanese": "第五",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/fifth.png"
+    },
+    {
+        "id": "sixth",
+        "english": "sixth",
+        "japanese": "第六",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/sixth.png"
+    },
+    {
+        "id": "seventh",
+        "english": "seventh",
+        "japanese": "第七",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/seventh.png"
+    },
+    {
+        "id": "eighth",
+        "english": "eighth",
+        "japanese": "第八",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/eighth.png"
+    },
+    {
+        "id": "ninth",
+        "english": "ninth",
+        "japanese": "第九",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/ninth.png"
+    },
+    {
+        "id": "tenth",
+        "english": "tenth",
+        "japanese": "第十",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/tenth.png"
+    },
+    {
+        "id": "eleventh",
+        "english": "eleventh",
+        "japanese": "第十一",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/eleventh.png"
+    },
+    {
+        "id": "twelfth",
+        "english": "twelfth",
+        "japanese": "第十二",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/twelfth.png"
+    },
+    {
+        "id": "thirteenth",
+        "english": "thirteenth",
+        "japanese": "第十三",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/thirteenth.png"
+    },
+    {
+        "id": "fourteenth",
+        "english": "fourteenth",
+        "japanese": "第十四",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/fourteenth.png"
+    },
+    {
+        "id": "fifteenth",
+        "english": "fifteenth",
+        "japanese": "第十五",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/fifteenth.png"
+    },
+    {
+        "id": "sixteenth",
+        "english": "sixteenth",
+        "japanese": "第十六",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/sixteenth.png"
+    },
+    {
+        "id": "seventeenth",
+        "english": "seventeenth",
+        "japanese": "第十七",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/seventeenth.png"
+    },
+    {
+        "id": "eighteenth",
+        "english": "eighteenth",
+        "japanese": "第十八",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/eighteenth.png"
+    },
+    {
+        "id": "nineteenth",
+        "english": "nineteenth",
+        "japanese": "第十九",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/nineteenth.png"
+    },
+    {
+        "id": "twentieth",
+        "english": "twentieth",
+        "japanese": "第二十",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/twentieth.png"
+    },
+    {
+        "id": "twentyFirst",
+        "english": "twenty-first",
+        "japanese": "第二十一",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/twentyFirst.png"
+    },
+    {
+        "id": "twentySecond",
+        "english": "twenty-second",
+        "japanese": "第二十二",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/twentySecond.png"
+    },
+    {
+        "id": "twentyThird",
+        "english": "twenty-third",
+        "japanese": "第二十三",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/twentyThird.png"
+    },
+    {
+        "id": "twentyFourth",
+        "english": "twenty-fourth",
+        "japanese": "第二十四",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/twentyFourth.png"
+    },
+    {
+        "id": "twentyFifth",
+        "english": "twenty-fifth",
+        "japanese": "第二十五",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/twentyFifth.png"
+    },
+    {
+        "id": "twentySixth",
+        "english": "twenty-sixth",
+        "japanese": "第二十六",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/twentySixth.png"
+    },
+    {
+        "id": "twentySeventh",
+        "english": "twenty-seventh",
+        "japanese": "第二十七",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/twentySeventh.png"
+    },
+    {
+        "id": "twentyEighth",
+        "english": "twenty-eighth",
+        "japanese": "第二十八",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/twentyEighth.png"
+    },
+    {
+        "id": "twentyNinth",
+        "english": "twenty-ninth",
+        "japanese": "第二十九",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/twentyNinth.png"
+    },
+    {
+        "id": "thirtieth",
+        "english": "thirtieth",
+        "japanese": "第三十",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/thirtieth.png"
+    },
+    {
+        "id": "thirtyFirst",
+        "english": "thirty-first",
+        "japanese": "第三十一",
+        "image": "gs://illustrations_bucket/OrdinalNumbers/thirtyFirst.png"
+    }
+]

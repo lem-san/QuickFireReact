@@ -10,11 +10,15 @@ const cdTheme = new Audio(countdownTheme)
 const congrats = new Audio(congratsJingle)
 
 export const playClick = () => {
-  new Audio(click).play();
+  const pclick = new Audio(click)
+  pclick.volume = 0.1
+  pclick.play()
   };
 
 export const playToggleClick = () => {
-  new Audio(toggleClick).play()
+  const toggle = new Audio(toggleClick)
+  toggle.volume = 0.2
+  toggle.play()
 }
 
 export const playCorrectPing = () => {

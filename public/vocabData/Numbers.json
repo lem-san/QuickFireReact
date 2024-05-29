@@ -1,0 +1,122 @@
+[
+    {
+        "id": "one",
+        "english": "one",
+        "japanese": "一",
+        "image": "gs://illustrations_bucket/Numbers/one.png"
+    },
+    {
+        "id": "two",
+        "english": "two",
+        "japanese": "二",
+        "image": "gs://illustrations_bucket/Numbers/two.png"
+    },
+    {
+        "id": "three",
+        "english": "three",
+        "japanese": "三",
+        "image": "gs://illustrations_bucket/Numbers/three.png"
+    },
+    {
+        "id": "four",
+        "english": "four",
+        "japanese": "四",
+        "image": "gs://illustrations_bucket/Numbers/four.png"
+    },
+    {
+        "id": "five",
+        "english": "five",
+        "japanese": "五",
+        "image": "gs://illustrations_bucket/Numbers/five.png"
+    },
+    {
+        "id": "six",
+        "english": "six",
+        "japanese": "六",
+        "image": "gs://illustrations_bucket/Numbers/six.png"
+    },
+    {
+        "id": "seven",
+        "english": "seven",
+        "japanese": "七",
+        "image": "gs://illustrations_bucket/Numbers/seven.png"
+    },
+    {
+        "id": "eight",
+        "english": "eight",
+        "japanese": "八",
+        "image": "gs://illustrations_bucket/Numbers/eight.png"
+    },
+    {
+        "id": "nine",
+        "english": "nine",
+        "japanese": "九",
+        "image": "gs://illustrations_bucket/Numbers/nine.png"
+    },
+    {
+        "id": "ten",
+        "english": "ten",
+        "japanese": "十",
+        "image": "gs://illustrations_bucket/Numbers/ten.png"
+    },
+    {
+        "id": "eleven",
+        "english": "eleven",
+        "japanese": "十一",
+        "image": "gs://illustrations_bucket/Numbers/eleven.png"
+    },
+    {
+        "id": "twelve",
+        "english": "twelve",
+        "japanese": "十二",
+        "image": "gs://illustrations_bucket/Numbers/twelve.png"
+    },
+    {
+        "id": "thirteen",
+        "english": "thirteen",
+        "japanese": "十三",
+        "image": "gs://illustrations_bucket/Numbers/thirteen.png"
+    },
+    {
+        "id": "fourteen",
+        "english": "fourteen",
+        "japanese": "十四",
+        "image": "gs://illustrations_bucket/Numbers/fourteen.png"
+    },
+    {
+        "id": "fifteen",
+        "english": "fifteen",
+        "japanese": "十五",
+        "image": "gs://illustrations_bucket/Numbers/fifteen.png"
+    },
+    {
+        "id": "sixteen",
+        "english": "sixteen",
+        "japanese": "十六",
+        "image": "gs://illustrations_bucket/Numbers/sixteen.png"
+    },
+    {
+        "id": "seventeen",
+        "english": "seventeen",
+        "japanese": "十七",
+        "image": "gs://illustrations_bucket/Numbers/seventeen.png"
+    },
+    {
+        "id": "eighteen",
+        "english": "eighteen",
+        "japanese": "十八",
+        "image": "gs://illustrations_bucket/Numbers/eighteen.png"
+    },
+    {
+        "id": "nineteen",
+        "english": "nineteen",
+        "japanese": "十九",
+        "image": "gs://illustrations_bucket/Numbers/nineteen.png"
+    },
+    {
+        "id": "twenty",
+        "english": "twenty",
+        "japanese": "二十",
+        "image": "gs://illustrations_bucket/Numbers/twenty.png"
+    }
+]

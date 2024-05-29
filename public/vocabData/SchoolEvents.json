@@ -1,0 +1,110 @@
+[
+    {
+        "id": "entranceCeremony",
+        "english": "entrance ceremony",
+        "japanese": "入学式",
+        "image": "gs://illustrations_bucket/SchoolEvents/entranceCeremony.png"
+    },
+    {
+        "id": "schoolFestival",
+        "english": "school festival",
+        "japanese": "学校祭",
+        "image": "gs://illustrations_bucket/SchoolEvents/schoolFestival.png"
+    },
+    {
+        "id": "swimmingMeet",
+        "english": "swimming meet",
+        "japanese": "水泳大会",
+        "image": "gs://illustrations_bucket/SchoolEvents/swimmingMeet.png"
+    },
+    {
+        "id": "volunteerDay",
+        "english": "volunteer day",
+        "japanese": "ボランティアの日",
+        "image": "gs://illustrations_bucket/SchoolEvents/volunteerDay.png"
+    },
+    {
+        "id": "fireDrill",
+        "english": "fire drill",
+        "japanese": "防火訓練",
+        "image": "gs://illustrations_bucket/SchoolEvents/fireDrill.png"
+    },
+    {
+        "id": "fieldTrip",
+        "english": "field trip",
+        "japanese": "遠足",
+        "image": "gs://illustrations_bucket/SchoolEvents/fieldTrip.png"
+    },
+    {
+        "id": "graduationCeremony",
+        "english": "graduation ceremony",
+        "japanese": "卒業式",
+        "image": "gs://illustrations_bucket/SchoolEvents/graduationCeremony.png"
+    },
+    {
+        "id": "skiTournament",
+        "english": "ski tournament",
+        "japanese": "スキー大会",
+        "image": "gs://illustrations_bucket/SchoolEvents/skiTournament.png"
+    },
+    {
+        "id": "skiTrip",
+        "english": "ski trip",
+        "japanese": "スキー旅行",
+        "image": "gs://illustrations_bucket/SchoolEvents/skiTrip.png"
+    },
+    {
+        "id": "sportsDay",
+        "english": "sports day",
+        "japanese": "運動会",
+        "image": "gs://illustrations_bucket/SchoolEvents/sportsDay.png"
+    },
+    {
+        "id": "musicFestival",
+        "english": "music festival",
+        "japanese": "音楽祭",
+        "image": "gs://illustrations_bucket/SchoolEvents/musicFestival.png"
+    },
+    {
+        "id": "schoolTrip",
+        "english": "school trip",
+        "japanese": "修学旅行",
+        "image": "gs://illustrations_bucket/SchoolEvents/schoolTrip.png"
+    },
+    {
+        "id": "raftingTrip",
+        "english": "rafting trip",
+        "japanese": "ラフティング旅行",
+        "image": "gs://illustrations_bucket/SchoolEvents/raftingTrip.png"
+    },
+    {
+        "id": "SweetPotatoFestival",
+        "english": "sweet potato festival",
+        "japanese": "芋祭り",
+        "image": "gs://illustrations_bucket/SchoolEvents/SweetPotatoFestival.png"
+    },
+    {
+        "id": "seaTrip",
+        "english": "sea trip",
+        "japanese": "海の旅行",
+        "image": "gs://illustrations_bucket/SchoolEvents/seaTrip.png"
+    },
+    {
+        "id": "riceFarming",
+        "english": "rice farming",
+        "japanese": "稲作",
+        "image": "gs://illustrations_bucket/SchoolEvents/riceFarming.png"
+    },
+    {
+        "id": "artContest",
+        "english": "art contest",
+        "japanese": "美術コンクール",
+        "image": "gs://illustrations_bucket/SchoolEvents/artContest.png"
+    },
+    {
+        "id": "marathon",
+        "english": "marathon",
+        "japanese": "マラソン",
+        "image": "gs://illustrations_bucket/SchoolEvents/marathon.png"
+    }
+]
