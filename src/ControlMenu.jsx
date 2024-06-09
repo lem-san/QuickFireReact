@@ -69,6 +69,9 @@ export const handleControls = (controlId, onSelectOption) => {
             case "btnOneMore":
                 stopSounds();
                 return onSelectOption('GameScreen');
+            case "btnReview":
+                stopSounds();
+                return onSelectOption('ReviewScreen');
             default:
                 break;
         }
@@ -90,6 +93,8 @@ export const handleControls = (controlId, onSelectOption) => {
             return <button id="btnFullscreen" onClick={() => handleClick('btnFullscreen')}><img class="icon" src={fullscreen} /></button>;
         case "btnNext": 
             return <button id="btnNext" onClick={() => handleClick('btnNext')}><img class="icon" src={nextIcon} /></button>;
+        case "btnReview":
+            return <button id="btnReview" onClick={() => handleClick('btnReview')}></button>
         default:
             break;
     }

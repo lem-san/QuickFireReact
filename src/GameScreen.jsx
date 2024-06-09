@@ -7,7 +7,7 @@ import confetti from 'https://cdn.skypack.dev/canvas-confetti';
 import { playCorrectPing, playIncorrectPing, playCountdownTheme, stopSounds } from './Sounds';
 import clock from './assets/countdownClock.png';
 
-const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, questionType }) => {
+const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, questionType}) => {
     const [vocab, setVocab] = useState(null);
     const [scoreCounter, setScoreCounter] = useState(0);
     const [timerDuration, setTimerDuration] = useState(timeLimit);
@@ -144,15 +144,21 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, que
                 break;
             case "btnIncorrect":
                 addToReview();
-                console.log(renderedVocab)
-
-                renderRandomVocab(vocab);
-                playIncorrectPing();
                 break;
             default:
                 break;
         }
     };
+    
+    const addToReview = () => {
+        setReviewVocab(prevReviewVocab => {
+            const newReviewVocab = [...prevReviewVocab, renderedVocab];
+            renderRandomVocab(vocab);
+            playIncorrectPing();
+            return newReviewVocab;
+        });
+    };
+    
 
     const handleKeyDown = useCallback(
         (event) => {
@@ -171,10 +177,6 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, que
           document.removeEventListener('keydown', handleKeyDown);
         };
       }, [handleKeyDown]);
-
-    const addToReview = () => {
-        setReviewVocab(prevReviewVocab => [...prevReviewVocab, renderedVocab]);
-    };
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -204,11 +206,15 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, que
     };
 
     const handleTimerFinish = () => {
-        onGameFinish(scoreCounterRef.current);
-        stopSounds()
-        onSelectOption('ScoreScreen', checkedVocab, scoreCounterRef.current, timeLimit, questionType);
+        setReviewVocab(prevReviewVocab => {
+            const newReviewVocab = [...prevReviewVocab];
+            onGameFinish(scoreCounterRef.current, newReviewVocab);
+            stopSounds();
+            onSelectOption('ScoreScreen', checkedVocab, scoreCounterRef.current, timeLimit, questionType, newReviewVocab);
+            return newReviewVocab;
+        });
     };
-
+    
     return (
         <>
             <div id="countdown">

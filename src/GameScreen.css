@@ -24,7 +24,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 6%;
 }
 
 #answerBtns {
@@ -32,6 +31,8 @@
     flex-direction: row;
     align-self: center;
     gap: 450px;
+    padding-bottom: 6%;
+
 }
 
 #answerBtns button {

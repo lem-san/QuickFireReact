@@ -1,0 +1,25 @@
+#review {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25%;
+    position: fixed;
+}
+
+.reviewBtns {
+    background: none;        /* No background */
+    border: none;            /* No border */
+    color: #000;             /* Set text color */
+    padding: 10px 20px;      /* Add some padding for better appearance */
+    cursor: pointer;         /* Change cursor to pointer */
+    outline: none;           /* Remove default focus outline */
+    border-radius: none;
+    box-shadow: none;
+    transition-duration: none;
+}
+
+#reviewLogo {
+    width: 50em;
+    padding: 10px 20px;
+}
