@@ -77,13 +77,13 @@ button {
     box-shadow: none;
 }
 
-#btnRanked {
+#btnTeam {
     border-radius: 20px;
     border: 7px solid #5980FF;
     background: #BDE6FF;
 }
 
-#btnRanked:hover {
+#btnTeam:hover {
     border: 7px solid #BDE6FF;
     background: #5980FF;
     text-shadow: none;

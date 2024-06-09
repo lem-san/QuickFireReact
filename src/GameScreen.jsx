@@ -112,7 +112,7 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, que
             };
     
             const renderedItem = renderRandomItem();
-            setRenderedVocab(renderedItem);
+            setRenderedVocab({...randomVocab, renderedItem});
 
             if (shouldRepeat) {
                 const newVocabArray = [
@@ -224,7 +224,7 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, que
             <div className="game">
                 {vocab && (
                     <div id="quizItem">
-                        {renderedVocab}
+                        {renderedVocab?.renderedItem}
                     </div>
                 )}
                 <div id="answerBtns">

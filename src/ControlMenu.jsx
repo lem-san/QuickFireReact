@@ -9,6 +9,7 @@ import returnIcon from './assets/returnIcon.png'
 import oneMoreTime from './assets/oneMoreTime.png'
 import fullscreen from './assets/fullscreen.png'
 import nextIcon from './assets/nextIcon.png'
+import reviewIcon from './assets/reviewIcon.png'
 import './ControlMenu.css'
 
 const ControlMenu = () => {
@@ -94,7 +95,7 @@ export const handleControls = (controlId, onSelectOption) => {
         case "btnNext": 
             return <button id="btnNext" onClick={() => handleClick('btnNext')}><img class="icon" src={nextIcon} /></button>;
         case "btnReview":
-            return <button id="btnReview" onClick={() => handleClick('btnReview')}></button>
+            return <button id="btnReview" onClick={() => handleClick('btnReview')}><img className='icon' src={reviewIcon} /></button>
         default:
             break;
     }

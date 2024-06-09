@@ -11,7 +11,7 @@ const MainMenu = ({onSelectOption}) => {
         switch (buttonId) {
             case "btnNormal":
                 return onSelectOption('NormalMode');
-            case "btnRanked":
+            case "btnTeam":
             case "btnLeaderboards":
             case "btnSettings":
             default: break;
@@ -26,7 +26,7 @@ const MainMenu = ({onSelectOption}) => {
                     <img id="logo" src={logo}/>
                     <div id="btnMenu">
                         <button id="btnNormal" onClick={() => handleClick('btnNormal')}>Normal</button>
-                        <button id="btnRanked" onClick={() => handleClick('btnRanked')}>Ranked</button>
+                        <button id="btnTeam" onClick={() => handleClick('btnTeam')}>Team Battle</button>
                         <button id="btnLeaderboards" onClick={playClick}>Leaderboards</button>
                         <button id="btnSettings" onClick={playClick}>Settings</button>
                     </div>

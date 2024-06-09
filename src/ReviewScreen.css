@@ -1,4 +1,22 @@
-#review {
+#reviewLogo {
+    width: 45em;
+    padding: 10px 20px;
+}
+
+#reviewItems {
+    width: 800px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#reviewItems img{
+    object-fit: contain;
+    min-height: 80%;
+}
+
+#reviewBtnsDiv {
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -19,7 +37,27 @@
     transition-duration: none;
 }
 
-#reviewLogo {
-    width: 50em;
-    padding: 10px 20px;
+.reviewText {
+    font-family: UDDigiKyokasho;
+    font-size: 5vw;
+    font-weight: 700;
+    color: #FFF;
+    text-shadow:
+    3px 3px 0 #000,
+    -3px 3px 0 #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 3s; 
+    white-space: nowrap;
+}
+
+.hidden {
+    visibility: hidden;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }

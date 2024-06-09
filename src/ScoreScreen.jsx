@@ -55,7 +55,7 @@ const ScoreScreen = ({onSelectOption, checkedVocab, score, timeLimit, questionTy
 
     //TODO:    
       const handleReviewButton = () => {
-        onSelectOption('ReviewScreen', reviewVocab);
+        onSelectOption('ReviewScreen', [], score, timeLimit, questionType, reviewVocab);
       };
 
     return (

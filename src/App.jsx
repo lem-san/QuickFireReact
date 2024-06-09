@@ -30,10 +30,6 @@ function App() {
       setTimerFinished(false);
       setGameScreenVisible(true);
     }
-  
-    if (option === 'ReviewScreen') {
-      console.log("Navigating to ReviewScreen with reviewVocab:", reviewVocab);
-    }
   }
 
   function handleGameFinish(score, reviewVocab) {

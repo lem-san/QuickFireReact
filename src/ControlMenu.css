@@ -77,3 +77,16 @@
     box-shadow: none;
 }
 
+#btnReview {
+    border-radius: 20px;
+    border: 7px solid #500085;
+    background: #b270fd;
+    padding: 15px 20px;
+}
+
+#btnReview:hover {
+    border: 7px solid #b270fd;
+    background: #500085;
+    box-shadow: none;
+}
+
