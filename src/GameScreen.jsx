@@ -159,13 +159,12 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, que
         });
     };
     
-
     const handleKeyDown = useCallback(
         (event) => {
           if (event.key === 'ArrowLeft') {
-            handleClick('btnCorrect');
+            handleClick('btnCorrect' || 'btnPrevious');
           } else if (event.key === 'ArrowRight') {
-            handleClick('btnIncorrect');
+            handleClick('btnIncorrect' || 'btnNext');
           }
         },
         [handleClick]
@@ -237,7 +236,7 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, que
                 </div>
             </div>
             <div className="controls">
-                {handleControls("btnReturn", onSelectOption)}
+                {handleControls("btnMainMenu", onSelectOption)}
             </div>
         </>
     );

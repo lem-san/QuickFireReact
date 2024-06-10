@@ -480,7 +480,7 @@ const OptionsMenu = ({onSelectOption}) => {
                     </div>
             </div>
             <div class="controls">
-                {handleControls('btnReturn', onSelectOption)}
+                {handleControls('btnMainMenu', onSelectOption)}
                 {handleControls('btnFullscreen')}
                 {handleControls('btnNext', handleNextButton)}
             </div>

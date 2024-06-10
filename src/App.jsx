@@ -70,7 +70,16 @@ function App() {
           />
         );
       case 'ReviewScreen':
-        return <ReviewScreen onSelectOption={handleOptionSelect} reviewVocab={reviewVocab} />;
+        return (
+          <ReviewScreen
+            onSelectOption={handleOptionSelect}
+            checkedVocab={checkedVocab}
+            score={gameScore}
+            timeLimit={gameTimeLimit}
+            questionType={questionType}
+            reviewVocab={reviewVocab}
+          />
+        );
       default:
         return <MainMenu onSelectOption={handleOptionSelect} />;
     }

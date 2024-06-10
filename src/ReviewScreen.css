@@ -39,7 +39,7 @@
 
 .reviewText {
     font-family: UDDigiKyokasho;
-    font-size: 5vw;
+    font-size: 7vw;
     font-weight: 700;
     color: #FFF;
     text-shadow:
@@ -49,7 +49,7 @@
     3px -3px 0 #000;
     display: flex;
     justify-content: center;
-    animation: fadeIn 3s; 
+    /* animation: fadeIn 3s;  */
     white-space: nowrap;
 }
 

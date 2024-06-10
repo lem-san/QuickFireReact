@@ -50,13 +50,12 @@ const ScoreScreen = ({onSelectOption, checkedVocab, score, timeLimit, questionTy
     }, []);
 
     const handleOneMoreButton = () => {
-        onSelectOption('GameScreen', checkedVocab, 0, timeLimit, questionType)
+      onSelectOption('GameScreen', checkedVocab, 0, timeLimit, questionType)
     }
 
-    //TODO:    
-      const handleReviewButton = () => {
-        onSelectOption('ReviewScreen', [], score, timeLimit, questionType, reviewVocab);
-      };
+    const handleReviewButton = () => {
+      onSelectOption('ReviewScreen', checkedVocab, score, timeLimit, questionType, reviewVocab);
+    };
 
     return (
         <div id="mainView">
@@ -70,7 +69,7 @@ const ScoreScreen = ({onSelectOption, checkedVocab, score, timeLimit, questionTy
             {count}
           </h1>
           <div className="controls">
-            {handleControls("btnReturn", onSelectOption)}
+            {handleControls("btnMainMenu", onSelectOption)}
             {handleControls("btnOneMore", handleOneMoreButton)}
             {handleControls("btnReview", handleReviewButton)}
           </div>

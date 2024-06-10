@@ -20,7 +20,7 @@ const Info = ({onSelectOption}) => {
                     There will be future updates to include a 'solo-play' mode, allowing students to play without the need of teacher assistance. Stay tuned!</p>
             </div>
             <div class="controls">            
-                {handleControls('btnReturn', onSelectOption)}
+                {handleControls('btnMainMenu', onSelectOption)}
             </div>
         </>
     )

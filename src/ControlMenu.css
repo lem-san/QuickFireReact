@@ -24,16 +24,29 @@
     box-shadow: none;
 }
 
-#btnReturn {
+#btnMainMenu {
     border-radius: 20px;
     border: 7px solid #ffe600;
     background: #ffe785;
     padding: 15px 20px;
 }
 
-#btnReturn:hover {
+#btnMainMenu:hover {
     border: 7px solid #ffe785;
     background: #ffe600;
+    box-shadow: none;
+}
+
+#btnReturn {
+    border-radius: 20px;
+    border: 7px solid #a26201;
+    background: #d9a75b;
+    padding: 15px 20px;
+}
+
+#btnReturn:hover {
+    border: 7px solid #d9a75b;
+    background: #a26201;
     box-shadow: none;
 }
 

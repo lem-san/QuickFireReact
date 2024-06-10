@@ -5,6 +5,7 @@ import React, {useState} from 'react'
 import bgMusic from './assets/audio/bgMusic1.mp3'
 import {playClick} from './Sounds'
 import { stopSounds } from './Sounds'
+import mainMenuIcon from './assets/mainMenuIcon.png'
 import returnIcon from './assets/returnIcon.png'
 import oneMoreTime from './assets/oneMoreTime.png'
 import fullscreen from './assets/fullscreen.png'
@@ -59,6 +60,8 @@ export const handleControls = (controlId, onSelectOption) => {
         switch (buttonId) {
             case "btnInfo":
                 return onSelectOption('Info');
+            case "btnMainMenu":
+                return onSelectOption('MainMenu');  
             case "btnReturn":
                 stopSounds();
                 return onSelectOption('MainMenu');  
@@ -86,6 +89,8 @@ export const handleControls = (controlId, onSelectOption) => {
             </button>;
         case "btnInfo":
             return <button id="btnInfo" onClick={() => handleClick('btnInfo')}><img class="icon" src={info}/></button>;
+        case "btnMainMenu":
+            return <button id="btnMainMenu" onClick={() => handleClick('btnMainMenu')}><img class="icon" src={mainMenuIcon}/></button>;
         case "btnReturn":
             return <button id="btnReturn" onClick={() => handleClick('btnReturn')}><img class="icon" src={returnIcon}/></button>;
         case "btnOneMore":
