@@ -8,6 +8,7 @@ const OptionsMenu = ({onSelectOption}) => {
     const [checkedVocab, setCheckedVocab] = useState([])
     const [timeLimit, setTimeLimit] = useState(60) // Default time limit
     const [questionType, setQuestionType] = useState(['Image'])
+    const [vocab, setVocab] = useState(null);
 
     const handleSelectedVocab = (event) => {
         playToggleClick()
@@ -48,6 +49,7 @@ const OptionsMenu = ({onSelectOption}) => {
         } else {
             alert("Please select a category and question type!")
         }
+
     };
 
     return (

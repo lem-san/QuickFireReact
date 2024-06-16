@@ -49,7 +49,7 @@ function App() {
       case 'MainMenu':
         return <MainMenu onSelectOption={handleOptionSelect} />;
       case 'GameScreen':
-        return gameScreenVisible ? (
+        return (
           <GameScreen
             onSelectOption={handleOptionSelect}
             checkedVocab={checkedVocab}
@@ -57,7 +57,7 @@ function App() {
             timeLimit={gameTimeLimit}
             questionType={questionType}
           />
-        ) : null;
+        ); 
       case 'ScoreScreen':
         return (
           <ScoreScreen
@@ -87,7 +87,7 @@ function App() {
 
   return (
     <>
-      {currentPage !== 'GameScreen' && (
+      {currentPage === 'GameScreen' || 'OptionsMenu' && (
         <video autoPlay muted loop id="bgAnimation">
           <source src={bg} type="video/mp4" />
         </video>

@@ -6,6 +6,7 @@ import incorrect from './assets/incorrect.png';
 import confetti from 'https://cdn.skypack.dev/canvas-confetti';
 import { playCorrectPing, playIncorrectPing, playCountdownTheme, stopSounds } from './Sounds';
 import clock from './assets/countdownClock.png';
+import LoadingScreen from './LoadingScreen'; // Import the LoadingScreen component
 
 const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, questionType}) => {
     const [vocab, setVocab] = useState(null);
@@ -14,6 +15,7 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, que
     const scoreCounterRef = useRef(0);
     const [reviewVocab, setReviewVocab] = useState([]);
     const [renderedVocab, setRenderedVocab] = useState(null);
+    const [loading, setLoading] = useState(true); // State to manage loading screen visibility
 
     useEffect(() => {
         const importData = async () => {
@@ -38,6 +40,9 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, que
     
             setVocab(vocabWithImagePaths);
             renderRandomVocab(vocabWithImagePaths); // Pass true to indicate initial rendering
+
+            // Hide loading screen after data is fetched and delay has passed
+            setTimeout(() => setLoading(false), checkedVocab.length * 2000);
         };
     
         importData();
@@ -128,6 +133,8 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, que
     };
 
     const handleClick = (buttonId) => {
+        if (loading) return; // Disable clicks if loading
+
         switch (buttonId) {
             case "btnCorrect":
                 renderRandomVocab(vocab);
@@ -161,13 +168,15 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, que
     
     const handleKeyDown = useCallback(
         (event) => {
+          if (loading) return; // Disable key presses if loading
+
           if (event.key === 'ArrowLeft') {
             handleClick('btnCorrect' || 'btnPrevious');
           } else if (event.key === 'ArrowRight') {
             handleClick('btnIncorrect' || 'btnNext');
           }
         },
-        [handleClick]
+        [loading, handleClick]
       );
     
     useEffect(() => {
@@ -178,21 +187,23 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, que
       }, [handleKeyDown]);
 
     useEffect(() => {
-        const timer = setInterval(() => {
-            setTimerDuration(prevTimerDuration => {
-                if (prevTimerDuration === 0) {
-                    handleTimerFinish();
-                    clearInterval(timer);
-                    return 0;
-                } else if (prevTimerDuration === 32) {
-                    playCountdownTheme();
-                }
-                return prevTimerDuration - 1;
-            });
-        }, 1000);
+        if (!loading) {
+            const timer = setInterval(() => {
+                setTimerDuration(prevTimerDuration => {
+                    if (prevTimerDuration === 0) {
+                        handleTimerFinish();
+                        clearInterval(timer);
+                        return 0;
+                    } else if (prevTimerDuration === 32) {
+                        playCountdownTheme();
+                    }
+                    return prevTimerDuration - 1;
+                });
+            }, 1000);
 
-        return () => clearInterval(timer);
-    }, [timeLimit]);
+            return () => clearInterval(timer);
+        }
+    }, [loading, timeLimit]);
 
     useEffect(() => {
         scoreCounterRef.current = scoreCounter;
@@ -215,30 +226,38 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, que
     };
     
     return (
-        <>
-            <div id="countdown">
-                <img src={clock} alt="Clock" />
-                <h1>{formatTime(timerDuration)}</h1>
-            </div>
-            <div className="game">
-                {vocab && (
-                    <div id="quizItem">
-                        {renderedVocab?.renderedItem}
+        <div>
+        <div className="games" style={{ pointerEvents: loading ? 'none' : 'auto' }}>
+            {loading ? (
+                <LoadingScreen categories={checkedVocab} />
+            ) : (
+            <div style={{ pointerEvents: loading ? 'none' : 'auto' }}>
+                <div id="countdown">
+                    <img src={clock} alt="Clock" />
+                    <h1>{formatTime(timerDuration)}</h1>
+                </div>
+                <div className="game">
+                    {vocab && (
+                        <div id="quizItem">
+                            {renderedVocab?.renderedItem}
+                        </div>
+                    )}
+                    <div id="answerBtns">
+                        <button id="btnCorrect" onClick={() => handleClick('btnCorrect')}>
+                            <img className="icon" src={correct} alt="Correct" />
+                        </button>
+                        <button id="btnIncorrect" onClick={() => handleClick('btnIncorrect')}>
+                            <img className="icon" src={incorrect} alt="Incorrect" />
+                        </button>
                     </div>
-                )}
-                <div id="answerBtns">
-                    <button id="btnCorrect" onClick={() => handleClick('btnCorrect')}>
-                        <img className="icon" src={correct} alt="Correct" />
-                    </button>
-                    <button id="btnIncorrect" onClick={() => handleClick('btnIncorrect')}>
-                        <img className="icon" src={incorrect} alt="Incorrect" />
-                    </button>
                 </div>
             </div>
-            <div className="controls">
-                {handleControls("btnMainMenu", onSelectOption)}
-            </div>
-        </>
+            )}
+        </div>
+        <div className="controls">
+            {handleControls("btnMainMenu", onSelectOption)}
+        </div>
+        </div>
     );
 };
 

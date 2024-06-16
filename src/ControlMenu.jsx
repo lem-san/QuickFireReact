@@ -61,6 +61,7 @@ export const handleControls = (controlId, onSelectOption) => {
             case "btnInfo":
                 return onSelectOption('Info');
             case "btnMainMenu":
+                stopSounds();
                 return onSelectOption('MainMenu');  
             case "btnReturn":
                 stopSounds();
