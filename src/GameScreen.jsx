@@ -92,7 +92,7 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, que
             const shouldRenderImage = questionType.includes('Image');
             const shouldRenderEnglish = questionType.includes('English');
             const shouldRenderJapanese = questionType.includes('Japanese');
-            const shouldRepeat = questionType.includes('Repeat');
+            const shouldNotRepeat = questionType.includes('Repeat');
     
             const renderImage = () => <img src={randomVocab.image} alt={randomVocab.english} />;
             const renderEnglish = () => <h1 className="vocabText">{randomVocab.english}</h1>;
@@ -119,12 +119,9 @@ const GameScreen = ({ onSelectOption, checkedVocab, onGameFinish, timeLimit, que
             const renderedItem = renderRandomItem();
             setRenderedVocab({...randomVocab, renderedItem});
 
-            if (shouldRepeat) {
-                const newVocabArray = [
-                    ...vocab.slice(0, randomIndex), // Elements before the one to delete
-                    ...vocab.slice(randomIndex + 1) // Elements after the one to delete
-                  ];
-                setVocab(newVocabArray)
+            if (shouldNotRepeat) {
+                const newVocabArray = vocabData.filter((_, index) => index !== randomIndex);
+                setVocab(newVocabArray);
             }
 
         } else {

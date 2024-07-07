@@ -15,7 +15,6 @@ const LoadingScreen = ({ categories }) => {
       })
       .then((data) => {
         setCategoryMapping(data);
-        console.log('Category Mapping:', data); // Debug to check the fetched data
       })
       .catch((error) => {
         console.error('There has been a problem with your fetch operation:', error);

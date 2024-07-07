@@ -7,7 +7,7 @@ import {handleControls} from './ControlMenu'
 const OptionsMenu = ({onSelectOption}) => {
     const [checkedVocab, setCheckedVocab] = useState([])
     const [timeLimit, setTimeLimit] = useState(60) // Default time limit
-    const [questionType, setQuestionType] = useState(['Image'])
+    const [questionType, setQuestionType] = useState(['Image', 'Repeat'])
     const [vocab, setVocab] = useState(null);
 
     const handleSelectedVocab = (event) => {

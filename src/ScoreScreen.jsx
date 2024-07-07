@@ -71,7 +71,9 @@ const ScoreScreen = ({onSelectOption, checkedVocab, score, timeLimit, questionTy
           <div className="controls">
             {handleControls("btnMainMenu", onSelectOption)}
             {handleControls("btnOneMore", handleOneMoreButton)}
-            {handleControls("btnReview", handleReviewButton)}
+            {reviewVocab.length != 0 && (
+              handleControls("btnReview", handleReviewButton)
+            )}
           </div>
         </div>
       );
