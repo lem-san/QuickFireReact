@@ -9,9 +9,9 @@ import { playCongratulationsJingle } from "./Sounds";
 
 const ScoreScreen = ({onSelectOption, checkedVocab, score, timeLimit, questionType, reviewVocab}) => {
     const pop = keyframes`
-        50% { transform: scale(1.2); }
+    50% { transform: scale(1.2); }
     `;
-
+    
     const PopWrapper = styled.div`
         display: inline-block;
         animation: ${pop} 0.3s linear alternate;

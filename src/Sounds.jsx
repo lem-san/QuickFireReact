@@ -15,7 +15,7 @@ export const playClick = () => {
   const pclick = new Audio(click)
   pclick.volume = 0.1
   pclick.play()
-  };
+}
 
 export const playToggleClick = () => {
   const toggle = new Audio(toggleClick)
@@ -24,13 +24,13 @@ export const playToggleClick = () => {
 }
 
 export const playCorrectPing = () => {
-  stopSounds()
+  stopGameSounds()
   correct.volume = 0.3
   correct.play()
 }
 
 export const playIncorrectPing = () => {
-  stopSounds()
+  stopGameSounds()
   incorrect.volume = 0.3
   incorrect.play()
 }
@@ -44,15 +44,18 @@ export const playCongratulationsJingle = () => {
   congrats.play()
 }
 
+export const stopGameSounds = () => {
+  correct.pause() 
+  correct.currentTime = 0;
+  incorrect.pause()
+  incorrect.currentTime = 0;
+}
+
 export const stopSounds = () => {
   cdTheme.pause()
   cdTheme.currentTime = 0;
   congrats.pause()
   congrats.currentTime = 0;
-  correct.pause() 
-  correct.currentTime = 0;
-  incorrect.pause()
-  incorrect.currentTime = 0;
 }
 
 const Sounds = () => {

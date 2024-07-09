@@ -25,9 +25,9 @@ const MainMenu = ({onSelectOption}) => {
                 <div class="menu">
                     <img id="logo" src={logo}/>
                     <div id="btnMenu">
-                        <button id="btnNormal" onClick={() => handleClick('btnNormal')}>Normal</button>
+                        <button id="btnNormal" onClick={() => handleClick('btnNormal')}>Normal Mode</button>
                         <button id="btnTeam" onClick={() => handleClick('btnTeam')}>Team Battle</button>
-                        <button id="btnLeaderboards" onClick={playClick}>Leaderboards</button>
+                        <button id="btnLeaderboards" onClick={playClick}>Hint Quiz</button>
                         <button id="btnSettings" onClick={playClick}>Settings</button>
                     </div>
                 </div>
