@@ -86,11 +86,11 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0 20px;
 }
 
 .vocab-columns .col {
-  width: 45%;
+  width: 50%;
+  padding-left: 10px;
 }
 
 .col {
@@ -113,7 +113,7 @@
 }
 
 .col2 .switch {
-  margin-right: 10px;
+  margin-right: 70px;
 }
 
 /* checkbox slider */
@@ -165,10 +165,6 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-#monthsSeasonsTitle, #schoolRoomsTitle {
-  font-size: 35px;
 }
 
 /* Scrollbar Styling */

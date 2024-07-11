@@ -61,6 +61,22 @@ const questionTypes = [
     { id: 'Japanese', label: 'Japanese' },
 ]
 
+const TimeLimit = ({ value, onChange }) => (
+    <div className="col2">
+        <h2 className="category">Time limit</h2>
+        <label className="switch">
+            <select value={value} onChange={onChange}>
+                <option value="5">0:05</option>
+                <option value="32">0:30</option>
+                <option value="45">0:45</option>
+                <option value="60">1:00</option>
+                <option value="90">1:30</option>
+                <option value="120">2:00</option>
+            </select>
+        </label>
+    </div>
+)
+
 const OptionsMenu = ({ onSelectOption }) => {
     const [checkedVocab, setCheckedVocab] = useState([])
     const [timeLimit, setTimeLimit] = useState(60)
@@ -109,67 +125,59 @@ const OptionsMenu = ({ onSelectOption }) => {
                 <input type="radio" id="vocabOptions" name="optionTabs" defaultChecked />
                 <label id="vocabTitle" htmlFor="vocabOptions">Vocab</label>
                 <div className="tab">
-    <div className="vocab-columns">
-        <div className="col">
-            {vocabCategories.slice(0, Math.ceil(vocabCategories.length / 2)).map(category => (
-                <ToggleSwitch 
-                    key={category.id}
-                    id={`vocab${category.id}`}
-                    label={category.label}
-                    checked={checkedVocab.includes(category.id)}
-                    onChange={handleSelectedVocab}
-                />
-            ))}
-        </div>
-        <div className="col">
-            {vocabCategories.slice(Math.ceil(vocabCategories.length / 2)).map(category => (
-                <ToggleSwitch 
-                    key={category.id}
-                    id={`vocab${category.id}`}
-                    label={category.label}
-                    checked={checkedVocab.includes(category.id)}
-                    onChange={handleSelectedVocab}
-                />
-            ))}
-        </div>
-    </div>
-</div>
+                    <div className="vocab-columns">
+                        <div className="col">
+                            {vocabCategories.slice(0, Math.ceil(vocabCategories.length / 2)).map(category => (
+                                <ToggleSwitch 
+                                    key={category.id}
+                                    id={`vocab${category.id}`}
+                                    label={category.label}
+                                    checked={checkedVocab.includes(category.id)}
+                                    onChange={handleSelectedVocab}
+                                />
+                            ))}
+                        </div>
+                        <div className="col">
+                            {vocabCategories.slice(Math.ceil(vocabCategories.length / 2)).map(category => (
+                                <ToggleSwitch 
+                                    key={category.id}
+                                    id={`vocab${category.id}`}
+                                    label={category.label}
+                                    checked={checkedVocab.includes(category.id)}
+                                    onChange={handleSelectedVocab}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                </div>
 
                 <input type="radio" id="modifierOptions" name="optionTabs" />
                 <label id="modifierTitle" htmlFor="modifierOptions">Modifiers</label>
                 <div className="tab">
-                    <div className="col">
-                        <h2 className="category">Question type:</h2>
-                        {questionTypes.map(type => (
+                    <div className="vocab-columns">
+                        <div className="col">
+                            {questionTypes.map(type => (
+                                <ToggleSwitch 
+                                    key={type.id}
+                                    id={`question${type.id}`}
+                                    label={type.label}
+                                    checked={questionType.includes(type.id)}
+                                    onChange={handleQuestionType}
+                                />
+                            ))}
+                        </div>
+                        <div className="col">
+                            <TimeLimit 
+                                value={timeLimit}
+                                onChange={handleTimeLimitChange}
+                            />
                             <ToggleSwitch 
-                                key={type.id}
-                                id={`question${type.id}`}
-                                label={type.label}
-                                checked={questionType.includes(type.id)}
+                                id="questionRepeat"
+                                label="No repeats"
+                                checked={questionType.includes('Repeat')}
                                 onChange={handleQuestionType}
                             />
-                        ))}
-                    </div>
-                    <div className="col">
-                        <div className="col2">
-                            <h2 className="category">Time limit</h2>
-                            <label className="switch">
-                                <select value={timeLimit} onChange={handleTimeLimitChange}>
-                                    <option value="5">0:05</option>
-                                    <option value="30">0:30</option>
-                                    <option value="45">0:45</option>
-                                    <option value="60">1:00</option>
-                                    <option value="90">1:30</option>
-                                    <option value="120">2:00</option>
-                                </select>
-                            </label>
                         </div>
-                        <ToggleSwitch 
-                            id="questionRepeat"
-                            label="No repeats"
-                            checked={questionType.includes('Repeat')}
-                            onChange={handleQuestionType}
-                        />
                     </div>
                 </div>
             </div>
