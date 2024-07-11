@@ -77,10 +77,26 @@ const TimeLimit = ({ value, onChange }) => (
     </div>
 )
 
-const OptionsMenu = ({ onSelectOption }) => {
+const OptionsMenu = ({ onSelectOption, mode }) => {
     const [checkedVocab, setCheckedVocab] = useState([])
     const [timeLimit, setTimeLimit] = useState(60)
     const [questionType, setQuestionType] = useState(['Image', 'Repeat'])
+
+    const renderModeOptions = () => {
+        switch(mode) {
+            case 'Normal':
+                return normalOptions
+            case 'TeamBattle':
+                return (
+                    <>
+                        {normalOptions}
+                        {teamOptions}
+                    </>
+                )
+            default:
+                return null
+        }
+      };
 
     const handleSelectedVocab = (event) => {
         playToggleClick()
@@ -118,11 +134,9 @@ const OptionsMenu = ({ onSelectOption }) => {
         }
     }
 
-    return (
-        <>
-            <img id="optionsLogo" src={optionsLogo} alt="Options Logo" />
-            <div id="optionTabs">
-                <input type="radio" id="vocabOptions" name="optionTabs" defaultChecked />
+    const normalOptions = (
+        <React.Fragment>
+            <input type="radio" id="vocabOptions" name="optionTabs" defaultChecked />
                 <label id="vocabTitle" htmlFor="vocabOptions">Vocab</label>
                 <div className="tab">
                     <div className="vocab-columns">
@@ -180,6 +194,49 @@ const OptionsMenu = ({ onSelectOption }) => {
                         </div>
                     </div>
                 </div>
+        </React.Fragment>
+    )
+
+    const teamOptions = (
+        <React.Fragment>
+                <input type="radio" id="vocabOptions" name="optionTabs" defaultChecked />
+                <label id="vocabTitle" htmlFor="vocabOptions">TEST</label>
+                <div className="tab">
+                    <div className="vocab-columns">
+                        <div className="col">
+                            {vocabCategories.slice(0, Math.ceil(vocabCategories.length / 2)).map(category => (
+                                <ToggleSwitch 
+                                    key={category.id}
+                                    id={`vocab${category.id}`}
+                                    label={category.label}
+                                    checked={checkedVocab.includes(category.id)}
+                                    onChange={handleSelectedVocab}
+                                />
+                            ))}
+                        </div>
+                        <div className="col">
+                            {vocabCategories.slice(Math.ceil(vocabCategories.length / 2)).map(category => (
+                                <ToggleSwitch 
+                                    key={category.id}
+                                    id={`vocab${category.id}`}
+                                    label={category.label}
+                                    checked={checkedVocab.includes(category.id)}
+                                    onChange={handleSelectedVocab}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                </div>
+        </React.Fragment>
+    )
+
+    return (
+        <>
+            <img id="optionsLogo" src={optionsLogo} alt="Options Logo" />
+            <div id="optionTabs">
+                {
+                    renderModeOptions()
+                }
             </div>
             <div className="controls">
                 {handleControls('btnMainMenu', onSelectOption)}

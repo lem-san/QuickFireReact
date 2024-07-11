@@ -10,8 +10,9 @@ const MainMenu = ({onSelectOption}) => {
         playClick();
         switch (buttonId) {
             case "btnNormal":
-                return onSelectOption('NormalMode');
+                return onSelectOption('Normal');
             case "btnTeam":
+                return onSelectOption('TeamBattle');
             case "btnLeaderboards":
             case "btnSettings":
             default: break;

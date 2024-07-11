@@ -8,6 +8,7 @@ import ScoreScreen from './ScoreScreen';
 import ReviewScreen from './ReviewScreen';
 
 function App() {
+  const [gameMode, setGameMode] = useState('normal');
   const [currentPage, setCurrentPage] = useState('MainMenu');
   const [checkedVocab, setCheckedVocab] = useState([]);
   const [timerFinished, setTimerFinished] = useState(false);
@@ -25,6 +26,17 @@ function App() {
     setQuestionType(questionType);
     setReviewVocab(reviewVocab);
     
+    switch(option) {
+      case 'Normal':
+        setGameMode('Normal')
+        break;
+      case 'TeamBattle':
+        setGameMode('TeamBattle')
+        break;
+      default:
+        setGameMode('Normal')
+    }
+
     if (option !== 'GameScreen') {
       // Reset to MainMenu when returning from other screens
       setTimerFinished(false);
@@ -42,8 +54,16 @@ function App() {
 
   function renderOption() {
     switch (currentPage) {
-      case 'NormalMode':
-        return <OptionsMenu onSelectOption={handleOptionSelect} />;
+      case 'Normal':
+        return <OptionsMenu 
+          onSelectOption={handleOptionSelect} 
+          mode={gameMode}
+        />;
+      case 'TeamBattle':
+        return <OptionsMenu 
+        onSelectOption={handleOptionSelect}
+        mode={gameMode}
+        />;
       case 'Info':
         return <Info onSelectOption={handleOptionSelect} />;
       case 'MainMenu':
