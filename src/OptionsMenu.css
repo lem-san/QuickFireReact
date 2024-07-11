@@ -3,6 +3,8 @@
   src: url('./assets/UDDigi.ttf');
 }
 
+
+
 #optionsLogo {
   padding: 20px 50px;
   margin-left: 3%;
@@ -20,11 +22,11 @@
   background: transparent;
 }
 
-#vocabOptions, #modifierOptions {
-  display: none;
+#vocabOptions, #modifierOptions, #teamOptions {
+  display:  none;
 }
 
-#vocabTitle, #modifierTitle {
+#tabTitle {
   padding: 25px;
   font-weight: 900;
   width: 50%;
@@ -43,13 +45,15 @@
   background: rgba(128, 128, 128, 0.371);
 }
 
-#vocabTitle {
+/* FOR PREVIOUS LAYOUT */
+
+/* #vocabTitle {
   border-radius: 27px 0 0 0;
 }
 
 #modifierTitle {
   border-radius: 0 27px 0 0;
-}
+} */
 
 #optionTabs .tab {
   width: 100%;

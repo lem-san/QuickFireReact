@@ -137,7 +137,7 @@ const OptionsMenu = ({ onSelectOption, mode }) => {
     const normalOptions = (
         <React.Fragment>
             <input type="radio" id="vocabOptions" name="optionTabs" defaultChecked />
-                <label id="vocabTitle" htmlFor="vocabOptions">Vocab</label>
+                <label id="tabTitle" htmlFor="vocabOptions">Vocab</label>
                 <div className="tab">
                     <div className="vocab-columns">
                         <div className="col">
@@ -166,7 +166,7 @@ const OptionsMenu = ({ onSelectOption, mode }) => {
                 </div>
 
                 <input type="radio" id="modifierOptions" name="optionTabs" />
-                <label id="modifierTitle" htmlFor="modifierOptions">Modifiers</label>
+                <label id="tabTitle" htmlFor="modifierOptions">Modifiers</label>
                 <div className="tab">
                     <div className="vocab-columns">
                         <div className="col">
@@ -199,33 +199,10 @@ const OptionsMenu = ({ onSelectOption, mode }) => {
 
     const teamOptions = (
         <React.Fragment>
-                <input type="radio" id="vocabOptions" name="optionTabs" defaultChecked />
-                <label id="vocabTitle" htmlFor="vocabOptions">TEST</label>
+                <input type="radio" id="teamOptions" name="optionTabs" defaultChecked />
+                <label id="tabTitle" htmlFor="teamOptions">Teams</label>
                 <div className="tab">
-                    <div className="vocab-columns">
-                        <div className="col">
-                            {vocabCategories.slice(0, Math.ceil(vocabCategories.length / 2)).map(category => (
-                                <ToggleSwitch 
-                                    key={category.id}
-                                    id={`vocab${category.id}`}
-                                    label={category.label}
-                                    checked={checkedVocab.includes(category.id)}
-                                    onChange={handleSelectedVocab}
-                                />
-                            ))}
-                        </div>
-                        <div className="col">
-                            {vocabCategories.slice(Math.ceil(vocabCategories.length / 2)).map(category => (
-                                <ToggleSwitch 
-                                    key={category.id}
-                                    id={`vocab${category.id}`}
-                                    label={category.label}
-                                    checked={checkedVocab.includes(category.id)}
-                                    onChange={handleSelectedVocab}
-                                />
-                            ))}
-                        </div>
-                    </div>
+
                 </div>
         </React.Fragment>
     )
