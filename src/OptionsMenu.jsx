@@ -200,7 +200,7 @@ const OptionsMenu = ({ onSelectOption, mode }) => {
     const teamOptions = (
         <React.Fragment>
                 <input type="radio" id="teamOptions" name="optionTabs" defaultChecked />
-                <label id="tabTitle" htmlFor="teamOptions">Teams</label>
+                <label id="tabTitle" style={{width: "33.33333333333%" }} htmlFor="teamOptions">Teams</label>
                 <div className="tab">
 
                 </div>
