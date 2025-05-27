@@ -2,7 +2,7 @@ import './OptionsMenu.css'
 import React, { useState } from 'react'
 import optionsLogo from './assets/optionsPageLogo.png'
 import { playToggleClick } from './Sounds'
-import { handleControls } from './ControlMenu'
+import { handleControls } from './ControlMenu' 
 
 // Separate component for toggle switches
 const ToggleSwitch = ({ id, label, checked, onChange }) => (
@@ -81,7 +81,7 @@ const OptionsMenu = ({ onSelectOption, mode }) => {
     const [checkedVocab, setCheckedVocab] = useState([])
     const [timeLimit, setTimeLimit] = useState(60)
     const [questionType, setQuestionType] = useState(['Image', 'Repeat'])
-    const [teamsChosen, setTeamsChosen] = useState(['undecided'])
+    const [teamsChosen, setTeamsChosen] = useState('undecided')
 
     const renderModeOptions = () => {
         switch(mode) {
@@ -115,6 +115,11 @@ const OptionsMenu = ({ onSelectOption, mode }) => {
     const handleTimeLimitChange = (event) => {
         playToggleClick()
         setTimeLimit(parseInt(event.target.value))
+    }
+
+    const handleTeams = (event) => {
+        playToggleClick()
+        setTeamsChosen(parseInt(event.target.value))
     }
 
     const handleQuestionType = (event) => {
@@ -206,22 +211,21 @@ const OptionsMenu = ({ onSelectOption, mode }) => {
                 <input type="radio" id="teamOptions" name="optionTabs" defaultChecked />
                 <label id="tabTitle" htmlFor="teamOptions">Teams</label>
                 <div className="tab">
-                {/* {teamsChosen === 'undecided' && (
+                {teamsChosen === 'undecided' && (
                     <>                    
-                    <h1>How many?</h1>
-                    <label className="switch">
-                        <select>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                        </select>
-                    </label>     
-                    <button>Submit</button>           
+                        <h1>How many teams?</h1>
+                        <label className="switch" for="teams">
+                            <select name="teams">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </label>     
+                        <button onClick={handleTeams}>Submit</button>           
                     </>
-
-                )} */}
+                )} 
                 </div>
         </React.Fragment>
     )

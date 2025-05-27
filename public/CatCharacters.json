@@ -1,0 +1,62 @@
+[
+    {
+        "id": "houseCat",
+        "English": "House Cat",
+        "image": "gs://illustrations_bucket/CatCharacters/houseCat.png"
+    },
+    {
+        "id": "cowboyCat",
+        "English": "Cowboy Cat",
+        "image": "gs://illustrations_bucket/CatCharacters/cowboyCat.png"
+    },
+    {
+        "id": "conbiniCat",
+        "English": "Conbini Cat",
+        "image": "gs://illustrations_bucket/CatCharacters/conbiniCat.png"
+    },
+    {
+        "id": "policeOfficerCat",
+        "English": "Police Officer Cat",
+        "image": "gs://illustrations_bucket/CatCharacters/policeOfficerCat.png"
+    },
+    {
+        "id": "doctorCat",
+        "English": "Doctor Cat",
+        "image": "gs://illustrations_bucket/CatCharacters/doctorCat.png"
+    },
+    {
+        "id": "gamerCat",
+        "English": "Gamer Cat",
+        "image": "gs://illustrations_bucket/CatCharacters/gamerCat.png"
+    },
+    {
+        "id": "astronautCat",
+        "English": "Astronaut Cat",
+        "image": "gs://illustrations_bucket/CatCharacters/astronautCat.png"
+    },
+    {
+        "id": "farmerCat",
+        "English": "Farmer Cat",
+        "image": "gs://illustrations_bucket/CatCharacters/farmerCat.png"
+    },
+    {
+        "id": "chefCat",
+        "English": "Chef Cat",
+        "image": "gs://illustrations_bucket/CatCharacters/chefCat.png"
+    },
+    {
+        "id": "ninjaCat",
+        "English": "Ninja Cat",
+        "image": "gs://illustrations_bucket/CatCharacters/ninjaCat.png"
+    },
+    {
+        "id": "pirateCat",
+        "English": "Pirate Cat",
+        "image": "gs://illustrations_bucket/CatCharacters/pirateCat.png"
+    },
+    {
+        "id": "robotCat",
+        "English": "Robot Cat",
+        "image": "gs://illustrations_bucket/CatCharacters/robotCat.png"
+    }
+]
